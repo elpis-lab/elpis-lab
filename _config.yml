@@ -49,11 +49,11 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: # your GitHub user name
+github_username: ChamzasKonstantinos # your GitHub user name
 gitlab_username: # your GitLab user name
-twitter_username: # your Twitter handle
-linkedin_username: # your LinkedIn user name
-scholar_userid: # your Google Scholar ID
+twitter_username: CChamzas # your Twitter handle
+linkedin_username: constantinos-chamzas-33606284 # your LinkedIn user name
+scholar_userid: Constantinos Chamzas # your Google Scholar ID
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
@@ -154,10 +154,10 @@ github: [metadata]
 
 scholar:
 
-  last_name: Chamzas 
+  last_name: Chamzas  
   first_name: [Constantinos]
 
-  style: apa
+  style: assets/ieee
   locale: en
 
   source: /_bibliography/
@@ -167,6 +167,15 @@ scholar:
   # preprocessing may conflict with MathJAX if the latter is enabled.
   # See https://github.com/alshedivat/al-folio/issues/357.
   bibtex_filters: [latex, smallcaps, superscript]
+  bibtex_skip_fields:
+      - abstract
+      - month_numeric
+      - selected
+      - bibtex_show
+      - pdf
+      - talk
+      - code
+      - website
 
   replace_strings: true
   join_strings: true
