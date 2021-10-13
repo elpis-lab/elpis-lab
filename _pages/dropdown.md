@@ -2,6 +2,7 @@
 layout: page
 title: submenus
 nav: true
+exclude: true
 dropdown: true
 children: 
     - title: publications

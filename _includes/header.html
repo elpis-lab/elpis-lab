@@ -31,7 +31,7 @@
               {% endif %}
             </a>
           </li>
-          {% if site.blog_name %}
+          {% if site.blog_name and false %}
           <!-- Blog -->
           <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
             <a class="nav-link" href="{{ '/blog/' | relative_url }}">
@@ -45,6 +45,7 @@
           <!-- Other pages -->
           {% assign sorted_pages = site.pages | sort: "title" %}
           {% for p in sorted_pages %}
+          {% unless p.exclude %}
           {% if p.nav and p.autogen == nil %}
           {% if p.dropdown %}
           <li class="nav-item dropdown {% if page.title == p.title %}active{% endif %}">
@@ -75,6 +76,7 @@
           </li>
           {% endif %}
           {% endif %}
+          {% endunless %}
           {% endfor %}
           {% if site.enable_darkmode %}
             <div class = "toggle-container">
