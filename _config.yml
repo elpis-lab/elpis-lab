@@ -176,6 +176,8 @@ scholar:
       - talk
       - code
       - website
+      - abbr
+      - note
 
   replace_strings: true
   join_strings: true

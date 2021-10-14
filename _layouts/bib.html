@@ -81,7 +81,7 @@
         {{entry.year}}
       {% endif %}
       {% if entry.note %}
-      <br>{{entry.note}} <br/>
+      <br> <strong style="color:#00369f"> {{entry.note}} </strong> <br/>
       {% endif %}
 
       </div>
@@ -97,18 +97,24 @@
     {% if entry.bibtex_show %}
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
     {% endif %}
-    {% if entry.url %}
-      <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">URL</a>
-    {% endif %}
-    {% if entry.talk %}
-      <a href="{{ entry.talk }}" class="btn btn-sm z-depth-0" role="button" target="_blank">TALK</a>
-    {% endif %}
     {% if entry.pdf %}
       {% if entry.pdf contains '://' %}
       <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
       {% else %}
       <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
       {% endif %}
+    {% endif %}
+    {% if entry.code %}
+      <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    {% endif %}
+    {% if entry.url %}
+      <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">URL</a>
+    {% endif %}
+    {% if entry.video %}
+      <a href="{{ entry.video }}" class="btn btn-sm z-depth-0" role="button" target="_blank">video</a>
+    {% endif %}
+    {% if entry.talk %}
+      <a href="{{ entry.talk }}" class="btn btn-sm z-depth-0" role="button" target="_blank">TALK</a>
     {% endif %}
     {% if entry.supp %}
       {% if entry.supp contains '://' %}
@@ -119,9 +125,6 @@
     {% endif %}
     {% if entry.blog %}
       <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Blog</a>
-    {% endif %}
-    {% if entry.code %}
-      <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
     {% endif %}
     {% if entry.poster %}
       {% if entry.poster contains '://' %}
