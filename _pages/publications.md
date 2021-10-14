@@ -9,18 +9,18 @@ nav: true
 
 
 <div class="publications">
-<center> <h1><span style="color:#00369f"> Journal Articles  </span></h1> </center>
+<center> <h1><span style="color: var(--global-theme-color)"> Journal Articles  </span></h1> </center>
 {% bibliography -f papers -q @article %}
 </div>
 
 
 <div class="publications">
-<center> <h1><span style="color:#00369f"> Conference Papers  </span></h1> </center>
+<center> <h1><span style="color: var(--global-theme-color)"> Conference Papers  </span></h1> </center>
 {% bibliography -f papers -q @inproceedings %}
 </div>
 
 <div class="publications">
-<center> <h1><span style="color:#00369f"> Workshop Papers </span></h1> </center>
+<center> <h1><span style="color: var(--global-theme-color)"> Workshop Papers </span></h1> </center>
 {% bibliography -f papers -q @misc %}
 </div>
 
