@@ -2,22 +2,26 @@
 layout: about
 title: about
 permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
+description: 
 
 profile:
   align: right
   image: prof_pic.jpg
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>DH3055 Duncan Hall</p>
+    <p>6100 Main Street </p>
+    <p>Houston, TX,  77030</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a 5th year PhD student at the KavrakiLab in Rice University working with professor Lydia Kavraki.
- Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am a Ph.D. candidate in Computer Science at [Rice University](https://www.rice.edu/), working under the supervision of [Dr. Lydia Kavraki](https://profiles.rice.edu/faculty/lydia-e-kavraki)
+ and [Dr. Anshumali Shrivastava](https://www.cs.rice.edu/~as143/). I am honored to have received an [NSF-GRFP](https://www.nsfgrfp.org/) fellowship for my doctoral studies.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+
+I received my Diploma from [Aristotle University of Thessaloniki](https://www.auth.gr/en/) as an Electrical and Computer Engineer in 2017. 
+My research interests lie in algorithmic robotics, focusing on integrating learning-based methods with classic robotic planning algorithms.
+
+ More details can be found in my [curriculum vitae](/assets/pdf/cv_cchamzas.pdf). 

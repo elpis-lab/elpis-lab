@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2021-01-20 15:59:00-0400
 inline: true
 ---
-I was invited to give a Talk at TU berlin!
+I gave an invited [research talk](https://www.youtube.com/watch?v=x_GGQE1NQ7Y) at the Learning and Intelligent Systems Lab, TU Berlin. 
