@@ -176,6 +176,7 @@ scholar:
       - website
       - abbr
       - note
+      - video 
 
   replace_strings: true
   join_strings: true
