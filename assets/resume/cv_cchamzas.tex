@@ -1,0 +1,255 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2007-2014 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+\usepackage[empty]{fullpage}
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.90}
+\usepackage[urlcolor = black]{hyperref}
+\hypersetup{colorlinks=false,linkcolor=blue,pdfborderstyle={/S/U/W 1}}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+
+\usepackage[noadjust]{cite}
+%\usepackage[square,sort,comma,numbers]{natbib}
+%\setlength{\bibsep}{0pt}
+
+\bibliographystyle{ieeetr}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+	\textbf{\Large Constantinos Chamzas}    &  chamzask-at-gmail.com \\
+	                         Houston, USA   &  chamzas-at-rice.edu~~~~~ \\
+	
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+\resheading{Education}
+\begin{itemize}
+\item
+    \ressubheading{William Marsh Rice University }{Houston, TX, USA}
+	{Ph.D. student in Computer Science,
+		 Advisor: Dr Lydia Kavraki}{Aug. 2017 - Present}
+	\begin{itemize}
+		\resitem{8 Semesters Completed, GPA: \textbf{3.65/4} }
+		\resitem{Research Areas: AI,  Robotics,  Motion Planning, Representation Learning}
+	\end{itemize}
+
+	
+	\item
+        \ressubheading{Aristotle University of Thessaloniki }{Thessaloniki, Greece}{Diploma in Electrical and Computer Engineering }{Sep.2011- Apr.2017}
+	\begin{itemize}
+		\resitem{Graduated with 'Excellent', \textbf{8.86/10} cumulative average (Top 2\%)}
+		\resitem{Thesis: Structural Analysis of Handwritten Equations Using Probabilistic Context-Free Grammars}
+	\end{itemize}
+	
+		
+\end{itemize}
+\resheading{Research Experience}
+
+\begin{itemize}
+	
+    \item
+        \ressubheading{Kavraki Lab, \url{http://kavrakilab.org/}}
+	{Rice University, Houston}{Graduate Student}
+	{Aug. 2017 - Present  }
+	\begin{itemize}
+		\resitem{Research in Robotic Learning. \cite{Chamzas2019,Chamzas2020,Pairet2021, Chamzas2021} }
+		\resitem{Software development for education and research purposes. }
+	\end{itemize}
+    \item
+    \ressubheading{TracLabs Robotics Group, \url{https://traclabs.com/}}
+    {TracLabs, Houston}{Research Intern}
+    {Jul. 2019 - Aug. 2019}
+    \begin{itemize}
+    	\resitem{Integrated a motion planning framework (OMPL) with existing infrastructure (CRAFTSMAN)}
+    \resitem{Investigated experience-based planning in an industrial manipulation problem.}
+    \end{itemize}
+	\item
+     \ressubheading{Pandora Robotics Group, \url{http://pandora.ee.auth.gr/}}
+	{Aristotle University, Thessaloníki}{Software Engineer and Tester}
+	{Sep. 2013 - Feb. 2015}
+	\begin{itemize}
+		\resitem{Mapped robot’s georeferenced track and surrounding environment in a 2D geotiff (Qt, C++)}
+		\resitem{Developed an online diagnostic tester for the stat}
+	\end{itemize}
+\end{itemize}
+
+\resheading{Fellowships and Awards}
+\begin{itemize}
+		\item
+	\ressubheading{NSF Graduate Research Fellowship}
+	{Rice University, Houston}{Awarded to outstanding graduate students in the US in STEM }{May. 2019}
+		\item
+		\ressubheading{ICRA 2019 Travel Grant}
+		{Rice University, Houston}{Awarded to ICRA2019 attendees in a competitive basis }{Mar. 2019}
+		\item
+		\ressubheading{Hellenic Professional Society of Texas Scholarship}
+		{Rice University, Houston}{Awarded to students with Greek Origins for Academic Excellence}
+		{Jan. 2018}
+\end{itemize}
+
+\resheading{Publications }
+\begingroup
+	\renewcommand{\section}[2]{}%
+\begin{thebibliography}{9}
+
+	\bibitem{Chamzas2019}
+	\underline{C. Chamzas}, A. Shrivastava, L. E. Kavraki
+	``Using Local Experiences for Global Motion Planning,''\textit{IEEE International Conference on Robotics and Automation (ICRA)}, 2019.
+	\bibitem{Chamzas2020}
+    \underline{C. Chamzas}, Z. Kingston, A. Shrivastava, L. E. Kavraki
+	``Learning sampling distributions using local 3D workspace decompositions for motion planning in high dimensions''\textit{IEEE International Conference on Robotics and Automation (ICRA)}, 2021. \textbf{Top-4 finalist for best paper in Cognitive Robotics} 
+	\bibitem{Pairet2021}
+	E. Pairet, \underline{C. Chamzas}, Y. Petillot, L. E. Kavraki
+	``Path Planning for Manipulation using Experience-driven Random Trees''\textit{IEEE Robotics and Automation Letters (RAL)}, 2021.
+	\bibitem{DChamzas2021} 	
+	D. Chamzas, \underline{C. Chamzas}, K. Moustakas
+	``cMinMax: A Fast Algorithm to Find the Corners in an N-dimensional Convex Polytope''\textit{International Conference on Computer Graphics Theory and Applications (GRAPP)}, 2021. 
+	\bibitem{Chamzas2021} 
+	\underline{C. Chamzas*}, M. Lippi* , M. C. Welle*, A.Varava, A.Marino, D. Kragic, L.E.Kavraki ``Structuring Latent Representation with Minimal Supervision for Robotic Tasks ''\textit{3rd Robot Learning Workshop in NeurIPS}, 2020. 
+	\end{thebibliography}
+	\endgroup
+\pagebreak
+\resheading{Teaching Experience}
+\begin{itemize}
+	\item
+	\ressubheading{Artificial Intelligence (COMP  440/557) }
+	{Rice University, Houston}{Teaching Assistant}
+	{Aug. 2019 - Dec. 2019}
+	\item
+	\ressubheading{Probabilistic Algorithms and Data Structures (COMP  480/580)}
+	{Rice University, Houston}{Teaching Assistant}
+	{Jan. 2019 - . 2018}
+	\item
+	\ressubheading{Algorithmic Robotics (COMP  450/550) }
+	{Rice University, Houston}{Teaching Assistant}
+	{Aug. 2018 - Dec. 2018}
+	\item
+	\ressubheading{Rice DataScience Bootcamp}
+	{Rice University, Houston}{Teaching Assistant}
+	{Aug. 2018}
+	\item
+	\ressubheading{Statistical Machine Learning (COMP 440/540)}
+	{Rice University, Houston}{Teaching Assistant}
+	{Jan. 2018 - May. 2018}
+\end{itemize}
+\resheading{Open Source Software}
+\begin{itemize}
+	\item The Open Motion Planning Library \url{http://ompl.kavrakilab.org/}
+	\item MoveIt Robot Motion Planning Software  \url{https://moveit.ros.org/}
+	\item Robowflex Library \url{https://github.com/KavrakiLab/robowflex}
+	\item Pyre Library \url{https://github.com/KavrakiLab/pyre}
+\end{itemize}	
+\resheading{Competitions }
+\begin{itemize}
+	\item
+	\ressubheading{IEEEXtreme Programming Competition 9.0,10.0}
+	{Thessaloniki, Greece}
+	{ranked 132/2.447, 126/2.113,
+%	\textit{	,\href{https://www.dropbox.com/s/eszea1e4h4oys0t/certificateXtreeme9.pdf?dl=0}{certificate9}
+%		,\href{https://www.dropbox.com/s/evey861q7mr5q99/IEEEXtreme9Results.pdf?dl=0}{results9}
+%		,\href{https://www.dropbox.com/s/oh0hi22xbxqrq3e/certificateXtreeme10.pdf?dl=0}{certificate10}
+%		,\href{https://www.dropbox.com/s/vtfj1qr54ezt8ac/IEEEXtreme10Results.pdf?dl=0 }{results10}}
+	}
+	{Oct. 2015,Oct. 2016 }
+	\begin{itemize}
+		\resitem{In a 24-hour time span  had  to solve a plethora of programming- algorithmic problems}
+	\end{itemize}
+	\item
+	\ressubheading{CellLock,a cell anti-theft application }{Thessaloniki,Greece}{Team leader,%\href{https://github.com/orestisf1993/daedalus-sfhmmy9/graphs/contributors}{github\_repo}
+		}
+		{March 2016}
+	\begin{itemize}
+		\resitem{During a 2-days workshop developed a thef-protection device for cellphones}
+	\end{itemize}
+	\item
+	\ressubheading{AI block battle competition}{Thessaloniki, Greece}{Ranked 42 /220 in finals. %Currently 50/64, \href{https://github.com/papoudakis/TetrisAiGames/graphs/contributors}{github\_repo}
+		}{April 2016}
+	\begin{itemize}
+		\resitem{Developed a bot playing a 2 player variation of Tetris,
+			%\href{http://theaigames.com/competitions/ai-block-battle/game-log/a/1}{CompetitionPage}(BotName :TetrisMaster)
+			}
+	\end{itemize}
+	
+	
+\end{itemize}
+
+
+%\end{thebibliography}
+%\resheading{Notable Projects}
+%\begin{itemize}
+%	\item Parallel implementation of Conway's Game of Life in C++ and CUDA  \href{https://github.com/vasilish/game_of_life/graphs/contributors}{github\_repo} 
+%	\item Parallel implementation of pagerank in C and pthreads \href{https://github.com/orestisf1993/pthread-pagerank/graphs/contributors}{github\_repo}
+%	\item My Thesis : Recognition of on-line handwritten mathematical expressions using geometric probabilistic context-free grammars.
+%\end{itemize}
+%\pagebreak
+%\resheading{Sofware Skills}
+%\begin{description}
+%	\item[Programming Languages:] Assembly, C, C++, C\# ,Python,Java,Matlab,\LaTeX,MySql
+%	\item[Operating Systems:]Linux,Android,Windows
+%	\item[Software Development:] OOP,Event Programming   
+%\end{description}
+%\resheading{Open Source Software}
+%\begin{itemize}
+	%\item The Open Motion Planning Library  \url{http://ompl.kavrakilab.org/}
+%	\item MoveIt Robot Motion Planning Software  \url{https://moveit.ros.org/}
+%		\href{https://www.dropbox.com/s/pf5yrej1l3lfokf/Coursera%20interactivepython%202016.pdf?dl=0}{certificate}
+%	\item  Game Theory I, II (Stanford University)
+%		\href{https://www.dropbox.com/s/utel1aosukvknbk/certificateGameTheory.pdf?dl=0}{certificate}
+%	\item  Artificial Intelligence (Berkeley University)
+%		\href{https://www.dropbox.com/s/xokddky45ra8s5t/certificateArtificialInteligence.pdf?dl=0}{certificate}
+%	\item  Machine Learning (Stanford University)
+%		\href{https://www.coursera.org/learn/machine-learning}{course}
+%	\item  CNN for Visual Recognition (Stanford University) %\href{http://cs231n.stanford.edu/}{course}
+%	\item Modern Robotics (University of Pennsylvania) 
+%	%\item Probabilistic Graphical Models (Stanford University) 
+%\end{itemize}
+\resheading{Languages}
+\begin{description}
+	\item[Greek:] Mother Tonque 
+	\item[English:] Level: C2(Excellent)
+	\item[German:] Level: B2(Good)
+\end{description}
+
+\resheading{Other Skills/Interests}
+\begin{description}
+	\item [Service:] Officer of the Computer-Science Graduate Student Association  (CS-GSA).
+	\item[Chess Player :] 2 times local champion in my hometown
+	\item[Running:] Finished 3 half-Marathons and 1 Marathon
+	\item[Sailing:] Acquired Sailing diploma in 2012, I have been sailing the Aegean Sea since 12 years old
+	\item[Boy Scout:]Was active member of the Scout Community for more than 10 years
+	\item[Leadership:]Founded an independent student movement inside the university and won the 2014 student Board elections with 40\% of the votes.The  goal was to help organize the students and participate in the decision making of our university in student related matters.
+\end{description}
+	
+\end{document}

@@ -24,4 +24,4 @@ I am a Ph.D. candidate in Computer Science at [Rice University](https://www.rice
 I received my Diploma from [Aristotle University of Thessaloniki](https://www.auth.gr/en/) as an Electrical and Computer Engineer in 2017. 
 My research interests lie in algorithmic robotics, focusing on integrating learning-based methods with classic robotic planning algorithms.
 
- More details can be found in my [curriculum vitae](/assets/pdf/cv_cchamzas.pdf). 
+ More details can be found in my [curriculum vitae](/assets/resume/cv_cchamzas.pdf). 
