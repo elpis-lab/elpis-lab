@@ -22,4 +22,5 @@ vendor
 *.cb2
 .*.lb
 *.gz
+*.fdb
 
