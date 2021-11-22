@@ -9,6 +9,7 @@ _site
 Gemfile.lock
 vendor
 
+#Latex
 *.aux
 *.lof
 *.log
@@ -23,4 +24,6 @@ vendor
 .*.lb
 *.gz
 *.fdb_latexmk
+*.bbl
+*.blg
 
