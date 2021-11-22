@@ -22,5 +22,5 @@ vendor
 *.cb2
 .*.lb
 *.gz
-*.fdb
+*.fdb_latexmk
 
