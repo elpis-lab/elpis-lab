@@ -5,6 +5,21 @@
 @String { iros   = {IEEE/RSJ International Conference on Intelligent Robots and Systems}}
 @String { iral   = {IEEE Robotics and Automation Letters}}
 
+@inproceedings{quintero-chamzas2022-blind,
+ abstract = {Motion planning is a core problem in robotics, with a range of existing methods aimed to address its diverse set of challenges. However, most existing methods rely on complete knowledge of the robot environment; an assumption that seldom holds true due to inherent limitations of robot perception. To enable tractable motion planning for high-DOF robots under partial observability, we introduce BLIND, an algorithm that leverages human guidance. BLIND utilizes inverse reinforcement learning to derive motion-level guidance from human critiques. The algorithm overcomes the computational challenge of reward learning for high-DOF robots by projecting the robot’s continuous configuration space to a motion-planner-guided discrete task model. The learned reward is in turn used as guidance to generate robot motion using a novel motion planner. We demonstrate BLIND using the Fetch robot an dperform two simulation experiments with partial observability. Our experiments demonstrate that, despite the challenge of partial observability and high dimensionality, BLIND is capable of generating safe robot motion and outperforms baselines on metrics of teaching efficiency, success rate, and path quality.},
+ author = {Quintero-Pe{\~n}a, Carlos and Chamzas, Constantinos and Sun, Zhanyi and Unhelkar, Vaibhav and E. Kavraki, Lydia},
+ booktitle = icra,
+ month = may,
+ pdf = {quintero-chamzas2022-blind.pdf},
+ video = {https://youtu.be/m1rc8JNBMAQ},
+ title = {Human-Guided Motion Planning in Partially Observable Environments},
+ abbr={ICRA},
+ bibtex_show={true},
+ year = {2022}
+
+}
+
+
 @article{chamzas2022-motion-bench-maker,
   abstract = {Recently, there has been a wealth of development in motion planning for robotic manipulationnew motion planners are continuously proposed, each with its own unique set of strengths and weaknesses. However, evaluating these new planners is challenging, and researchers often create their own ad-hoc problems for benchmarking, which is time-consuming, prone to bias, and does not directly compare against other state-of-the-art planners. We present MotionBenchMaker, an open-source tool to generate benchmarking datasets for realistic robot manipulation problems. MotionBenchMaker is designed to be an extensible, easy-to-use tool that allows users to both generate datasets and benchmark them by comparing motion planning algorithms. Empirically, we show the benefit of using MotionBenchMaker as a tool to procedurally generate datasets which helps in the fair evaluation of planners. We also present a suite of over 40 prefabricated datasets, with 5 different commonly used robots in 8 environments, to serve as a common ground for future motion planning research.},
   title = {MotionBenchMaker: A Tool to Generate and Benchmark Motion Planning Datasets},
@@ -14,7 +29,6 @@
   issn = {2377-3766},
   doi = {10.1109/LRA.2021.3133603},
   journal = iral, 
-  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
   author = {Chamzas, Constantinos and Quintero-Pe{\~n}a, Carlos and Kingston, Zachary and Orthey, Andreas and Rakita, Daniel and Gleicher, Michael and Toussaint, Marc and E. Kavraki, Lydia},
   year = {2022},
   month = april,
