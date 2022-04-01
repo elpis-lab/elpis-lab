@@ -4,10 +4,13 @@
 @String { icra   = {IEEE International Conference on Robotics and Automation}}
 @String { iros   = {IEEE/RSJ International Conference on Intelligent Robots and Systems}}
 @String { iral   = {IEEE Robotics and Automation Letters}}
+@String { nam   = {National Academy of Medicine Perspectives}}
+
+
 
 @inproceedings{quintero-chamzas2022-blind,
  abstract = {Motion planning is a core problem in robotics, with a range of existing methods aimed to address its diverse set of challenges. However, most existing methods rely on complete knowledge of the robot environment; an assumption that seldom holds true due to inherent limitations of robot perception. To enable tractable motion planning for high-DOF robots under partial observability, we introduce BLIND, an algorithm that leverages human guidance. BLIND utilizes inverse reinforcement learning to derive motion-level guidance from human critiques. The algorithm overcomes the computational challenge of reward learning for high-DOF robots by projecting the robot’s continuous configuration space to a motion-planner-guided discrete task model. The learned reward is in turn used as guidance to generate robot motion using a novel motion planner. We demonstrate BLIND using the Fetch robot an dperform two simulation experiments with partial observability. Our experiments demonstrate that, despite the challenge of partial observability and high dimensionality, BLIND is capable of generating safe robot motion and outperforms baselines on metrics of teaching efficiency, success rate, and path quality.},
- author = {Quintero-Pe{\~n}a, Carlos and Chamzas, Constantinos and Sun, Zhanyi and Unhelkar, Vaibhav and E. Kavraki, Lydia},
+ author = {Quintero-Pe{\~n}a*, Carlos and Chamzas*, Constantinos and Sun, Zhanyi and Unhelkar, Vaibhav and E. Kavraki, Lydia},
  booktitle = icra,
  month = may,
  pdf = {quintero-chamzas2022-blind.pdf},
@@ -16,7 +19,6 @@
  abbr={ICRA},
  bibtex_show={true},
  year = {2022}
-
 }
 
 
@@ -40,6 +42,20 @@
   bibtex_show={true},
   abbr = {RAL}
 }
+
+@article{chamzas2022-health-robotics,
+abstract={Advances in robotic technologies and intelligent machines will transform the way clinicians care for members of our community within a variety of health care settings, including the home, and, perhaps of far greater importance, offer a means to create a much more accessible, adaptable, and equitable world for every member of society. Robotics have already entered the health care ecosystem, and their presence is rapidly expanding. Surgical robots have become a common fixture in many medical centers. Outside of North America, robotic systems have emerged to meet an acute and growing labor shortage within skilled nursing facilities in Japan and were recently used to limit social contact and mitigate the risk of COVID-19 in China and South Korea (Khan et al., 2020). Regardless of the setting or application, key challenges to fully integrating robotics into health care include the development of algorithms and methods that enable shared human-robot autonomy and collaboration in the real world, as well as technology deployment that is both cost-effective and culturally centered so that all communities may benefit. Exploiting the transformative potential of these technologies will require intensive collaboration among policy makers, regulators, entrepreneurs, researchers, health care providers, and especially those who would stand to benefit from or may be subject to risks due to the use of these technologies. This paper outlines areas in which robotics could make the largest and most immediate impact, discusses existing and emergent challenges to their implementation, and identifies areas in which implementers will need to pay specific attention to ensure equitable access for all.},
+author = {Chamzas*, Constantinos and Eweje*, Feyisayo and Kavraki, Lydia E and Chaikof, Elliot L},
+journal = nam,
+publisher = {National Academy of Medicine},
+title = {Human Health and Equity in an Age of Robotics and Intelligent Machines},
+year = {2022},
+bibtex_show={true},
+abbr = {NAM},
+pdf = {chamzas2022-health-robotics.pdf},
+url = {https://doi.org/10.31478/202203b},
+}
+
 
 
 @inproceedings{kingston2021experience-foliations,
@@ -265,3 +281,6 @@ During the last years, the emerging field of Augmented Virtual Reality (AR-VR) h
   bibtex_show = {true},
   abbr = {ICRA}
 }
+
+
+
