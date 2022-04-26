@@ -1,11 +1,26 @@
 ---
 ---
 
-@String { icra   = {IEEE International Conference on Robotics and Automation}}
-@String { iros   = {IEEE/RSJ International Conference on Intelligent Robots and Systems}}
-@String { iral   = {IEEE Robotics and Automation Letters}}
-@String { nam   = {National Academy of Medicine Perspectives}}
+@String { icra = {IEEE International Conference on Robotics and Automation}}
+@String { iros = {IEEE/RSJ International Conference on Intelligent Robots and Systems}}
+@String { iral = {IEEE Robotics and Automation Letters}}
+@String { nam  = {National Academy of Medicine Perspectives}}
 
+
+
+@inproceedings{chamzas2022-learn-retrieve,
+ abstract = {Recent work has demonstrated that motion planners’ performance can be significantly improved by retrieving past experiences from a database. Typically, the experience database is queried for past similar problems using a similarity function defined over the motion planning problems. However, to date, most works rely on simple hand-crafted similarity functions and fail to generalize outside their corresponding training dataset. To address this limitation, we propose (FIRE), aframework that extracts local representations of planning problems and learns a similarity function over them. To generate the training data we introduce a novel self-supervised method that identifies similar and dissimilar pairs of local primitives from past solution paths. With these pairs, a Siamese network is trained with the contrastive loss and the similarity function is realized in the network’s latent space. We evaluate FIRE on an 8-DOF manipulator in five categories of motion planning problems with sensed environments. Our experiments show that FIRE retrieves relevant experiences which can informatively guide sampling-based planners even in problems outside its training distribution, outperforming other baselines.},
+ author = {Chamzas, Constantinos and Cullen, Aedan and Unhelkar, Vaibhav and E. Kavraki, Lydia},
+ booktitle = icra,
+ month = may,
+ pdf = {chamzas2022-learn-retrieve.pdf},
+ selected = {true},
+ talk = {https://youtu.be/6E2BXmAdAvM},
+ title = {Learning to Retrieve Relevant Experiences for Motion Planning},
+ abbr={ICRA},
+ bibtex_show={true},
+ year = {2022}
+}
 
 
 @inproceedings{quintero-chamzas2022-blind,
@@ -37,6 +52,7 @@
   url = {https://dx.doi.org/10.1109/LRA.2021.3133603},
   pdf = {chamzas2022-motion-bench-maker.pdf},
   video = {https://youtu.be/t96Py0QX0NI},
+  talk = {https://youtu.be/ggRmKPt7IP8},
   code = {https://github.com/KavrakiLab/motion_bench_maker}, 
   selected={true},
   bibtex_show={true},
