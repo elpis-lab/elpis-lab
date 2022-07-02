@@ -6,7 +6,42 @@
 @String { iral = {IEEE Robotics and Automation Letters}}
 @String { nam  = {National Academy of Medicine Perspectives}}
 
+@inproceedings{chamzas2022-contrastive-visual-task-planning,
+  abstract={Learning state representations enables robotic planning directly from raw observations such as images. Most methods learn state representations by utilizing losses based on the reconstruction of the raw observations from a lower-dimensional latent space. The similarity between observations in the space of images is often assumed and used as a proxy for estimating similarity between the underlying states of the system. However, observations commonly contain task-irrelevant factors of variation which are nonetheless important for reconstruction, such as varying lighting and different camera viewpoints. In this work, we define relevant evaluation metrics and perform a thorough study of different loss functions for state representation learning. We show that models exploiting  task priors, such as Siamese networks with a simple contrastive loss, outperform reconstruction-based representations in visual  task planning.}
+  title={Comparing reconstruction-and contrastive-based models for visual task planning},
+  author={Chamzas*, Constantinos and Lippi*, Martina and Welle*, Michael C and Varava, Anastasia and Kavraki, Lydia E and Kragic, Danica},
+  booktitle = iros, 
+  month = oct,
+  year={2022}, 
+  pdf={chamzas2022-contrastive-visual-task-planning.pdf}, 
+  bibtex_show={true},
+  abbr={IROS}
+}
 
+@article{lee2022-apes,
+  abstract = {Sampling-based motion planners are widely used for motion planning with high-dof
+      robots. These planners generally rely on a uniform distribution to explore the search space.
+      Recent work has explored learning biased sampling distributions to improve the time
+      efficiency of these planners. However, learning such distributions is challenging, since
+      there is no direct connection between the choice of distributions and the performance of the
+      downstream planner. To alleviate this challenge, this paper proposes APES, a framework that
+      learns sampling distributions optimized directly for the planner's performance. This is done
+      using a critic, which serves as a differentiable surrogate objective modeling the planner's
+      performance - thus allowing gradients to circumvent the non-differentiable planner.
+      Leveraging the differentiability of the critic, we train a generator, which outputs sampling
+      distributions optimized for the given problem instance. We evaluate APES on a series of
+      realistic and challenging high-dof manipulation problems in simulation. Our experimental
+      results demonstrate that APES can learn high-quality distributions that improve planning
+      performance more than other biased sampling baselines.},
+  title = {Adaptive Experience Sampling for Motion Planning using the Generator-Critic Framework},
+  journal = iral, 
+  author = {Lee, Yiyuan and Chamzas, Constantinos and E. Kavraki, Lydia},
+  year = {2022},
+  month = jul,
+  pdf = {lee2022-apes.pdf}, 
+  bibtex_show={true},
+  abbr = {RAL}
+}
 
 @inproceedings{chamzas2022-learn-retrieve,
  abstract = {Recent work has demonstrated that motion planners’ performance can be significantly improved by retrieving past experiences from a database. Typically, the experience database is queried for past similar problems using a similarity function defined over the motion planning problems. However, to date, most works rely on simple hand-crafted similarity functions and fail to generalize outside their corresponding training dataset. To address this limitation, we propose (FIRE), aframework that extracts local representations of planning problems and learns a similarity function over them. To generate the training data we introduce a novel self-supervised method that identifies similar and dissimilar pairs of local primitives from past solution paths. With these pairs, a Siamese network is trained with the contrastive loss and the similarity function is realized in the network’s latent space. We evaluate FIRE on an 8-DOF manipulator in five categories of motion planning problems with sensed environments. Our experiments show that FIRE retrieves relevant experiences which can informatively guide sampling-based planners even in problems outside its training distribution, outperforming other baselines.},
