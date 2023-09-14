@@ -5,6 +5,7 @@
 @String { iros = {IEEE/RSJ International Conference on Intelligent Robots and Systems}}
 @String { iral = {IEEE Robotics and Automation Letters}}
 @String { nam  = {National Academy of Medicine Perspectives}}
+@String { rss  = {Robotics Science and Systems}}
 
 @inproceedings{chamzas2022-contrastive-visual-task-planning,
   abstract={Learning state representations enables robotic planning directly from raw observations such as images. Most methods learn state representations by utilizing losses based on the reconstruction of the raw observations from a lower-dimensional latent space. The similarity between observations in the space of images is often assumed and used as a proxy for estimating similarity between the underlying states of the system. However, observations commonly contain task-irrelevant factors of variation which are nonetheless important for reconstruction, such as varying lighting and different camera viewpoints. In this work, we define relevant evaluation metrics and perform a thorough study of different loss functions for state representation learning. We show that models exploiting  task priors, such as Siamese networks with a simple contrastive loss, outperform reconstruction-based representations in visual  task planning.},
@@ -183,6 +184,20 @@ url = {https://doi.org/10.31478/202203b},
   abbr = {IROS}
 }
 
+@misc{chamzas2023-metapolicy,
+  abstract = {Model-based robotic planning techniques, such as inverse kinematics and motion planning, can endow robots with the  ability to perform complex manipulation tasks, such as grasping, object manipulation, and precise placement. However, these methods often assume perfect world knowledge and leverage approximate world models. For example, tasks that involve dynamics such as pushing or pouring are difficult to address with model-based techniques as it is difficult to obtain accurate characterizations of these object dynamics. Additionally, uncertainty in perception prevents them populating an accurate world state estimate.  In this work, we propose using a model-based motion planner to build an ensemble of plans under different environment  hypotheses. Then, we train a meta-policy to decide online which plan to track based on the current history of observations. By leveraging history, this policy is able to switch ensemble plans to circumvent getting “stuck” in order to complete the task. We tested our method on a 7-DOF Franka-Emika robot pushing a cabinet door in simulation. We demonstrate that a successful meta-policy can be trained to push a door in settings high environment uncertainty all while requiring little data.},
+  author={Constantinos Chamzas and Caelan Garrett and Balakumar Sundaralingam and Lydia E. Kavraki and Dieter Fox},
+  booktitle = {RSS 2023: Workshop on Learning for Task and Motion Planning},
+  month = jul,
+  title={Meta-Policy Learning over Plan Ensembles for Robust Articulated Object Manipulation}, 
+  year = {2023},
+  website= {https://zt-yang.github.io/rss23-l4tamp-workshop/},
+  url={https://openreview.net/forum?id=68N8Dj6KVv},
+  pdf={chamzas2023-metapolicy.pdf}, 
+  bibtex_show={true},
+  abbr={RSS}
+}
+
 @misc{quintero-chamzas2021-motion-planning-in-the-dark,
   abstract = {Motion planning is a core problem in many applications spanning from robotic
       manipulation to autonomous driving. Given its importance, several schools of methods have
@@ -204,12 +219,13 @@ url = {https://doi.org/10.31478/202203b},
   year = {2021},
   url={https://sites.google.com/utexas.edu/mlmp-icra2021/home},
   pdf={quintero-chamzas2021-motion-planning-in-the-dark.pdf}, 
-  url={https://sites.google.com/utexas.edu/mlmp-icra2021/home},
   talk={https://youtu.be/33JbcVqnVEM?t=19522},
   bibtex_show={true},
   note={(Spotlight)}, 
   abbr={ICRA}
 }
+
+
 
 @inproceedings{chamzas2021-learn-sampling,
   abstract = {Earlier work has shown that reusing experience from prior motion planning problems

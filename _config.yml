@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Constantinos 
 middle_name: 
 last_name: Chamzas 
-email: chamzas@rice.edu
+email: cchamzas@wpi.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   The webpage of Constantinos Chamzas, PhD student in Computer Science.
 footer_text: >
