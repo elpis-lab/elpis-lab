@@ -1,5 +1,4 @@
----
-layout: about
+--- layout: about
 title: about
 permalink: /
 description: 
@@ -8,8 +7,8 @@ profile:
   align: right
   image: prof_pic.jpg
   address: >
-    <p> UH271 Unity Hall </p>
-    <p> 100 institute Rd </p>
+    <p> UH271, Unity Hall </p>
+    <p> 100 Institute Rd </p>
     <p> Worcester, MA 01609 </p>
 
 news: true  # includes a list of news items
