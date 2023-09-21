@@ -17,9 +17,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am an Assistant Professor in [Robotics Enginnering](https://www.wpi.edu/academics/departments/robotics-engineering) at [Worcester Polytechnic Institute](https://www.wpi.edu/) 
+I am an Assistant Professor in [Robotics Engineering](https://www.wpi.edu/academics/departments/robotics-engineering) at [Worcester Polytechnic Institute](https://www.wpi.edu/) 
 
-I recieved my Ph.D. in Computer Science in 2023 at [Rice University](https://www.rice.edu/), working under the supervision of [Dr. Lydia Kavraki](https://profiles.rice.edu/faculty/lydia-e-kavraki)
+I received my Ph.D. in Computer Science in 2023 at [Rice University](https://www.rice.edu/), working under the supervision of [Dr. Lydia Kavraki](https://profiles.rice.edu/faculty/lydia-e-kavraki)
  and [Dr. Anshumali Shrivastava](https://www.cs.rice.edu/~as143/). I am honored to have received an [NSF-GRFP](https://www.nsfgrfp.org/) fellowship for my doctoral studies.
 I received my Diploma from [Aristotle University of Thessaloniki](https://www.auth.gr/en/) as an Electrical and Computer Engineer in 2017. 
 
