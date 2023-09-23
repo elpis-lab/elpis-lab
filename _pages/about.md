@@ -1,4 +1,5 @@
---- layout: about
+----
+layout: about
 title: about
 permalink: /
 description: 
