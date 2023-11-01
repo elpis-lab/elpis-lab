@@ -9,6 +9,21 @@
 @String { rss  = {Robotics Science and Systems}}
 @String { arev  = {Annual review of control, robotics, and autonomous systems}}
 
+@article{orthey2024-review-sampling,
+  author      = {Andreas Orthey and Constantinos Chamzas and Lydia E. Kavraki},
+  title       = {Sampling-Based Motion Planning: A Comparative Review},
+  journal     = arev,
+  month       = jul,
+  year        = {2024},
+  volume      = {7},
+  abbr        = {AR},
+  abstract    = {Sampling-based motion planning is one of the fundamental paradigms to generate robot motions, and a cornerstone of robotics research. This comparative review provides an up-to-date guideline and reference manual for the use of sampling-based motion planning algorithms. This includes a history of motion planning, an overview about the most successful planners, and a discussion on their properties. It is also shown how planners can handle special cases and how extensions of motion planning can be accommodated. To put sampling-based motion planning into a larger context, a discussion of alternative motion generation frameworks is presented which highlights their respective differences to sampling-based motion planning. Finally, a set of sampling-based motion planners are compared on 24 challenging planning problems. This evaluation gives insights into which planners perform well in which situations and where future research would be required. This comparative review thereby provides not only a useful reference manual for researchers in the field, but also a guideline for practitioners to make informed algorithmic decisions.},
+  bibtex_show = {true},
+  pdf         = {orthey2024-review-sampling.pdf},
+  selected    = {false}
+}
+
+
 @inproceedings{chamzas2022-contrastive-visual-task-planning,
   abstract={Learning state representations enables robotic planning directly from raw observations such as images. Most methods learn state representations by utilizing losses based on the reconstruction of the raw observations from a lower-dimensional latent space. The similarity between observations in the space of images is often assumed and used as a proxy for estimating similarity between the underlying states of the system. However, observations commonly contain task-irrelevant factors of variation which are nonetheless important for reconstruction, such as varying lighting and different camera viewpoints. In this work, we define relevant evaluation metrics and perform a thorough study of different loss functions for state representation learning. We show that models exploiting  task priors, such as Siamese networks with a simple contrastive loss, outperform reconstruction-based representations in visual  task planning.},
   title={Comparing Reconstruction-and Contrastive-based Models for Visual Task Planning},
@@ -374,17 +389,5 @@ During the last years, the emerging field of Augmented Virtual Reality (AR-VR) h
   abbr = {ICRA}
 }
 
-@Article{orthey2024-review-sampling,
-  author      = {Andreas Orthey and Constantinos Chamzas and Lydia E. Kavraki},
-  title       = {Sampling-Based Motion Planning: A Comparative Review},
-  journal     = arev,
-  year        = {2024},
-  volume      = {7},
-  abbr        = {AR},
-  abstract    = {Sampling-based motion planning is one of the fundamental paradigms to generate robot motions, and a cornerstone of robotics research. This comparative review provides an up-to-date guideline and reference manual for the use of sampling-based motion planning algorithms. This includes a history of motion planning, an overview about the most successful planners, and a discussion on their properties. It is also shown how planners can handle special cases and how extensions of motion planning can be accommodated. To put sampling-based motion planning into a larger context, a discussion of alternative motion generation frameworks is presented which highlights their respective differences to sampling-based motion planning. Finally, a set of sampling-based motion planners are compared on 24 challenging planning problems. This evaluation gives insights into which planners perform well in which situations and where future research would be required. This comparative review thereby provides not only a useful reference manual for researchers in the field, but also a guideline for practitioners to make informed algorithmic decisions.},
-  bibtex_show = {true},
-  pdf         = {orthey2024-review-sampling.pdf},
-  selected    = {false}
-}
 
 @Comment{jabref-meta: databaseType:bibtex;}
