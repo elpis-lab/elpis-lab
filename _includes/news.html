@@ -1,5 +1,5 @@
 <div class="news">
-  <h2>news</h2>
+  <h2>news </h2>
   {% if site.news  %}
     <div class="table-responsive">
       <table class="table table-sm table-borderless">
@@ -11,6 +11,7 @@
             {% if item.inline %}
               {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
             {% else %}
+              {{item.desc}}
               <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
             {% endif %}
           </td>
