@@ -5,7 +5,7 @@ name: Ph.D. Call
 desc: Seeking two Ph.D. students for Fall2024!
 inline: False 
 ---
-The Efficient Learning and Planning for Intelligent System (ELPIS) Lab invites applications for two fully funded Ph.D. positions starting in Fall 2024. 
+The Efficient Learning and Planning for Intelligent Systems (ELPIS) Lab invites applications for two fully funded Ph.D. positions starting in Fall 2024. 
 
 **Lab Focus:** The ELPIS Lab has a broad interest in autonomous robotic system capable of reasoning about and interacting with the physical world. The primary goal is to develop agents that are efficient, robust, and capable of learning from real-world interactions. Current research projects focus on the integration of classical planning algorithms and state-of-the-art machine learning techniques, aiming to advance 1) planning efficiency, 2) planning robustness, and 3) planning from visual inputs.
 The lab concentrates on practical applications in robotic manipulation, including tasks such as object manipulation, mobile manipulation, and multi-arm manipulation.
