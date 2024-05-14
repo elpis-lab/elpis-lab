@@ -2,24 +2,28 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>UH271, Unity Hall</p>
+    <p>100 Institute Rd</p>
+    <p>Worcester, MA 01609</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am an Assistant Professor in [Robotics Engineering](https://www.wpi.edu/academics/departments/robotics-engineering) at [Worcester Polytechnic Institute](https://www.wpi.edu/). 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I received my Ph.D. in Computer Science in 2023 at [Rice University](https://www.rice.edu/), working under the supervision of [Dr. Lydia Kavraki](https://profiles.rice.edu/faculty/lydia-e-kavraki)
+ and [Dr. Anshumali Shrivastava](https://www.cs.rice.edu/~as143/). I am honored to have received an [NSF-GRFP](https://www.nsfgrfp.org/) fellowship for my doctoral studies.
+I received my Diploma from [Aristotle University of Thessaloniki](https://www.auth.gr/en/) as an Electrical and Computer Engineer in 2017. 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My research interests lie in algorithmic robotics, focusing on integrating learning-based methods with classic robotic planning algorithms. The current research directions I am pursuing 
+are in planning efficiency, planning under uncertainty, and planning from visual inputs. 
+
+More details can be found in my [curriculum vitae](/assets/pdf/cv_cchamzas.pdf). 
