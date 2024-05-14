@@ -1,113 +1,397 @@
+% Encoding: UTF-8
 ---
 ---
 
-@string{aps = {American Physical Society,}}
+@String { icra = {IEEE International Conference on Robotics and Automation}}
+@String { iral = {IEEE Robotics and Automation Letters}}
+@String { iros = {IEEE/RSJ International Conference on Intelligent Robots and Systems}}
+@String { nam  = {National Academy of Medicine Perspectives}}
+@String { rss  = {Robotics Science and Systems}}
+@String { arev  = {Annual Review of Control, Robotics, and Autonomous Systems}}
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@article{orthey2024-review-sampling,
+  abstract = {Sampling-based motion planning is one of the fundamental paradigms to generate robot motions, and a cornerstone of robotics research. This comparative review provides an up-to-date guideline and reference manual for the use of sampling-based motion planning algorithms. This includes a history of motion planning, an overview about the most successful planners, and a discussion on their properties. It is also shown how planners can handle special cases and how extensions of motion planning can be accommodated. To put sampling-based motion planning into a larger context, a discussion of alternative motion generation frameworks is presented which highlights their respective differences to sampling-based motion planning. Finally, a set of sampling-based motion planners are compared on 24 challenging planning problems. This evaluation gives insights into which planners perform well in which situations and where future research would be required. This comparative review thereby provides not only a useful reference manual for researchers in the field, but also a guideline for practitioners to make informed algorithmic decisions.},
+  author = {Orthey, Andreas and Chamzas, Constantinos and Kavraki, Lydia E.},
+  title = {Sampling-Based Motion Planning: A Comparative Review},
+  journal = arev,
+  volume = {7},
+  number = {1},
+  pages = {null},
+  year = {2024},
+  doi = {10.1146/annurev-control-061623-094742},
+  url = {https://doi.org/10.1146/annurev-control-061623-094742},
+  month       = jul,
+  abbr        = {AR},
+  bibtex_show = {true},
+  pdf         = {orthey2024-review-sampling.pdf},
+  selected    = {false}
 }
 
-@book{einstein1956investigations,
+
+@inproceedings{chamzas2022-contrastive-visual-task-planning,
+  abstract={Learning state representations enables robotic planning directly from raw observations such as images. Most methods learn state representations by utilizing losses based on the reconstruction of the raw observations from a lower-dimensional latent space. The similarity between observations in the space of images is often assumed and used as a proxy for estimating similarity between the underlying states of the system. However, observations commonly contain task-irrelevant factors of variation which are nonetheless important for reconstruction, such as varying lighting and different camera viewpoints. In this work, we define relevant evaluation metrics and perform a thorough study of different loss functions for state representation learning. We show that models exploiting  task priors, such as Siamese networks with a simple contrastive loss, outperform reconstruction-based representations in visual  task planning.},
+  title={Comparing Reconstruction-and Contrastive-based Models for Visual Task Planning},
+  author={Chamzas*, Constantinos and Lippi*, Martina and C. Welle*, Michael and Varava, Anastasia and E. Kavraki, Lydia and Kragic, Danica},
+  booktitle = iros, 
+  month = oct,
+  pages={12550-12557},
+  doi={10.1109/IROS47612.2022.9981533},
+  year={2022}, 
+  pdf={chamzas2022-contrastive-visual-task-planning.pdf}, 
+  url={https://doi.org/10.1109/IROS47612.2022.9981533},
+  code = {https://github.com/State-Representation/code},
+  website = {https://state-representation.github.io/web/},
   bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+  abbr={IROS}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
+@article{lee2022-apes,
+  abstract = {Sampling-based motion planners are widely used for motion planning with high-dof
+      robots. These planners generally rely on a uniform distribution to explore the search space.
+      Recent work has explored learning biased sampling distributions to improve the time
+      efficiency of these planners. However, learning such distributions is challenging, since
+      there is no direct connection between the choice of distributions and the performance of the
+      downstream planner. To alleviate this challenge, this paper proposes APES, a framework that
+      learns sampling distributions optimized directly for the planner's performance. This is done
+      using a critic, which serves as a differentiable surrogate objective modeling the planner's
+      performance - thus allowing gradients to circumvent the non-differentiable planner.
+      Leveraging the differentiability of the critic, we train a generator, which outputs sampling
+      distributions optimized for the given problem instance. We evaluate APES on a series of
+      realistic and challenging high-dof manipulation problems in simulation. Our experimental
+      results demonstrate that APES can learn high-quality distributions that improve planning
+      performance more than other biased sampling baselines.},
+  title = {Adaptive Experience Sampling for Motion Planning using the Generator-Critic Framework},
+  journal = iral, 
+  volume = {7},
+  number = {4},
+  pages = {9437-9444},
+  issn = {2377-3766},
+  doi = {10.1109/LRA.2022.3191803},
+  author = {Lee, Yiyuan and Chamzas, Constantinos and E. Kavraki, Lydia},
+  year = {2022},
+  month = jul,
+  pdf = {lee2022-apes.pdf}, 
+  url = {https://dx.doi.org/10.1109/LRA.2022.3191803},
   bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+  abbr = {RAL}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  selected={true}
+@inproceedings{chamzas2022-learn-retrieve,
+ abstract = {Recent work has demonstrated that motion planners’ performance can be significantly improved by retrieving past experiences from a database. Typically, the experience database is queried for past similar problems using a similarity function defined over the motion planning problems. However, to date, most works rely on simple hand-crafted similarity functions and fail to generalize outside their corresponding training dataset. To address this limitation, we propose (FIRE), aframework that extracts local representations of planning problems and learns a similarity function over them. To generate the training data we introduce a novel self-supervised method that identifies similar and dissimilar pairs of local primitives from past solution paths. With these pairs, a Siamese network is trained with the contrastive loss and the similarity function is realized in the network’s latent space. We evaluate FIRE on an 8-DOF manipulator in five categories of motion planning problems with sensed environments. Our experiments show that FIRE retrieves relevant experiences which can informatively guide sampling-based planners even in problems outside its training distribution, outperforming other baselines.},
+ author = {Chamzas, Constantinos and Cullen, Aedan and Shrivastava, Anshumali and E. Kavraki, Lydia},
+ booktitle = icra,
+ month = may,
+ pages = {7233--7240},
+ doi = {10.1109/ICRA46639.2022.9812076},
+ pdf = {chamzas2022-learn-retrieve.pdf},
+ selected = {true},
+ talk = {https://youtu.be/6E2BXmAdAvM},
+ title = {Learning to Retrieve Relevant Experiences for Motion Planning},
+ abbr={ICRA},
+ url={https://doi.org/10.1109/ICRA46639.2022.9812076},
+ bibtex_show={true},
+ year = {2022}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+
+@inproceedings{quintero-chamzas2022-blind,
+ abstract = {Motion planning is a core problem in robotics, with a range of existing methods aimed to address its diverse set of challenges. However, most existing methods rely on complete knowledge of the robot environment; an assumption that seldom holds true due to inherent limitations of robot perception. To enable tractable motion planning for high-DOF robots under partial observability, we introduce BLIND, an algorithm that leverages human guidance. BLIND utilizes inverse reinforcement learning to derive motion-level guidance from human critiques. The algorithm overcomes the computational challenge of reward learning for high-DOF robots by projecting the robot’s continuous configuration space to a motion-planner-guided discrete task model. The learned reward is in turn used as guidance to generate robot motion using a novel motion planner. We demonstrate BLIND using the Fetch robot an dperform two simulation experiments with partial observability. Our experiments demonstrate that, despite the challenge of partial observability and high dimensionality, BLIND is capable of generating safe robot motion and outperforms baselines on metrics of teaching efficiency, success rate, and path quality.},
+ author = {Quintero-Pe{\~n}a*, Carlos and Chamzas*, Constantinos and Sun, Zhanyi and Unhelkar, Vaibhav and E. Kavraki, Lydia},
+ booktitle = icra,
+ month = may,
+ pages={7226-7232},
+ doi={10.1109/ICRA46639.2022.9811893},
+ pdf = {quintero-chamzas2022-blind.pdf},
+ video = {https://youtu.be/m1rc8JNBMAQ},
+ title = {Human-Guided Motion Planning in Partially Observable Environments},
+ abbr={ICRA},
+ url= {https://doi.org/10.1109/ICRA46639.2022.9811893},
+ bibtex_show={true},
+ year = {2022}
+ 
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
+@article{chamzas2022-motion-bench-maker,
+  abstract = {Recently, there has been a wealth of development in motion planning for robotic manipulationnew motion planners are continuously proposed, each with its own unique set of strengths and weaknesses. However, evaluating these new planners is challenging, and researchers often create their own ad-hoc problems for benchmarking, which is time-consuming, prone to bias, and does not directly compare against other state-of-the-art planners. We present MotionBenchMaker, an open-source tool to generate benchmarking datasets for realistic robot manipulation problems. MotionBenchMaker is designed to be an extensible, easy-to-use tool that allows users to both generate datasets and benchmark them by comparing motion planning algorithms. Empirically, we show the benefit of using MotionBenchMaker as a tool to procedurally generate datasets which helps in the fair evaluation of planners. We also present a suite of over 40 prefabricated datasets, with 5 different commonly used robots in 8 environments, to serve as a common ground for future motion planning research.},
+  title = {MotionBenchMaker: A Tool to Generate and Benchmark Motion Planning Datasets},
+  volume = {7},
+  number = {2},
+  pages = {882–889},
+  issn = {2377-3766},
+  doi = {10.1109/LRA.2021.3133603},
+  journal = iral, 
+  author = {Chamzas, Constantinos and Quintero-Pe{\~n}a, Carlos and Kingston, Zachary and Orthey, Andreas and Rakita, Daniel and Gleicher, Michael and Toussaint, Marc and E. Kavraki, Lydia},
+  year = {2022},
+  month = april,
+  url = {https://dx.doi.org/10.1109/LRA.2021.3133603},
+  pdf = {chamzas2022-motion-bench-maker.pdf},
+  video = {https://youtu.be/t96Py0QX0NI},
+  talk = {https://youtu.be/ggRmKPt7IP8},
+  code = {https://github.com/KavrakiLab/motion_bench_maker}, 
+  selected={true},
   bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
+  abbr = {RAL}
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@article{chamzas2022-health-robotics,
+abstract={Advances in robotic technologies and intelligent machines will transform the way clinicians care for members of our community within a variety of health care settings, including the home, and, perhaps of far greater importance, offer a means to create a much more accessible, adaptable, and equitable world for every member of society. Robotics have already entered the health care ecosystem, and their presence is rapidly expanding. Surgical robots have become a common fixture in many medical centers. Outside of North America, robotic systems have emerged to meet an acute and growing labor shortage within skilled nursing facilities in Japan and were recently used to limit social contact and mitigate the risk of COVID-19 in China and South Korea (Khan et al., 2020). Regardless of the setting or application, key challenges to fully integrating robotics into health care include the development of algorithms and methods that enable shared human-robot autonomy and collaboration in the real world, as well as technology deployment that is both cost-effective and culturally centered so that all communities may benefit. Exploiting the transformative potential of these technologies will require intensive collaboration among policy makers, regulators, entrepreneurs, researchers, health care providers, and especially those who would stand to benefit from or may be subject to risks due to the use of these technologies. This paper outlines areas in which robotics could make the largest and most immediate impact, discusses existing and emergent challenges to their implementation, and identifies areas in which implementers will need to pay specific attention to ensure equitable access for all.},
+author = {Chamzas*, Constantinos and Eweje*, Feyisayo and Kavraki, Lydia E and Chaikof, Elliot L},
+journal = nam,
+publisher = {National Academy of Medicine},
+title = {Human Health and Equity in an Age of Robotics and Intelligent Machines},
+year = {2022},
+bibtex_show={true},
+abbr = {NAM},
+pdf = {chamzas2022-health-robotics.pdf},
+url = {https://doi.org/10.31478/202203b},
 }
+
+
+
+@inproceedings{kingston2021experience-foliations,
+  abstract = {Many robotic manipulation problems are multi-modal—they consist of a discrete set
+      of mode families (e.g., whether an object is grasped or placed) each with a continuum of
+      parameters (e.g., where exactly an object is grasped). Core to these problems is solving
+      single-mode motion plans, i.e., given a mode from a mode family (e.g., a specific grasp),
+      find a feasible motion to transition to the next desired mode. Many planners for such
+      problems have been proposed, but complex manipulation plans may require prohibitively long
+      computation times due to the difficulty of solving these underlying single-mode problems. It
+      has been shown that using experience from similar planning queries can significantly improve
+      the efficiency of motion planning. However, even though modes from the same family are
+      similar, they impose different constraints on the planning problem, and thus experience
+      gained in one mode cannot be directly applied to another. We present a new experience-based
+      framework, ALEF , for such multi-modal planning problems. ALEF learns using paths from
+      single-mode problems from a mode family, and applies this experience to novel modes from the
+      same family. We evaluate ALEF on a variety of challenging problems and show a significant
+      improvement in the efficiency of sampling-based planners both in isolation and within a
+      multi-modal manipulation planner.},
+  author = {Kingston, Zachary and Chamzas, Constantinos and E. Kavraki, Lydia},
+  booktitle = iros,
+  month = sep,
+  title = {Using Experience to Improve Constrained Planning on Foliations for Multi-Modal Problems},
+  year = {2021},
+  pdf = {kingston2021experience-foliations.pdf}, 
+  pages = {6922-6927},
+  doi = {10.1109/IROS51168.2021.9636236},
+  url = {https://doi.org/10.1109/IROS51168.2021.9636236},
+  abbr = {IROS},
+  bibtex_show = {true}
+}
+
+@inproceedings{moll2021hyperplan,
+  abstract = {Over the years, many motion planning algorithms have been proposed. It is often
+      unclear which algorithm might be best suited for a particular class of problems. The problem
+      is compounded by the fact that algorithm performance can be highly dependent on parameter
+      settings. This paper shows that hyperparameter optimization is an effective tool in both
+      algorithm selection and parameter tuning over a given set of motion planning problems. We
+      present different loss functions for optimization that capture different notions of
+      optimality. The approach is evaluated on a broad range of scenes using two different
+      manipulators, a Fetch and a Baxter. We show that optimized planning algorithm performance
+      significantly improves upon baseline performance and generalizes broadly in the sense that
+      performance improvements carry over to problems that are very different from the ones
+      considered during optimization.},
+  author = {Moll, Mark and Chamzas, Constantinos and Kingston, Zachary and E. Kavraki, Lydia},
+  booktitle = iros, 
+  month = sep,
+  title = {HyperPlan: A Framework for Motion Planning Algorithm Selection and Parameter Optimization},
+  year = {2021},
+  pdf = {moll2021hyperplan.pdf}, 
+  pages = {2511-2518},
+  doi = {10.1109/IROS51168.2021.9636651},
+  url = {https://doi.org/10.1109/IROS51168.2021.9636651},
+  code = {https://github.com/KavrakiLab/hyperplan},  
+  bibtex_show = {true},
+  abbr = {IROS}
+}
+
+@misc{chamzas2023-metapolicy,
+  abstract = {Model-based robotic planning techniques, such as inverse kinematics and motion planning, can endow robots with the  ability to perform complex manipulation tasks, such as grasping, object manipulation, and precise placement. However, these methods often assume perfect world knowledge and leverage approximate world models. For example, tasks that involve dynamics such as pushing or pouring are difficult to address with model-based techniques as it is difficult to obtain accurate characterizations of these object dynamics. Additionally, uncertainty in perception prevents them populating an accurate world state estimate.  In this work, we propose using a model-based motion planner to build an ensemble of plans under different environment  hypotheses. Then, we train a meta-policy to decide online which plan to track based on the current history of observations. By leveraging history, this policy is able to switch ensemble plans to circumvent getting “stuck” in order to complete the task. We tested our method on a 7-DOF Franka-Emika robot pushing a cabinet door in simulation. We demonstrate that a successful meta-policy can be trained to push a door in settings high environment uncertainty all while requiring little data.},
+  author={Constantinos Chamzas and Caelan Garrett and Balakumar Sundaralingam and Lydia E. Kavraki and Dieter Fox},
+  booktitle = {RSS 2023: Workshop on Learning for Task and Motion Planning},
+  month = jul,
+  title={Meta-Policy Learning over Plan Ensembles for Robust Articulated Object Manipulation}, 
+  year = {2023},
+  website= {https://zt-yang.github.io/rss23-l4tamp-workshop/},
+  url={https://openreview.net/forum?id=68N8Dj6KVv},
+  pdf={chamzas2023-metapolicy.pdf}, 
+  bibtex_show={true},
+  abbr={RSS}
+}
+
+@misc{quintero-chamzas2021-motion-planning-in-the-dark,
+  abstract = {Motion planning is a core problem in many applications spanning from robotic
+      manipulation to autonomous driving. Given its importance, several schools of methods have
+      been proposed to address the motion planning problem. However, most existing solutions
+      require complete knowledge of the robot's environment; an assumption that might not be valid
+      in many real-world applications due to occlusions and inherent limitations of robots'
+      sensors. Indeed, relatively little emphasis has been placed on developing safe motion
+      planning algorithms that work in partially unknown environments. In this work, we
+      investigate how a human who can observe the robot's workspace can enable motion planning for
+      a robot with incomplete knowledge of its workspace. We propose a framework that combines
+      machine learning and motion planning to address the challenges of planning motions for
+      high-dimensional robots that learn from human interaction. Our preliminary results indicate
+      that the proposed framework can successfully guide a robot in a partially unknown
+      environment quickly discovering feasible paths.},
+  author = {Quintero-Pe{\~n}a*, Carlos and Chamzas*, Constantinos and Unhelkar, Vaibhav and E. Kavraki, Lydia},
+  booktitle = {ICRA 2021: Workshop on Machine Learning for Motion Planning},
+  month = jun,
+  title = {Motion Planning via Bayesian Learning in the Dark},
+  year = {2021},
+  url={https://sites.google.com/utexas.edu/mlmp-icra2021/home},
+  pdf={quintero-chamzas2021-motion-planning-in-the-dark.pdf}, 
+  talk={https://youtu.be/33JbcVqnVEM?t=19522},
+  bibtex_show={true},
+  note={(Spotlight)}, 
+  abbr={ICRA}
+}
+
+@inproceedings{chamzas2021-learn-sampling,
+  abstract = {Earlier work has shown that reusing experience from prior motion planning problems
+      can improve the efficiency of similar, future motion planning queries. However, for robots
+      with many degrees-of-freedom, these methods exhibit poor generalization across different
+      environments and often require large datasets that are impractical to gather. We present
+      SPARK and FLAME , two experience-based frameworks for sampling- based planning applicable to
+      complex manipulators in 3 D environments. Both combine samplers associated with features
+      from a workspace decomposition into a global biased sampling distribution. SPARK decomposes
+      the environment based on exact geometry while FLAME is more general, and uses an
+      octree-based decomposition obtained from sensor data. We demonstrate the effectiveness of
+      SPARK and FLAME on a real and simulated Fetch robot tasked with challenging pick-and- place
+      manipulation problems. Our approaches can be trained incrementally and significantly improve
+      performance with only a handful of examples, generalizing better over diverse tasks and
+      environments as compared to prior approaches.},
+  author = {Chamzas, Constantinos and Kingston, Zachary and Quintero-Pe{\~n}a, Carlos and Shrivastava, Anshumali and E. Kavraki, Lydia },
+  booktitle = icra, 
+  month = jun,
+  title = {{Learning Sampling Distributions Using Local 3D Workspace Decompositions for Motion
+      Planning in High Dimensions}},
+  year = {2021},
+  note = {(Top-4 finalist for best paper in Cognitive Robotics)},
+  pdf={chamzas2021-learn-sampling.pdf}, 
+  url = {https://dx.doi.org/10.1109/ICRA48506.2021.9561104},
+  doi={10.1109/ICRA48506.2021.9561104},
+  pages={1283-1289},
+  code={https://github.com/KavrakiLab/pyre}, 
+  talk={https://youtu.be/DP0376NNHQo},
+  video={https://youtu.be/cH4_lIjjs58},
+  selected={true},
+  abbr={ICRA},
+  bibtex_show={true}
+}
+
+@article{pairet2021-path-planning-for-manipulation,
+  abstract = {Robotic systems may frequently come across similar manipulation planning problems
+      that result in similar motion plans. Instead of planning each problem from scratch, it is
+      preferable to leverage previously computed motion plans, i.e., experiences, to ease the
+      planning. Different approaches have been proposed to exploit prior information on novel task
+      instances. These methods, however, rely on a vast repertoire of experiences and fail when
+      none relates closely to the current problem. Thus, an open challenge is the ability to
+      generalise prior experiences to task instances that do not necessarily resemble the prior.
+      This work tackles the above challenge with the proposition that experiences are
+      “decomposable” and “malleable”, i.e., parts of an experience are suitable to
+      relevantly explore the connectivity of the robot-task space even in non-experienced regions.
+      Two new planners result from this insight: experience-driven random trees (ERT) and its
+      bi-directional version ERTConnect. These planners adopt a tree sampling-based strategy that
+      incrementally extracts and modulates parts of a single path experience to compose a valid
+      motion plan. We demonstrate our method on task instances that significantly differ from the
+      prior experiences, and compare with related state-of-the-art experience-based planners.
+      While their repairing strategies fail to generalise priors of tens of experiences, our
+      planner, with a single experience, significantly outperforms them in both success rate and
+      planning time. Our planners are implemented and freely available in the Open Motion Planning
+      Library.},
+  title = {Path Planning for Manipulation Using Experience-Driven Random Trees},
+  volume = {6},
+  issn = {2377-3774},
+  doi = {10.1109/lra.2021.3063063},
+  number = {2},
+  journal = iral, 
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  author = {Pairet, {\`E}ric and Chamzas, Constantinos and Petillot, Yvan R. and E. Kavraki, Lydia},
+  year = {2021},
+  month = apr,
+  pages = {3295–3302},
+  url = {https://dx.doi.org/10.1109/LRA.2021.3063063},
+  pdf = {pairet2021-path-planning-for-manipulation.pdf},
+  video = {https://www.youtube.com/watch?v=kD3A3Xs_psI},
+  code = {https://github.com/ericpairet/ompl/tree/ert_planners}, 
+  bibtex_show={true},
+  abbr = {RAL}
+}
+
+@inproceedings{chamzas2021-cMinMax,
+   abstract = {
+During the last years, the emerging field of Augmented Virtual Reality (AR-VR) has seen tremendous growth. At the same time there is a trend to develop low cost high-quality AR systems where computing power is in demand. Feature points are extensively used in these real-time frame-rate and 3D applications, therefore efficient high-speed feature detectors are necessary. Corners are such special features and often are used as the first step in the marker alignment in Augmented Reality (AR). Corners are also used in image registration and recognition, tracking, SLAM, robot path finding and 2D or 3D object detection and retrieval. Therefore there is a large number of corner detection algorithms but most of them are too computationally intensive for use in real-time applications of any complexity. Many times the border of the image is a convex polygon. For this special, but quite common case, we have developed a specific algorithm, cMinMax. The proposed algorithm is faster, approximatel y by a factor of 5 compared to the widely used Harris Corner Detection algorithm. In addition is highly parallelizable. The algorithm is suitable for the fast registration of markers in augmented reality systems and in applications where a computationally efficient real time feature detector is necessary. The algorithm can also be extended to N-dimensional polyhedrons.},
+   title = {cMinMax: A Fast Algorithm to Find the Corners of an N-dimensional Convex Polytope},
+   isbn = {9789897584886},
+   doi = {10.5220/0010259002290236},
+   booktitle = {16th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications},
+   publisher = {SCITEPRESS - Science and Technology Publications},
+   author = {Chamzas, Dimitrios and Chamzas, Constantinos and Moustakas, Konstantinos},
+   year = {2021},
+   pages = {229-236},
+   url = {https://dx.doi.org/10.5220/0010259002290236},
+   pdf = {chamzas2020-cminmax.pdf}, 
+   video= {https://www.youtube.com/watch?v=y4e7_5uWy6o},
+   code = {https://github.com/jimas95/CMinMax},
+   talk= {https://www.youtube.com/watch?v=Ug313Nf-S-A},
+   bibtex_show= {true},
+   abbr = {GRAPP}
+}
+
+@misc{chamzas2020rep-learning,
+  bibtex_show={true},
+  abstract = {Representation learning allows planning actions directly from raw observations.
+      Variational Autoencoders (VAEs) and their modifications are often used to learn latent state
+      representations from high-dimensional observations such as images of the scene. This
+      approach uses the similarity between observations in the space of images as a proxy for
+      estimating similarity between the underlying states of the system. We argue that, despite
+      some successful implementations, this approach is not applicable in the general case where
+      observations contain task-irrelevant factors of variation. We compare different methods to
+      learn latent representations for a box stacking task and show that models with weak
+      supervision such as Siamese networks with a simple contrastive loss produce more useful
+      representations than traditionally used autoencoders for the final downstream manipulation
+      task.},
+  author = {Chamzas*, Constantinos and Lippi*, Martina and C. Welle*, Michael and Varava, Anastasiia and Alessandro, Marino and E. Kavraki, Lydia and Kragic, Danica},
+  booktitle = {NeurIPS, 3rd Robot Learning Workshop: Grounding Machine Learning Development in the
+      Real World},
+  title = {State Representations in Robotics: Identifying Relevant Factors of Variation using Weak
+      Supervision},
+  year = {2020},
+  month = dec,
+  url = {https://www.robot-learning.ml/2020/},
+  pdf = {chamzas2020rep-learning.pdf}, 
+  website = {https://state-representation.github.io/web/},
+  code = {https://github.com/State-Representation/code},
+  abbr = {NeurIPS}
+}
+
+@inproceedings{chamzas2019using-local-experiences-for-global-motion-planning,
+      abstract = {Sampling-based planners are effective in many real-world applications such as
+          robotics manipulation, navigation, and even protein modeling.However, it is often
+          challenging to generate a collision-free path in environments where key areas are hard to
+          sample. In the absence of any prior information, sampling-based planners are forced to
+      explore uniformly or heuristically, which can lead to degraded performance. One way to
+      improve performance is to use prior knowledge of environments to adapt the sampling strategy
+      to the problem at hand. In this work, we decompose the workspace into local primitives,
+      memorizing local experiences by these primitives in the form of local samplers, and store
+      them in a database. We synthesize an efficient global sampler by retrieving local
+      experiences relevant to the given situation. Our method transfers knowledge effectively
+      between diverse environments that share local primitives and speeds up the performance
+      dramatically. Our results show, in terms of solution time, an improvement of multiple orders
+      of magnitude in two traditionally challenging high-dimensional problems compared to
+      state-of-the-art approaches.},
+  author = {Chamzas, Constantinos and Shrivastava, Anshumali and E. Kavraki, Lydia},
+  booktitle = icra, 
+  month = may,
+  title = {Using Local Experiences for Global Motion Planning},
+  year = {2019},
+  pages = {8606--8612},
+  doi = {10.1109/ICRA.2019.8794317},
+  url = {https://dx.doi.org/10.1109/ICRA.2019.8794317},
+  pdf = {chamzas2019using-local-experiences-for-global-motion-planning.pdf},
+  bibtex_show = {true},
+  abbr = {ICRA}
+}
+
+
+@Comment{jabref-meta: databaseType:bibtex;}
