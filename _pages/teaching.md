@@ -2,14 +2,13 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: [Courses](https://courselistings.wpi.edu/)
+description: 
 nav: true
-nav_order: 4
+nav_order: 5
 ---
 
 ## RBE 550 ##
 ##### Offered Fall2023, Fall2024 #####
-
 
 Motion planning is the study of algorithms that reason about the movement of physical or virtual entities. These algorithms can be used to generate sequences of motions for many kinds of robots, robot teams, animated characters, and even molecules. This course will cover the major topics of motion planning including (but not limited to) planning for manipulation with robot arms and hands, mobile robot path planning with non-holonomic constraints, multi-robot path planning, high-dimensional sampling-based planning, and planning on constraint manifolds. Students will implement motion planning algorithms in open-source frameworks, read recent literature in the field, and complete a project that draws on the course material. The PR2 robot will be available as a platform for class projects. Physical robot platforms will be available for class projects.
 
