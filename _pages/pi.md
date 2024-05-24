@@ -2,7 +2,7 @@
 layout: pi 
 title: PI 
 permalink: /pi/
-nav: true
+nav: false 
 nav_order: 1
 profile:
   align: right
