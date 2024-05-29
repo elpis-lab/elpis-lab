@@ -1,0 +1,3 @@
+Constantinos Chamzas is an Assistant Professor in [Robotics Engineering](https://www.wpi.edu/academics/departments/robotics-engineering) at [Worcester Polytechnic Institute](https://www.wpi.edu/). 
+He received his Ph.D. in Computer Science in 2023 at [Rice University](https://www.rice.edu/). 
+He directs the [Efficient Learning and Planning for Intelligent Systems (ELPIS) Lab](/). His research interests lie  in algorithmic robotics, focusing on integrating learning-based methods with classic robotic planning algorithms. 

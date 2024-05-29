@@ -1,0 +1,22 @@
+<div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
+            {% if profile.image %}
+            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+            {% if profile.image_circular %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+            {% else %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+            {% endif %}
+            {% capture sizes %}(max-width: {{site.max_width | times: 0.1}}) {{ site.max_width | minus: 30 | times: 0.1}}px, (min-width: 20px) 30vw, 95vw"{% endcapture %}
+            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
+            {% endif %}
+</div>
+<div class="clearfix">
+          <h4><a href={{profile.website}}><span style="color: var(--global-theme-color)">{{ profile.name }}</span></a></h4>
+          {% if profile.content %}
+            {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
+            {{ profile_content | markdownify }}
+          {% else %}
+            {{ content }}
+          {% endif %}
+          <div class="contact-icons">{% include social_profiles.liquid  %}</div>
+</div>
