@@ -2,7 +2,7 @@
 layout: page
 permalink: /join/
 title: Join
-description:  We are hiring! If you are interested in joining our group, please review the information below.
+description: If you are interested in joining our group, please review the information below.
 nav: true
 nav_order: 6
 ---
@@ -16,7 +16,10 @@ If you are  interested please apply through the [WPI application portal](https:/
 Prospective applicants should have a background in CS, EE, ME, or a related field, and a passion for robotics! Preference will be given to those with relevant research experience, and a significant emphasis is placed on programming and/or hardware skills.
 
 ### WPI Master Students ###
-Every year, there are several open positions for WPI Master's students. Please note that I typically accept students only after they have taken my Motion-Planning (RBE550) course, which is taught in the Fall semester. This prerequisite ensures that students are well-prepared for the research work in the ELPIS lab.
+Every year, there are several open positions for WPI Master's students. Please note that I typically accept students only after they have taken the [Motion-Planning (RBE550)](https://www.wpi.edu/academics/calendar-courses/course-descriptions/3911/robotics-engineering#RBE-550) course, which is taught in the Fall semester. This prerequisite ensures that students are well-prepared for the research work in the ELPIS lab.
+
+### Undergrad Students ###
+If you are interested in a Major Qualifying Project check the available projects [here](todo)  
 
 ### Contact ### 
 
