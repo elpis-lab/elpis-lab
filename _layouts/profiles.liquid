@@ -1,11 +1,10 @@
 ---
-layout: page
+layout: default 
 ---
 <div class="post">
-  <article>
     {% if page.profiles %}
       <div style="text-align: right;">
-        <h3<span style="color: var(--global-text-color-light)"> Principal Investigator </span></h3>
+      <h3><span style="color: var(--global-text-color-light)"> Principal Investigator </span></h3>
       </div>
       <hr>
       {% for profile in page.profiles %}
@@ -26,13 +25,24 @@ layout: page
       <h3><span style="color: var(--global-text-color-light)"> MS Students </span></h3>
       </div>
       <hr>
-      {% for profile in page.profiles %}
+    {% endif %}
+    {% for profile in page.profiles %}
       {% if profile.type == 'ms' %}
-      <div class="profile" style="width: 100%;"> {% include profile.liquid %} </div>
+      <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
+        {% if profile.image %}
+        {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+        {% if profile.image_circular %}
+          {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+        {% else %}
+          {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+        {% endif %}
+        {% capture sizes %}(max-width: {{site.max_width | times: 0.1}}) {{ site.max_width | minus: 30 | times: 0.1}}px, (min-width: 20px) 30vw, 95vw"{% endcapture %}
+        {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
+        <h4><a href={{profile.website}}>{{ profile.name }}</a></h4>
+        <div class="contact-icons">{% include social_profiles.liquid  %}</div> 
+        {% endif %}
+        </div> 
       {% endif %}
       {% endfor %}
-
-
-    {% endif %}
-  </article>
+      <div class="clearfix"/>
 </div>

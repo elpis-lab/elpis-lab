@@ -21,22 +21,31 @@ profiles:
     scholar_userid: 56Q72NwAAAAJ # your Google Scholar ID
     image_circular: false # crops the image to make it circular
   - align: left
-    image: uknown.jpg
+    image: zhong_square.jpg
     name: Zhuoyun Zhong
     website: "https://www.linkedin.com/in/zhuoyunzhong/"
     type: phd 
-    content: about_todo.md
+    content: about_zzhong.md
     email: zzhong3@wpi.edu
     github_username: ZhuoyunZhong # your GitHub user name
     linkedin_username: zhuoyunzhong  # your LinkedIn user name
     scholar_userid: AjnroRoAAAAJ
+    image_circular: false # crops the image to make it circular
+  - align: left 
+    name: Niranjan Kumar Ilampooranan 
+    website: https://www.linkedin.com/in/niranjan-kumar-ilampooranan
+    image: niranjan_square.jpg
+    type: ms
+    email: nilampooranan@wpi.edu
+    github_username: red-lightning10 # your GitHub user name
+    linkedin_username: niranjan-kumar-ilampooranan # your LinkedIn user name
+    scholar_userid: 95wXj-kAAAAJ # your Google Scholar ID
     image_circular: false # crops the image to make it circular
   - align: left
     image: uknown.jpg
     name: Jeel Chatrola
     website: 
     type: ms   
-    content: about_todo.md
     email: 
     github_username:  # your GitHub user name
     linkedin_username:  # your LinkedIn user name
@@ -47,18 +56,6 @@ profiles:
     name: Uday Girish Maradana 
     website: 
     type: ms   
-    content: about_todo.md
-    email: 
-    github_username:  # your GitHub user name
-    linkedin_username:  # your LinkedIn user name
-    scholar_userid: 
-    image_circular: false # crops the image to make it circular
-  - align: left
-    image: uknown.jpg
-    name: Niranjan Kumar Ilampooranan 
-    website: 
-    type: ms   
-    content: about_todo.md
     email: 
     github_username:  # your GitHub user name
     linkedin_username:  # your LinkedIn user name
