@@ -22,4 +22,4 @@ Wecome to the webpage of the **ELPIS** Lab!
 The Lab has a broad interest in autonomous robotic system capable of reasoning about and interacting with the physical world. The primary goal is to develop agents that are efficient, robust, and capable of learning from real-world interactions. Current research projects focus on the integration of classical planning algorithms and state-of-the-art machine learning techniques, aiming to advance 1) planning efficiency, 2) planning robustness, and 3) planning from visual inputs.
 
 
-If you are interested in joining the lab please see [here](\join\) 
+If you are interested in joining the lab please see this [page ](\join\) 

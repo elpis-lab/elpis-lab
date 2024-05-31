@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Uncertainty  
+description: Learning for Planning Under Uncertainty
+img: assets/img/research/planning_under_uncertainty.jpg
 importance: 2
 category: work
 giscus_comments: true
