@@ -2,6 +2,12 @@
 layout: default 
 ---
 <div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-description">{{ page.description }}</p>
+  </header>
+
+<div class="post">
     {% if page.profiles %}
       <div style="text-align: right;">
       <h3><span style="color: var(--global-text-color-light)"> Principal Investigator </span></h3>
