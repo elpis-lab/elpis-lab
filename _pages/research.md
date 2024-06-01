@@ -5,14 +5,36 @@ permalink: /research/
 description: 
 nav: false 
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [Research Areas]
 horizontal: false
 ---
-Robots and other AI-enabled systems offer tremendous promise for supporting humans in a variety of physical and cognitive tasks. For instance, imagine an AI Coach that can train humans and mitigate preventable errors. Or, a Robotic Assistant that can perform chores (both at work and home) given high-level task specifications.
 
-To deliver on this promise, AI-enabled systems will need new technology to reason about humans and exhibit beneficial interaction. This new technology will also be critical to avoid unintended side effects of AI, such as disuse, misuse, and bias. Our research aims to generate this new technology, in the form of algorithmic advances and interactive systems.
+I envision a world where robots can augment humans’ capabilities in extraordinary ways. Robots
+could perform dangerous and routine tasks while freeing up human resources and providing a safer
+working environment. Moreover, they could assist doctors and nurses in medical procedures and
+help care for the elderly. The development of accurate sensors and improved actuators has laid
+the groundwork for robots to achieve such advanced capabilities, sparking tremendous growth in
+robotics research. As a result, robots are already operating on factory floors and vacuuming our
+homes. However, we still do not have robots that function as collaborative assistants to aid us in
+mundane or hazardous tasks. Outside highly structured environments, robots fail to adapt to new
+situations and are unable to perform complicated tasks. For robots to work safely and reliably in
+dynamic and unstructured environments, there is a pressing need for new models and algorithms
+that endow robots with advanced planning capabilities.
 
-For more details, please check out our contributions by research areas and research projects.
+At the core of achieving advanced robotic autonomy lies motion planning, the research field that
+computes feasible paths for robots to follow. Despite the wealth of planners developed over the years,
+several problems remain open. As a Ph.D. student, I have worked on three such critical problems for
+planners, namely, i) planning efficiently, ii) planning under partial observability, and iii) planning
+with human guidance. Towards these goals, I have primarily focused on integrating classical robot
+planning methods with machine learning techniques. These classical methods are theoretically
+sound algorithms with proven guarantees such as reachability and completeness. Nonetheless,
+they often work only in idealized scenarios or require significant domain knowledge. Modern
+machine learning methods can directly learn from real-world data showing promising results on
+challenging research areas such as image recognition and language processing. However, they often
+exhibit unpredictable behavior and lack theoretical guarantees. Thus, my research aims to bring
+theoretically sound classical methods into practical applications through the use of machine learning
+methods that leverage real world data.
+
 <!-- pages/projects.md -->
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}
