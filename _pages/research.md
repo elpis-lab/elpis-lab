@@ -3,37 +3,17 @@ layout: page
 title: Research 
 permalink: /research/
 description: 
-nav: false 
+nav: true 
 nav_order: 3
 display_categories: [Research Areas]
 horizontal: false
 ---
 
-I envision a world where robots can augment humans’ capabilities in extraordinary ways. Robots
-could perform dangerous and routine tasks while freeing up human resources and providing a safer
-working environment. Moreover, they could assist doctors and nurses in medical procedures and
-help care for the elderly. The development of accurate sensors and improved actuators has laid
-the groundwork for robots to achieve such advanced capabilities, sparking tremendous growth in
-robotics research. As a result, robots are already operating on factory floors and vacuuming our
-homes. However, we still do not have robots that function as collaborative assistants to aid us in
-mundane or hazardous tasks. Outside highly structured environments, robots fail to adapt to new
-situations and are unable to perform complicated tasks. For robots to work safely and reliably in
-dynamic and unstructured environments, there is a pressing need for new models and algorithms
-that endow robots with advanced planning capabilities.
 
-At the core of achieving advanced robotic autonomy lies motion planning, the research field that
-computes feasible paths for robots to follow. Despite the wealth of planners developed over the years,
-several problems remain open. As a Ph.D. student, I have worked on three such critical problems for
-planners, namely, i) planning efficiently, ii) planning under partial observability, and iii) planning
-with human guidance. Towards these goals, I have primarily focused on integrating classical robot
-planning methods with machine learning techniques. These classical methods are theoretically
-sound algorithms with proven guarantees such as reachability and completeness. Nonetheless,
-they often work only in idealized scenarios or require significant domain knowledge. Modern
-machine learning methods can directly learn from real-world data showing promising results on
-challenging research areas such as image recognition and language processing. However, they often
-exhibit unpredictable behavior and lack theoretical guarantees. Thus, my research aims to bring
-theoretically sound classical methods into practical applications through the use of machine learning
-methods that leverage real world data.
+Robotics holds the potential to perform dangerous and routine tasks, freeing up human resources and providing a safer working environment. Despite significant advancements, such as robots operating on factory floors and vacuuming homes, robots still struggle to function as collaborative assistants in unstructured environments, failing to adapt to new situations or perform complex tasks. To achieve safe and reliable robot operation in dynamic settings, advanced planning capabilities are crucial. 
+
+ The ELPIS lab addresses these challenges by focusing on three critical aspects of planning: efficiency, robustness under uncertainty due to partial information, and planning in the real world through images. By integrating classical robot planning methods with modern machine learning techniques, the research aims to develop practical applications that combine theoretical soundness with the ability to learn from real-world data, ultimately enhancing robotic autonomy and functionality in diverse environments.
+
 
 <!-- pages/projects.md -->
 <div class="projects">
