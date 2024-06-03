@@ -2,11 +2,11 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title:  Efficient Learning and Planning for Intelligent Systems 
+title: ELPIS Lab 
  # the website title (if blank, full name will be used instead)
-first_name: Constantinos  
+first_name: ELPIS 
 middle_name:
-last_name: Chamzas 
+last_name: Lab 
 email: cchamzas@wpi.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
    The webpage of the Efficient Learning and Planning for Intelligent Systems (ELPIS) Lab. 
