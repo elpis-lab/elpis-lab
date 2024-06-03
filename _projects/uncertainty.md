@@ -4,6 +4,7 @@ title: Planning Under Uncertainty
 description: Generating robust plans in uncertain scenarios. 
 img: assets/img/research/planning_under_uncertainty.jpg
 importance: 2
+related_publications: false 
 category: Research Areas 
 ---
 
