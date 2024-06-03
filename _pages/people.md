@@ -12,7 +12,7 @@ profiles:
   - align: left 
     name: Constantinos Chamzas
     website: "https://cchamzas.com/"
-    image: cchamzas_square.jpg
+    image: people/cchamzas_square.jpg
     type: pi
     content: about_cchamzas.md
     email: cchamzas@wpi.edu
@@ -21,7 +21,7 @@ profiles:
     scholar_userid: 56Q72NwAAAAJ # your Google Scholar ID
     image_circular: false # crops the image to make it circular
   - align: left
-    image: zhong_square.jpg
+    image: people/zhong_square.jpg
     name: Zhuoyun Zhong
     website: "https://www.linkedin.com/in/zhuoyunzhong/"
     type: phd 
@@ -34,7 +34,7 @@ profiles:
   - align: left 
     name: Niranjan Kumar Ilampooranan 
     website: https://www.linkedin.com/in/niranjan-kumar-ilampooranan
-    image: niranjan_square.jpg
+    image: people/niranjan_square.jpg
     type: ms
     email: nilampooranan@wpi.edu
     github_username: red-lightning10 # your GitHub user name
@@ -42,7 +42,7 @@ profiles:
     scholar_userid: 95wXj-kAAAAJ # your Google Scholar ID
     image_circular: false # crops the image to make it circular
   - align: left
-    image: uknown.jpg
+    image: people/unknown.jpg
     name: Jeel Chatrola
     website: 
     type: ms   
@@ -52,7 +52,7 @@ profiles:
     scholar_userid: 
     image_circular: false # crops the image to make it circular
   - align: left
-    image: uknown.jpg
+    image: people/unknown.jpg
     name: Uday Girish Maradana 
     website: 
     type: ms   

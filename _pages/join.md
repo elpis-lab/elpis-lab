@@ -7,7 +7,7 @@ nav: true
 nav_order: 6
 ---
 
-### Ph.D. Students ###
+### Prospective Ph.D. Students ###
 
 Positions for Ph.D. are available each year for students with expertise in robotics, machine learning, or artificial intelligence. Prior experience in focus areas *motion-planning*, *reasoning with uncertainty*, *visual-based manipulation* is preferred but not required. Broadly speaking, we are looking for students with strong fundamentals who are interested in these focus areas and / or application domains.
 
@@ -15,13 +15,11 @@ If you are  interested please apply through the [WPI application portal](https:/
 
 Prospective applicants should have a background in CS, EE, ME, or a related field, and a passion for robotics! Preference will be given to those with relevant research experience, and a significant emphasis is placed on programming and/or hardware skills.
 
+You can also reach out to me directly at *cchamzas at wpi dot edu* to inquire for further details. When you email, please attach your CV, transcript, and a brief cover letter outlining your research interests and relevant experience. If you have already emailed me, thank you for your interest in our research group. Due to the high volume of emails, I may not be able to respond to everyone personally. Please accept my apologies, and know that I do read and appreciate your messages.
+
 ### WPI Master Students ###
-Every year, there are several open positions for WPI Master's students. Please note that I typically accept students only after they have taken the [Motion-Planning (RBE550)](https://www.wpi.edu/academics/calendar-courses/course-descriptions/3911/robotics-engineering#RBE-550) course, which is taught in the Fall semester. This prerequisite ensures that students are well-prepared for the research work in the ELPIS lab.
+Every year, there are several open positions for WPI Master's students. Please note that I typically accept master students only after they have taken the [Motion-Planning (RBE550)](https://www.wpi.edu/academics/calendar-courses/course-descriptions/3911/robotics-engineering#RBE-550) course, which is taught in the Fall semester. This prerequisite ensures that students are well-prepared for the research work in the ELPIS lab. If interested in joining the lab please submit your application through this [form](https://forms.gle/mBQE83X8jo4Ci3ux7). 
 
-### Undergrad Students ###
-If you are interested in a Major Qualifying Project check the available projects [here](todo).  
+### WPI Undergrad Students ###
+If interested in a Major Qualifying Project (MQP) you can find available projects [here](/mqp). If interested generally in the lab please submit your application through this [form](https://forms.gle/mBQE83X8jo4Ci3ux7).
 
-### Contact ### 
-
-You can reach out to me directly at *cchamzas at wpi dot edu* to inquire for specific positions and details. When you email, please attach your CV, transcript, and a brief cover letter outlining your research interests and relevant experience.
-If you have already emailed me, thank you for your interest in our research group. Due to the high volume of emails, I may not be able to respond to everyone personally. Please accept my apologies, and know that I do read and appreciate your messages.
