@@ -42,23 +42,30 @@ profiles:
     scholar_userid: 95wXj-kAAAAJ # your Google Scholar ID
     image_circular: false # crops the image to make it circular
   - align: left
-    image: people/unknown.jpg
-    name: Jeel Chatrola
-    website: 
-    type: ms   
-    email: 
-    github_username:  # your GitHub user name
-    linkedin_username:  # your LinkedIn user name
-    scholar_userid: 
+    name: Uday Girish Maradana
+    website: "https://udaygirish.github.io"
+    image: people/uday.jpg
+    type: ms
+    email: umaradana@wpi.edu
+    github_username: udaygirish # your GitHub user name
+    linkedin_username:  udaygirish-maradana # your LinkedIn user name
+    scholar_userid:  0d-yDl0AAAAJ # your Google Scholar ID
+    image_circular: false # crops the image to make it circular 
+  - align: left
+    name: Sumanth, Pashuparthi 
+    image: people/sumanth_pashuparthi.jpg
+    type: ms
+    email: spashuparthi@wpi.edu
+    github_username: Sumanth-Pashuparthi # your GitHub user name
+    linkedin_username: sumanth-pashuparthi# your LinkedIn user name
     image_circular: false # crops the image to make it circular
   - align: left
-    image: people/unknown.jpg
-    name: Uday Girish Maradana 
-    website: 
-    type: ms   
-    email: 
-    github_username:  # your GitHub user name
-    linkedin_username:  # your LinkedIn user name
-    scholar_userid: 
+    name: Ayesha Akhtar
+    website: "https://linkedin.com/in/ayeshakhtar209/"
+    image: people/AkhtarAyesha.jpg
+    type: ms
+    email: aakhtar@wpi.edu
+    github_username: ayeshakhtar209 # your GitHub user name
+    linkedin_username: ayeshakhtar209 # your LinkedIn user name
     image_circular: false # crops the image to make it circular
 ---
