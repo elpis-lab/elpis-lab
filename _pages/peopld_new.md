@@ -44,14 +44,14 @@ profiles:
     image_circular: false # crops the image to make it circular
   - align: left
     name: Abhiroop Ajith
-    website: "https://abhiroopajith.github.io/"
+    website: https://abhiroopajith.github.io/
     image: people/abhiroop.jpg
     type: phd
-    content: about_abhiroop.md 
+    content:about_abhiroop 
     email: aajith@wpi.edu
     github_username: AbhiroopAjith# your GitHub user name
-    linkedin_username: abhiroopajith# your LinkedIn user name    
-    Scholar_userid: LiDMFt4AAAAJ # your Google Scholar ID
+    linkedin_username:abhiroopajith# your LinkedIn user name    
+    Scholar_userid:google LiDMFt4AAAAJ # your Google Scholar ID
     image_circular: false # crops the image to make it circular
   - align: left 
     name: Niranjan Kumar Ilampooranan 
@@ -78,7 +78,7 @@ profiles:
     type: ms
     email: umaradana@wpi.edu
     github_username: udaygirish # your GitHub user name
-    linkedin_username: udaygirish-maradana # your LinkedIn user name
+    linkedin_username:  udaygirish-maradana # your LinkedIn user name
     scholar_userid:  0d-yDl0AAAAJ # your Google Scholar ID
     image_circular: false # crops the image to make it circular 
   - align: left
@@ -94,7 +94,7 @@ profiles:
     image_circular: false # crops the image to make it circular
   - align: left
     name: Edwin Clement
-    website: "https://blog.edwinclement08.com/"
+    website: https://blog.edwinclement08.com/
     image: people/Edwin.jpg
     type: ms 
     Content: 
@@ -105,7 +105,7 @@ profiles:
     image_circular: false # crops the image to make it circular
   - align: left
     name: Thanikai Adhithiyan Shanmugam
-    website: "https://adhithiyan03.github.io/STA.github.io/"
+    website: https://adhithiyan03.github.io/STA.github.io/
     image: people/Thanikai.jpg
     type: ms 
     content:
@@ -116,13 +116,12 @@ profiles:
     image_circular: false # crops the image to make it circular
   - align: left
     name: Zhun Cheng
-    website: "https://zhuncollectedwork.com/"
+    website: https://zhuncollectedwork.com/
     image: people/zhun.jpg
     type: ms 
     content: 
     email: zcheng2@wpi.edu
-    github_username: ZhunC # your GitHub user name
-    linkedin_username: zhun-cheng-6a1b06192 # your LinkedIn user name
+    github_username: https://github.com/ZhunC # your GitHub user name
+    linkedin_username:zhun-cheng-6a1b06192 # your LinkedIn user name
     scholar_userid: # your Google Scholar ID
     image_circular: false # crops the image to make it circular
----
