@@ -9,6 +9,22 @@
 @String { rss  = {Robotics Science and Systems}}
 @String { arev  = {Annual Review of Control, Robotics, and Autonomous Systems}}
 
+@inproceedings{zhong20240expansion-grr,
+      abstract={Global redundancy resolution (GRR) roadmaps is a novel concept in robotics that facilitates the mapping from task space paths to configuration space paths in a legible, predictable and repeatable way. Such roadmaps could find widespread utility in applications such as safe teleoperation, consistent path planning, and motion primitives generation. However, previous methods to compute GRR roadmaps often necessitate a lengthy computation time and produce non-smooth paths, limiting their practical efficacy. To address this challenge, we introduce a novel method Expansion-GRR that leverages efficient configuration space projections and enables rapid generation of smooth roadmaps that satisfy the task constraints. Additionally, we propose a simple multi-seed strategy that further enhances the final quality. We conducted experiments in simulation with a 5-link planar manipulator and a Kinova arm. We were able to generate the Expansion-GRR roadmaps up to 2 orders of magnitude faster while achieving higher smoothness. We also demonstrate the utility of the GRR roadmaps in teleoperation tasks where our method outperformed prior methods and reactive IK solvers in terms of success rate and solution quality},
+      author={Zhuoyun Zhong and Zhi Li and Constantinos Chamzas},
+      title={Expansion-GRR: Efficient Generation of Smooth Global Redundancy Resolution Roadmaps}, 
+      year={2024},
+      url={https://arxiv.org/abs/2405.13770}, 
+      month = oct,
+      booktitle = iros, 
+      selected    = {false},
+      abbr        = {IROS},
+      bibtex_show = {true},
+      pdf={zhong2024-expansion-grr.pdf},
+      code = {https://github.com/elpis-lab/Expansion-GRR},
+      keyword1 = {efficiency}, 
+}
+
 @article{orthey2024-review-sampling,
   abstract = {Sampling-based motion planning is one of the fundamental paradigms to generate robot motions, and a cornerstone of robotics research. This comparative review provides an up-to-date guideline and reference manual for the use of sampling-based motion planning algorithms. This includes a history of motion planning, an overview about the most successful planners, and a discussion on their properties. It is also shown how planners can handle special cases and how extensions of motion planning can be accommodated. To put sampling-based motion planning into a larger context, a discussion of alternative motion generation frameworks is presented which highlights their respective differences to sampling-based motion planning. Finally, a set of sampling-based motion planners are compared on 24 challenging planning problems. This evaluation gives insights into which planners perform well in which situations and where future research would be required. This comparative review thereby provides not only a useful reference manual for researchers in the field, but also a guideline for practitioners to make informed algorithmic decisions.},
   author = {Orthey, Andreas and Chamzas, Constantinos and Kavraki, Lydia E.},
