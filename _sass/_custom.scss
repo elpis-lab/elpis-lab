@@ -1,0 +1,37 @@
+// Custom styles for the team carousel
+#teamCarousel {
+    max-width: 800px;  // Adjust this value to your preferred width
+    margin: 0 auto;    // Centers the carousel
+    margin-bottom: 2rem;
+    
+    .carousel-item {
+        img {
+            max-height: 500px;  // Adjust this value to your preferred height
+            object-fit: cover;
+        }
+    }
+
+    .carousel-caption {
+        background: rgba(0,0,0,0.5);
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        background-color: rgba(0,0,0,0.3);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .carousel-indicators {
+        bottom: -40px;
+        
+        button {
+            background-color: #666;
+        }
+    }
+}
