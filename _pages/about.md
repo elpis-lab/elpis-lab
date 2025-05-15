@@ -40,16 +40,13 @@ If you are interested in joining the Lab please see this [page](\join\).
         {% endif %}
       </div>
       <div class="carousel-item">
-        <img src="/assets/img/team_pictures/team_photo_2.jpg" class="d-block w-100" alt="Team Photo 2">
+        <img src="/assets/img/team_pictures/team_photo_4.png" class="d-block w-100" alt="Team Photo 3">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Placeholder Caption</h5>
+          <h5>Christmas Dinner Celebration 2024</h5>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="/assets/img/team_pictures/team_photo_3.jpg" class="d-block w-100" alt="Team Photo 3">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Placeholder Caption</h5>
-        </div>
+        <img src="/assets/img/team_pictures/team_photo_2.jpg" class="d-block w-100" alt="Team Photo 2">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -73,21 +70,28 @@ If you are interested in joining the Lab please see this [page](\join\).
     object-fit: cover;
 }
 .carousel-caption {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-    border-radius: 5px;
-    color: white !important;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.8); 
-    bottom: 0px !important;     /* Changing this moves the captions up or down*/
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); 
+    bottom: 20px !important;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 600px;
 }
 .carousel-caption h5 {
-    color: white !important;
-    font-weight: bold;
+    color: rgba(255, 255, 255, 0.95) !important;
+    font-weight: 500;
+    font-size: 1.1rem;
     margin-bottom: 5px;
+    letter-spacing: 0.5px;
 }
 .carousel-caption p {
-    color: white !important;
+    color: rgba(255, 255, 255, 0.85) !important;
     margin-bottom: 0;
+    font-size: 0.9rem;
 }
 </style>
 

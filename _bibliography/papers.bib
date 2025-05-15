@@ -8,6 +8,40 @@
 @String { nam  = {National Academy of Medicine Perspectives}}
 @String { rss  = {Robotics Science and Systems}}
 @String { arev  = {Annual Review of Control, Robotics, and Autonomous Systems}}
+@String { hscc  = {ACM Hybrid Systems: Computation and Control}}
+
+
+@inproceedings{ajith2025-multi-layer-motion-planning,
+      abstract={We propose a novel, multi-layered planning approach for computing
+paths that satisfy both kinodynamic and spatiotemporal constraints.
+Our three-part framework first establishes potential sequences to
+meet spatial constraints, using them to calculate a geometric lead
+path. This path then guides an asymptotically optimal samplingbased kinodynamic planner, which minimizes an STL-robustness
+cost to jointly satisfy spatiotemporal and kinodynamic constraints.
+In our experiments, we test our method with a velocity-controlled
+Ackerman-car model and demonstrate significant efficiency gains
+compared to prior art. Additionally, our method is able to generate complex path maneuvers, such as crossovers, something that
+previous methods had not demonstrated.},
+      author={Jeel Chatrola* and Abhiroop Ajith* and Kevin Leahy and Constantinos Chamzas},
+      title={Multi-layer Motion Planning with Kinodynamic and Spatio-Temporal Constraints}, 
+      year={2025},
+      eprint={2503.07762},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2503.07762}, 
+      month = mar,
+      booktitle = hscc, 
+      selected = {false},
+      abbr = {HSCC},
+      bibtex_show = {false},
+      pdf={ajith2025multilayerplanning.pdf},
+      code = {https://github.com/elpis-lab/LG-SST-STL},
+      keyword1 = {efficiency}, 
+}
+
+
+
+
 
 @inproceedings{zhong20240expansion-grr,
       abstract={Global redundancy resolution (GRR) roadmaps is a novel concept in robotics that facilitates the mapping from task space paths to configuration space paths in a legible, predictable and repeatable way. Such roadmaps could find widespread utility in applications such as safe teleoperation, consistent path planning, and motion primitives generation. However, previous methods to compute GRR roadmaps often necessitate a lengthy computation time and produce non-smooth paths, limiting their practical efficacy. To address this challenge, we introduce a novel method Expansion-GRR that leverages efficient configuration space projections and enables rapid generation of smooth roadmaps that satisfy the task constraints. Additionally, we propose a simple multi-seed strategy that further enhances the final quality. We conducted experiments in simulation with a 5-link planar manipulator and a Kinova arm. We were able to generate the Expansion-GRR roadmaps up to 2 orders of magnitude faster while achieving higher smoothness. We also demonstrate the utility of the GRR roadmaps in teleoperation tasks where our method outperformed prior methods and reactive IK solvers in terms of success rate and solution quality},
@@ -96,7 +130,7 @@
 }
 
 @inproceedings{chamzas2022-learn-retrieve,
- abstract = {Recent work has demonstrated that motion planners’ performance can be significantly improved by retrieving past experiences from a database. Typically, the experience database is queried for past similar problems using a similarity function defined over the motion planning problems. However, to date, most works rely on simple hand-crafted similarity functions and fail to generalize outside their corresponding training dataset. To address this limitation, we propose (FIRE), aframework that extracts local representations of planning problems and learns a similarity function over them. To generate the training data we introduce a novel self-supervised method that identifies similar and dissimilar pairs of local primitives from past solution paths. With these pairs, a Siamese network is trained with the contrastive loss and the similarity function is realized in the network’s latent space. We evaluate FIRE on an 8-DOF manipulator in five categories of motion planning problems with sensed environments. Our experiments show that FIRE retrieves relevant experiences which can informatively guide sampling-based planners even in problems outside its training distribution, outperforming other baselines.},
+ abstract = {Recent work has demonstrated that motion planners' performance can be significantly improved by retrieving past experiences from a database. Typically, the experience database is queried for past similar problems using a similarity function defined over the motion planning problems. However, to date, most works rely on simple hand-crafted similarity functions and fail to generalize outside their corresponding training dataset. To address this limitation, we propose (FIRE), aframework that extracts local representations of planning problems and learns a similarity function over them. To generate the training data we introduce a novel self-supervised method that identifies similar and dissimilar pairs of local primitives from past solution paths. With these pairs, a Siamese network is trained with the contrastive loss and the similarity function is realized in the network's latent space. We evaluate FIRE on an 8-DOF manipulator in five categories of motion planning problems with sensed environments. Our experiments show that FIRE retrieves relevant experiences which can informatively guide sampling-based planners even in problems outside its training distribution, outperforming other baselines.},
  author = {Chamzas, Constantinos and Cullen, Aedan and Shrivastava, Anshumali and E. Kavraki, Lydia},
  booktitle = icra,
  month = may,
@@ -115,7 +149,7 @@
 
 
 @inproceedings{quintero-chamzas2022-blind,
- abstract = {Motion planning is a core problem in robotics, with a range of existing methods aimed to address its diverse set of challenges. However, most existing methods rely on complete knowledge of the robot environment; an assumption that seldom holds true due to inherent limitations of robot perception. To enable tractable motion planning for high-DOF robots under partial observability, we introduce BLIND, an algorithm that leverages human guidance. BLIND utilizes inverse reinforcement learning to derive motion-level guidance from human critiques. The algorithm overcomes the computational challenge of reward learning for high-DOF robots by projecting the robot’s continuous configuration space to a motion-planner-guided discrete task model. The learned reward is in turn used as guidance to generate robot motion using a novel motion planner. We demonstrate BLIND using the Fetch robot an dperform two simulation experiments with partial observability. Our experiments demonstrate that, despite the challenge of partial observability and high dimensionality, BLIND is capable of generating safe robot motion and outperforms baselines on metrics of teaching efficiency, success rate, and path quality.},
+ abstract = {Motion planning is a core problem in robotics, with a range of existing methods aimed to address its diverse set of challenges. However, most existing methods rely on complete knowledge of the robot environment; an assumption that seldom holds true due to inherent limitations of robot perception. To enable tractable motion planning for high-DOF robots under partial observability, we introduce BLIND, an algorithm that leverages human guidance. BLIND utilizes inverse reinforcement learning to derive motion-level guidance from human critiques. The algorithm overcomes the computational challenge of reward learning for high-DOF robots by projecting the robot's continuous configuration space to a motion-planner-guided discrete task model. The learned reward is in turn used as guidance to generate robot motion using a novel motion planner. We demonstrate BLIND using the Fetch robot an dperform two simulation experiments with partial observability. Our experiments demonstrate that, despite the challenge of partial observability and high dimensionality, BLIND is capable of generating safe robot motion and outperforms baselines on metrics of teaching efficiency, success rate, and path quality.},
  author = {Quintero-Pe{\~n}a*, Carlos and Chamzas*, Constantinos and Sun, Zhanyi and Unhelkar, Vaibhav and E. Kavraki, Lydia},
  booktitle = icra,
  month = may,
@@ -231,7 +265,7 @@ url = {https://doi.org/10.31478/202203b},
 }
 
 @misc{chamzas2023-metapolicy,
-  abstract = {Model-based robotic planning techniques, such as inverse kinematics and motion planning, can endow robots with the  ability to perform complex manipulation tasks, such as grasping, object manipulation, and precise placement. However, these methods often assume perfect world knowledge and leverage approximate world models. For example, tasks that involve dynamics such as pushing or pouring are difficult to address with model-based techniques as it is difficult to obtain accurate characterizations of these object dynamics. Additionally, uncertainty in perception prevents them populating an accurate world state estimate.  In this work, we propose using a model-based motion planner to build an ensemble of plans under different environment  hypotheses. Then, we train a meta-policy to decide online which plan to track based on the current history of observations. By leveraging history, this policy is able to switch ensemble plans to circumvent getting “stuck” in order to complete the task. We tested our method on a 7-DOF Franka-Emika robot pushing a cabinet door in simulation. We demonstrate that a successful meta-policy can be trained to push a door in settings high environment uncertainty all while requiring little data.},
+  abstract = {Model-based robotic planning techniques, such as inverse kinematics and motion planning, can endow robots with the  ability to perform complex manipulation tasks, such as grasping, object manipulation, and precise placement. However, these methods often assume perfect world knowledge and leverage approximate world models. For example, tasks that involve dynamics such as pushing or pouring are difficult to address with model-based techniques as it is difficult to obtain accurate characterizations of these object dynamics. Additionally, uncertainty in perception prevents them populating an accurate world state estimate.  In this work, we propose using a model-based motion planner to build an ensemble of plans under different environment  hypotheses. Then, we train a meta-policy to decide online which plan to track based on the current history of observations. By leveraging history, this policy is able to switch ensemble plans to circumvent getting "stuck" in order to complete the task. We tested our method on a 7-DOF Franka-Emika robot pushing a cabinet door in simulation. We demonstrate that a successful meta-policy can be trained to push a door in settings high environment uncertainty all while requiring little data.},
   author={Constantinos Chamzas and Caelan Garrett and Balakumar Sundaralingam and Lydia E. Kavraki and Dieter Fox},
   booktitle = {RSS 2023: Workshop on Learning for Task and Motion Planning},
   month = jul,
@@ -316,7 +350,7 @@ url = {https://doi.org/10.31478/202203b},
       none relates closely to the current problem. Thus, an open challenge is the ability to
       generalise prior experiences to task instances that do not necessarily resemble the prior.
       This work tackles the above challenge with the proposition that experiences are
-      “decomposable” and “malleable”, i.e., parts of an experience are suitable to
+      "decomposable" and "malleable", i.e., parts of an experience are suitable to
       relevantly explore the connectivity of the robot-task space even in non-experienced regions.
       Two new planners result from this insight: experience-driven random trees (ERT) and its
       bi-directional version ERTConnect. These planners adopt a tree sampling-based strategy that
