@@ -34,7 +34,7 @@ profiles:
   - align: left
     name: Ali Golestaneh
     website: 
-    image: people/Ali.jpg
+    image: people/Ali.jpeg
     type: phd 
     content: about_ali.md
     email: sgolestaneh@wpi.edu
@@ -45,13 +45,13 @@ profiles:
   - align: left
     name: Abhiroop Ajith
     website: "https://abhiroopajith.github.io/"
-    image: people/abhiroop.jpg
+    image: people/abhiroop.JPG
     type: phd
     content: about_abhiroop.md 
     email: aajith@wpi.edu
     github_username: AbhiroopAjith# your GitHub user name
     linkedin_username: abhiroopajith# your LinkedIn user name    
-    Scholar_userid: LiDMFt4AAAAJ # your Google Scholar ID
+    scholar_userid: LiDMFt4AAAAJ # your Google Scholar ID
     image_circular: false # crops the image to make it circular
   - align: left 
     name: Niranjan Kumar Ilampooranan 
