@@ -26,3 +26,5 @@ group :other_plugins do
     gem 'feedjira'
     gem 'httparty'
 end
+
+gem "html-proofer", "~> 4.4"

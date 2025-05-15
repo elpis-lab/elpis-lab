@@ -22,9 +22,9 @@ social: true # includes social icons at the bottom of the page
 
 Wecome to the webpage of the Efficient Learning and Planning for Intelligent Systems (ELPIS) Lab! 
 
-The Lab has a broad interest in autonomous robotic systems capable of reasoning about and interacting with the physical world. The primary goal is to develop agents that are efficient, robust, and capable of learning from real-world interactions. Current research projects focus on the integration of classical planning algorithms and state-of-the-art machine learning techniques, aiming to advance 1) [planning efficiency](\projects\efficiency), 2) [planning robustness](\projects\uncertainty), and 3) [planning from visual inputs](\projects\visual). 
+The Lab has a broad interest in autonomous robotic systems capable of reasoning about and interacting with the physical world. The primary goal is to develop agents that are efficient, robust, and capable of learning from real-world interactions. Current research projects focus on the integration of classical planning algorithms and state-of-the-art machine learning techniques, aiming to advance 1) [planning efficiency](/projects/efficiency), 2) [planning robustness](/projects/uncertainty), and 3) [planning from visual inputs](/projects/visual). 
 
-If you are interested in joining the Lab please see this [page](\join\). 
+If you are interested in joining the Lab please see this [page](/join). 
 
 <!-- ## Lab Team Photos -->
 
