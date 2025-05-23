@@ -5,9 +5,8 @@ title: Publications
 description: "* denotes equal contribution." 
 years: [2021, 2020, 2019]
 nav: true
-nav_order: 5 
+nav_order: 4 
 ---
-
 
 <div class="publications">
 <center> <h1><span style="color: var(--global-theme-color)"> Journal Articles  </span></h1> </center>

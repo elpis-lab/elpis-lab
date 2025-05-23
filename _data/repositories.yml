@@ -1,12 +1,8 @@
-github_users:
-  - torvalds
-  - alshedivat
-
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - ompl/ompl
+
+  - elpis-lab/Expansion-GRR/
+  - kavrakilab/motion_bench_maker 
+  - kavrakilab/pyre
+  - kavrakilab/robowflex
+  - elpis-lab/LG-SST-STL
