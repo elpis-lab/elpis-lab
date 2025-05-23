@@ -4,7 +4,7 @@ permalink: /join/
 title: Join
 description: If you are interested in joining our group, please review the information below.
 nav: true
-nav_order: 6
+nav_order: 7
 ---
 
 ### Prospective Ph.D. Students ###

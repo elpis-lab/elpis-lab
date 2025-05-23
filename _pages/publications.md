@@ -5,7 +5,7 @@ title: Publications
 description: "* denotes equal contribution." 
 years: [2025, 2024, 2023, 2022, 2021, 2020, 2019]
 nav: true
-nav_order: 5 
+nav_order: 4 
 ---
 
 <style>
@@ -48,4 +48,3 @@ nav_order: 5
 <h1><span style="color: var(--global-theme-color)"> 2019 </span></h1>
 {% bibliography -f papers -q @*[year=2019] %}
 </div>
-
