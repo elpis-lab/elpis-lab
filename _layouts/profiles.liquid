@@ -9,7 +9,7 @@ layout: default
 
 <div class="post">
     {% if page.profiles %}
-      <div style="text-align: right;">
+      <div style="text-align: left;">
       <h3><span style="color: var(--global-text-color-light)"> Principal Investigator </span></h3>
       </div>
       <hr>
@@ -18,7 +18,7 @@ layout: default
       <div class="profile" style="width: 100%;"> {% include profile.liquid %} </div>
       {% endif %}
       {% endfor %}
-      <div style="text-align: right;">
+      <div style="text-align: left;">
       <h3><span style="color: var(--global-text-color-light)"> Ph.D. Students </span></h3>
       </div>
       <hr>
@@ -27,7 +27,7 @@ layout: default
       <div class="profile" style="width: 100%;"> {% include profile.liquid %} </div>
       {% endif %}
       {% endfor %}
-      <div style="text-align: right;">
+      <div style="text-align: left;">
       <h3><span style="color: var(--global-text-color-light)"> MS Students </span></h3>
       </div>
       <hr>
@@ -51,4 +51,28 @@ layout: default
       {% endif %}
       {% endfor %}
       <div class="clearfix"/>
+      
+      <!-- Alumni Section -->
+      <div style="text-align: left; margin-top: 40px;">
+      <h3><span style="color: var(--global-text-color-light)"> Alumni </span></h3>
+      </div>
+      <hr>
+      <div class="alumni-list" style="margin-bottom: 30px;">
+        {% for profile in page.profiles %}
+          {% if profile.type == 'alumni' %}
+          <div style="padding: 8px 0; border-bottom: 1px solid #eee;">
+            {% if profile.website %}
+            <a href="{{ profile.website }}" style="text-decoration: none; color: var(--global-text-color); font-weight: 500;">{{ profile.name }}</a>
+            {% else %}
+            <span style="color: var(--global-text-color); font-weight: 500;">{{ profile.name }}</span>
+            {% endif %}
+            {% comment %}
+            {% if profile.current_position %}
+            <span style="color: var(--global-text-color-light); font-style: italic; margin-left: 8px;">(Now at {{ profile.current_position }})</span>
+            {% endif %}
+            {% endcomment %}
+          </div>
+          {% endif %}
+        {% endfor %}
+      </div>
 </div>

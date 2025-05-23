@@ -64,35 +64,6 @@ profiles:
     scholar_userid: 95wXj-kAAAAJ # your Google Scholar ID
     image_circular: false # crops the image to make it circular
   - align: left
-    name: Sumanth Pashuparthi 
-    image: people/sumanth_pashuparthi.jpg
-    type: ms
-    email: spashuparthi@wpi.edu
-    github_username: Sumanth-Pashuparthi # your GitHub user name
-    linkedin_username: sumanth-pashuparthi# your LinkedIn user name
-    image_circular: false # crops the image to make it circular
-  - align: left
-    name: Uday Girish Maradana
-    website: "https://udaygirish.github.io"
-    image: people/uday.jpg
-    type: ms
-    email: umaradana@wpi.edu
-    github_username: udaygirish # your GitHub user name
-    linkedin_username: udaygirish-maradana # your LinkedIn user name
-    scholar_userid:  0d-yDl0AAAAJ # your Google Scholar ID
-    image_circular: false # crops the image to make it circular 
-  - align: left
-    name: Butchi Venkatesh Adari
-    website: 
-    image: people/Butchi.jpg
-    type: ms 
-    content: 
-    email: badari@wpi.edu
-    github_username: VenkateshRoshan # your GitHub user name
-    linkedin_username: abven # your LinkedIn user name
-    scholar_userid: # your Google Scholar ID
-    image_circular: false # crops the image to make it circular
-  - align: left
     name: Edwin Clement
     website: "https://blog.edwinclement08.com/"
     image: people/Edwin.jpg
@@ -103,26 +74,61 @@ profiles:
     linkedin_username: www.linkedin.com/in/edwinclement08 # your LinkedIn user name
     scholar_userid: # your Google Scholar ID
     image_circular: false # crops the image to make it circular
+  
+  # Alumni Section
+  - align: left
+    name: Uday Girish Maradana
+    website: "https://udaygirish.github.io"
+    type: alumni
+    graduation_year: 2024
+    current_position: ""
+    degree: "M.S. in Computer Science"
+    github_username: udaygirish
+    linkedin_username: udaygirish-maradana
+    scholar_userid: 0d-yDl0AAAAJ
+    image_circular: false
+  - align: left
+    name: Butchi Venkatesh Adari
+    website: ""
+    type: alumni
+    graduation_year: 2024
+    current_position: ""
+    degree: "M.S. in Computer Science"
+    github_username: VenkateshRoshan
+    linkedin_username: abven
+    image_circular: false
   - align: left
     name: Thanikai Adhithiyan Shanmugam
     website: "https://adhithiyan03.github.io/STA.github.io/"
-    image: people/Thanikai.jpg
-    type: ms 
-    content:
-    email: tshanmugam@wpi.edu
-    github_username: Adhithiyan03  # your GitHub user name
-    linkedin_username: thanikai-adhithiyan-s # your LinkedIn
-    Scholar_userid: NGyOAR4AAAAJ  # your Google Scholar ID
-    image_circular: false # crops the image to make it circular
+    type: alumni
+    graduation_year: 2024
+    current_position: ""
+    degree: "M.S. in Computer Science"
+    github_username: Adhithiyan03
+    linkedin_username: thanikai-adhithiyan-s
+    scholar_userid: NGyOAR4AAAAJ
+    image_circular: false
   - align: left
     name: Zhun Cheng
     website: "https://zhuncollectedwork.com/"
-    image: people/zhun.jpg
-    type: ms 
-    content: 
-    email: zcheng2@wpi.edu
-    github_username: ZhunC # your GitHub user name
-    linkedin_username: zhun-cheng-6a1b06192 # your LinkedIn user name
+    type: alumni
+    graduation_year: 2024
+    current_position: ""
+    degree: "M.S. in Computer Science"
+    github_username: ZhunC
+    linkedin_username: zhun-cheng-6a1b06192
+    image_circular: false
+  - align: left
+    name: Dr. John Smith
+    website: "https://example.com"
+    image: people/default_avatar.jpg
+    type: alumni
+    graduation_year: 2023
+    current_position: "Senior Robotics Engineer at Tesla"
+    degree: "Ph.D. in Computer Science"
+    github_username: johnsmith
+    linkedin_username: johnsmith-robotics
     scholar_userid: # your Google Scholar ID
-    image_circular: false # crops the image to make it circular
+    image_circular: false
+
 ---

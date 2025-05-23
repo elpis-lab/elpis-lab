@@ -13,7 +13,24 @@ profile:
     <p>Worcester, MA 01609</p>
 
 carousel:
-  show_captions: true  # Toggle this to true/false to show/hide captions
+  show_captions: true  
+  images:
+    - src: "/assets/img/team_pictures/team_photo_1.jpg"
+      alt: "Team Photo 1"
+      caption: "ELPIS Lab @ NERC 2024, UMass Amherst"
+      active: true
+    - src: "/assets/img/team_pictures/team_photo_4.png"
+      alt: "Team Photo 3"
+      caption: "Christmas Dinner Celebration 2024"
+    - src: "/assets/img/team_pictures/team_photo_2.jpg"
+      alt: "Team Photo 2"
+      caption: ""
+    - src: "/assets/img/team_pictures/Team_Dinner_5.jpg"
+      alt: "Team Dinner 5"
+      caption: ""
+    - src: "/assets/img/team_pictures/AbhiroopHSCC.jpg"
+      alt: "Abhiroop at HSCC"
+      caption: "Abhiroop Presenting at HSCC 2025"
 
 news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -31,23 +48,16 @@ If you are interested in joining the Lab please see this [page](/join).
 <div class="container mt-5">
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="/assets/img/team_pictures/team_photo_1.jpg" class="d-block w-100" alt="Team Photo 1">
-        {% if page.carousel.show_captions %}
+      {% for image in page.carousel.images %}
+      <div class="carousel-item {% if image.active %}active{% endif %}">
+        <img src="{{ image.src }}" class="d-block w-100" alt="{{ image.alt }}">
+        {% if page.carousel.show_captions and image.caption and image.caption != "" %}
         <div class="carousel-caption d-none d-md-block">
-          <h5>ELPIS Lab @ NERC 2024, UMass Amherst</h5>
+          <h5>{{ image.caption }}</h5>
         </div>
         {% endif %}
       </div>
-      <div class="carousel-item">
-        <img src="/assets/img/team_pictures/team_photo_4.png" class="d-block w-100" alt="Team Photo 3">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Christmas Dinner Celebration 2024</h5>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="/assets/img/team_pictures/team_photo_2.jpg" class="d-block w-100" alt="Team Photo 2">
-      </div>
+      {% endfor %}
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -68,6 +78,12 @@ If you are interested in joining the Lab please see this [page](/join).
 .carousel-item img {
     max-height: 400px;
     object-fit: cover;
+    filter: contrast(1.02);
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 .carousel-caption {
     background: rgba(0, 0, 0, 0.5);
