@@ -118,17 +118,5 @@ profiles:
     github_username: ZhunC
     linkedin_username: zhun-cheng-6a1b06192
     image_circular: false
-  - align: left
-    name: Dr. John Smith
-    website: "https://example.com"
-    image: people/default_avatar.jpg
-    type: alumni
-    graduation_year: 2023
-    current_position: "Senior Robotics Engineer at Tesla"
-    degree: "Ph.D. in Computer Science"
-    github_username: johnsmith
-    linkedin_username: johnsmith-robotics
-    scholar_userid: # your Google Scholar ID
-    image_circular: false
 
 ---
