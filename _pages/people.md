@@ -45,7 +45,7 @@ profiles:
   - align: left
     name: Abhiroop Ajith
     website: "https://abhiroopajith.github.io/"
-    image: people/abhiroop_square.png
+    image: people/abhiroop_square.jpg
     type: phd
     content: about_abhiroop.md 
     email: aajith@wpi.edu
