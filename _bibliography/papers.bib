@@ -10,6 +10,24 @@
 @String { arev  = {Annual Review of Control, Robotics, and Autonomous Systems}}
 @String { hscc  = {ACM Hybrid Systems: Computation and Control}}
 
+@article{chatterjee2025-image-space-roadmaps,
+  abstract = { This work presents a motion planning framework for robotic manipulators that computes collision-free paths directly in image space. The generated paths can then be tracked using vision-based control, eliminating the need for an explicit robot model or proprioceptive sensing. At the core of our approach is the construction of a roadmap entirely in image space. To achieve this, we explicitly define sampling, nearest-neighbor selection, and collision checking based on visual features rather than geometric models. We first collect a set of image space samples by moving the robot within its workspace, capturing keypoints along its body at different configurations. These samples serve as nodes in the roadmap, which we construct using either learned or predefined distance metrics. At runtime, the roadmap generates collision-free paths directly in image space, removing the need for a robot model or joint encoders. We validate our approach through an experimental study in which a robotic arm follows planned paths using an adaptive vision-based control scheme to avoid obstacles. The results show that paths generated with the learned-distance roadmap achieved 100\% success in control convergence, whereas the predefined image space distance roadmap enabled faster transient responses but had a lower success rate in convergence},
+  title = {Image-Based Roadmaps for Vision-Only Planning and Control of Robotic Manipulators},
+  journal = iral, 
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  author = {Chatterjee, Sreejani and Gandhi, Abhinav and  Calli, Berk and Chamzas, Constantinos},
+  year = {2025},
+  month = jul,
+  pdf = {chatterjee2025image-space-roadmaps.pdf},
+  video = {https://www.youtube.com/watch?v=kD3A3Xs_psI},
+  code = {https://github.com/JaniC-WPI/KPDataGenerator},
+  bibtex_show={true},
+  keyword1 = {visual}, 
+  abbr = {RAL}
+}
+
+
+
 
 @inproceedings{chatrola2024multilayer,
   abstract = {We propose a novel, multi-layered planning approach for computing paths that satisfy both kinodynamic and spatiotemporal constraints. Our three-part framework first establishes potential sequences to meet spatial constraints, using them to calculate a geometric lead path. This path then guides an asymptotically optimal sampling-based kinodynamic planner, which minimizes an STL-robustness cost to jointly satisfy spatiotemporal and kinodynamic constraints. In our experiments, we test our method with a velocity-controlled Ackerman-car model and demonstrate significant efficiency gains compared to prior art. Additionally, our method is able to generate complex path maneuvers, such as crossovers, something that previous methods had not demonstrated.},
