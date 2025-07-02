@@ -10,6 +10,22 @@
 @String { arev  = {Annual Review of Control, Robotics, and Autonomous Systems}}
 @String { hscc  = {ACM Hybrid Systems: Computation and Control}}
 
+
+@misc{zhong25-active-pusher,
+  abstract = { Planning with learned dynamics models offers a promising approach toward real-world, long-horizon manipulation, particularly in nonprehensile settings such as pushing or rolling, where accurate analytical models are difficult to obtain. However, collecting training data for learning-based methods can be costly and inefficient, as it often relies on randomly sampled interactions that are not necessarily the most informative. Furthermore, learned models tend to exhibit high uncertainty in underexplored regions of the skill space, undermining the planning reliability. To address these challenges, we propose A CTIVE P USHER , a novel framework that combines residual-physics modeling with kernel-based uncertainty-driven active learning to focus data acquisition on the most informative skill parameters. Additionally, A CTIVE P USHER seamlessly integrates with model-based kinodynamic planners, leveraging uncertainty estimates to bias control sampling toward more reliable actions. We evaluate our approach in both simulation and real-world environments and demonstrate that it improves data efficiency and planning success rates compared to baseline methods.},
+  author={Zhong, Zhuoyun and Golestanh, Seyedali and Chamzas, Constantinos},
+  booktitle = {RSS 2025 Workshop: R3:Reasoning for Robust Robot Manipulation in the Open World},
+  month = jun,
+  title={ActivePusher: Active Learning and Planning with Residual Physics for Nonprehensile Manipulation}, 
+  year = {2025},
+  website= {https://sites.google.com/view/rss2025r3/home},
+  pdf={zhong2025-active-pusher.pdf}, 
+  bibtex_show={true},
+  video={https://www.youtube.com/watch?v=sVYmVxdFM9g},
+  abbr={RSS},
+  keyword2 = {uncertainty}, 
+}
+
 @article{chatterjee2025-image-space-roadmaps,
   abstract = { This work presents a motion planning framework for robotic manipulators that computes collision-free paths directly in image space. The generated paths can then be tracked using vision-based control, eliminating the need for an explicit robot model or proprioceptive sensing. At the core of our approach is the construction of a roadmap entirely in image space. To achieve this, we explicitly define sampling, nearest-neighbor selection, and collision checking based on visual features rather than geometric models. We first collect a set of image space samples by moving the robot within its workspace, capturing keypoints along its body at different configurations. These samples serve as nodes in the roadmap, which we construct using either learned or predefined distance metrics. At runtime, the roadmap generates collision-free paths directly in image space, removing the need for a robot model or joint encoders. We validate our approach through an experimental study in which a robotic arm follows planned paths using an adaptive vision-based control scheme to avoid obstacles. The results show that paths generated with the learned-distance roadmap achieved 100\% success in control convergence, whereas the predefined image space distance roadmap enabled faster transient responses but had a lower success rate in convergence},
   title = {Image-Based Roadmaps for Vision-Only Planning and Control of Robotic Manipulators},
