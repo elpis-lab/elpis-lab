@@ -86,6 +86,17 @@ profiles:
     linkedin_username: adil-shiyas-a3a9a0239
     scholar_userid: 
     image_circular: false
+  - align: left
+    name: Jaskrit Singh 
+    website: "https://jazkarit.github.io/Jaskrit-Singh/"
+    image: people/jaskrit.jpg
+    type: ms
+    current_position: ""
+    degree: "M.S. in Computer Science"
+    github_username: JazKarit
+    linkedin_username: jaskrit-singh-019768172
+    scholar_userid: 
+    image_circular: false
   
   
   # Alumni Section
