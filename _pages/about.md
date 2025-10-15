@@ -53,7 +53,11 @@ If you are interested in joining the Lab please see this [page](/join).
     <div class="carousel-inner">
       {% for image in page.carousel.images %}
       <div class="carousel-item {% if image.active %}active{% endif %}">
-        <img src="{{ image.src }}" class="d-block w-100" alt="{{ image.alt }}">
+        {% if image.active %}
+        {% include figure.liquid loading="eager" path=image.src class="d-block w-100" alt=image.alt cache_bust=true %}
+        {% else %}
+        {% include figure.liquid loading="lazy" path=image.src class="d-block w-100" alt=image.alt cache_bust=true %}
+        {% endif %}
         {% if page.carousel.show_captions and image.caption and image.caption != "" %}
         <div class="carousel-caption d-none d-md-block">
           <h5>{{ image.caption }}</h5>

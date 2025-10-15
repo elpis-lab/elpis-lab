@@ -53,35 +53,69 @@ profiles:
     linkedin_username: abhiroopajith# your LinkedIn user name    
     scholar_userid: LiDMFt4AAAAJ # your Google Scholar ID
     image_circular: false # crops the image to make it circular
-  - align: left 
-    name: Niranjan Kumar Ilampooranan 
-    website: https://www.linkedin.com/in/niranjan-kumar-ilampooranan
-    image: people/niranjan_square.jpg
+  - align: left
+    name:  Kashif Khurshid Noori
+    website: 
+    image: people/kashif.jpg
     type: ms
-    email: nilampooranan@wpi.edu
-    github_username: red-lightning10 # your GitHub user name
-    linkedin_username: niranjan-kumar-ilampooranan # your LinkedIn user name
-    scholar_userid: 95wXj-kAAAAJ # your Google Scholar ID
-    image_circular: false # crops the image to make it circular
+    current_position: ""
+    degree: "M.S. in Computer Science"
+    github_username: noorikashif
+    linkedin_username: kashifnoori
+    scholar_userid: 
+    image_circular: false
+  - align: left
+    name: Donghyung Lee
+    website: 
+    image: people/Dean.jpg
+    type: ms
+    current_position: ""
+    degree: "M.S. in Computer Science"
+    github_username: eastbright99
+    linkedin_username: donghyung
+    scholar_userid: 
+    image_circular: false
+  - align: left
+    name: Adil Shiyas 
+    website: 
+    image: people/adil.png
+    type: ms
+    current_position: ""
+    degree: "M.S. in Computer Science"
+    github_username: adilshiyas
+    linkedin_username: adil-shiyas-a3a9a0239
+    scholar_userid: 
+    image_circular: false
+  
+  
+  # Alumni Section
+  - align: left
+    name: Niranjan Kumar Ilampooranan
+    website: https://www.linkedin.com/in/niranjan-kumar-ilampooranan
+    type: alumni
+    graduation_year: 2025
+    current_position: ""
+    degree: "M.S. in Computer Science"
+    github_username: red-lightning10
+    linkedin_username: niranjan-kumar-ilampooranan
+    scholar_userid: 95wXj-kAAAAJ
+    image_circular: false
   - align: left
     name: Edwin Clement
     website: "https://blog.edwinclement08.com/"
-    image: people/Edwin.jpg
-    type: ms 
-    Content: 
-    Email: eclement@wpi.edu
+    type: alumni
+    graduation_year: 2025
+    current_position: ""
+    degree: "M.S. in Computer Science"
     github_username: edwinclement08
-    linkedin_username: www.linkedin.com/in/edwinclement08 # your LinkedIn user name
-    scholar_userid: # your Google Scholar ID
-    image_circular: false # crops the image to make it circular
-  
-  # Alumni Section
+    linkedin_username: edwinclement08
+    image_circular: false
   - align: left
     name: Uday Girish Maradana
     website: "https://udaygirish.github.io"
     type: alumni
-    graduation_year: 2024
-    current_position: ""
+    graduation_year: 2025
+    current_position: "Senior Machine Learning Engineer at webAI"
     degree: "M.S. in Computer Science"
     github_username: udaygirish
     linkedin_username: udaygirish-maradana
@@ -91,7 +125,7 @@ profiles:
     name: Butchi Venkatesh Adari
     website: ""
     type: alumni
-    graduation_year: 2024
+    graduation_year: 2025
     current_position: ""
     degree: "M.S. in Computer Science"
     github_username: VenkateshRoshan
@@ -101,7 +135,7 @@ profiles:
     name: Thanikai Adhithiyan Shanmugam
     website: "https://adhithiyan03.github.io/STA.github.io/"
     type: alumni
-    graduation_year: 2024
+    graduation_year: 2025
     current_position: ""
     degree: "M.S. in Computer Science"
     github_username: Adhithiyan03
@@ -112,8 +146,8 @@ profiles:
     name: Zhun Cheng
     website: "https://zhuncollectedwork.com/"
     type: alumni
-    graduation_year: 2024
-    current_position: ""
+    graduation_year: 2025
+    current_position: "R&D Controls Engineer at SharkNinja"
     degree: "M.S. in Computer Science"
     github_username: ZhunC
     linkedin_username: zhun-cheng-6a1b06192

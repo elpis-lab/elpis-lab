@@ -66,11 +66,9 @@ layout: default
             {% else %}
             <span style="color: var(--global-text-color); font-weight: 500;">{{ profile.name }}</span>
             {% endif %}
-            {% comment %}
-            {% if profile.current_position %}
-            <span style="color: var(--global-text-color-light); font-style: italic; margin-left: 8px;">(Now at {{ profile.current_position }})</span>
+            {% if profile.current_position and profile.current_position != '' %}
+            <span style="color: var(--global-text-color-light); font-style: italic; margin-left: 8px;">({{ profile.current_position }})</span>
             {% endif %}
-            {% endcomment %}
           </div>
           {% endif %}
         {% endfor %}

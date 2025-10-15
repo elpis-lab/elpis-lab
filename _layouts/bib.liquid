@@ -75,7 +75,11 @@
         <em>In {{entry.booktitle}},</em>
       {% endif %}
       {% if entry.type == "misc" %}
+        {% if entry.archivePrefix and entry.archivePrefix == "arXiv" %}
+        <em>arXiv Preprint,</em>
+        {% elsif entry.booktitle %}
         <em>In {{entry.booktitle}},</em>
+        {% endif %}
       {% endif %}
       {% if entry.year %}
         {{entry.year}}

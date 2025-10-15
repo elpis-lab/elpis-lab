@@ -7,7 +7,7 @@
               {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
             {% endif %}
             {% capture sizes %}(max-width: {{site.max_width | times: 0.1}}) {{ site.max_width | minus: 30 | times: 0.1}}px, (min-width: 20px) 30vw, 95vw"{% endcapture %}
-            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
+            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image cache_bust=true %}
             {% endif %}
 </div>
 <div class="clearfix">
