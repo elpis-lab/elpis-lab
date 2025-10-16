@@ -25,39 +25,54 @@
               {% assign author_is_self = true %}
             {% endif %}
           {% endif %}
+
           {% assign coauthor_url = nil %}
-          {% if site.data.coauthors[author.last] %}
-            {% for coauthor in site.data.coauthors[author.last] %}
-              {% if coauthor.firstname contains author.first %}
-                {% assign coauthor_url = coauthor.url %}
-                {% break %}
-              {% endif %}
-            {% endfor %}
-          {% endif %}
-          
+          {% assign last_clean = author.last | replace: '*', '' | strip | downcase %}
+          {% assign first_clean = author.first | replace: '*', '' | strip %}
+          {% assign first_initial = first_clean | slice: 0, 1 %}
+          {% capture first_initial_dot %}{{ first_initial }}.{% endcapture %}
+
+          {% for pair in site.data.coauthors %}
+            {% assign key = pair[0] | downcase %}
+            {% assign entries = pair[1] %}
+            {% if key == last_clean %}
+              {% for co in entries %}
+                {% for fname in co.firstname %}
+                  {% assign fname_clean = fname | replace: '.', '' | strip %}
+                  {% if fname == first_clean or fname == first_initial or fname == first_initial_dot or fname_clean == first_initial %}
+                    {% assign coauthor_url = co.url %}
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
+                {% if coauthor_url %}{% break %}{% endif %}
+              {% endfor %}
+            {% endif %}
+            {% if coauthor_url %}{% break %}{% endif %}
+          {% endfor %}
+
           {% if forloop.length == 1 %}
             {% if author_is_self %}
-              <em>{{author.first | slice:0 }}. {{author.last}}</em>
+              {{author.first | slice:0}}. {{author.last}}
             {% else %}
               {{author.first | slice:0}}. {{author.last}}
             {% endif %}
           {% else %}
             {% unless forloop.last %}
               {% if author_is_self %}
-                <em>{{author.first | slice:0}}. {{author.last}}</em>,
+                {{author.first | slice:0}}. {{author.last}},
               {% else %}
                 {% if coauthor_url %}
-                  <a href="{{coauthor_url}}" target="_blank">{{author.first | slice:0}}. {{author.last}}</a>,
+                  <a href="{{coauthor_url}}" target="_blank" style="text-decoration: none; border-bottom: none; ">{{author.first | slice:0}}. {{author.last}}</a>,
                 {% else %}
                   {{author.first | slice:0}}. {{author.last}},
                 {% endif %}
               {% endif %}
             {% else %}
               {% if author_is_self %}
-                and <em>{{author.first | slice: 0}} {{author.last}}</em>
+                and {{author.first | slice:0}}. {{author.last}}
               {% else %}
                 {% if coauthor_url %}
-                  and <a href="{{coauthor_url}}" target="_blank">{{author.first}} {{author.last}}</a>
+                  and <a href="{{coauthor_url}}" target="_blank" style="text-decoration: none; border-bottom: none; ">{{author.first | slice:0}}. {{author.last}}</a>
                 {% else %}
                   and {{author.first | slice:0}}. {{author.last}}
                 {% endif %}

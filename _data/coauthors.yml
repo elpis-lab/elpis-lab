@@ -1,18 +1,15 @@
-"Temp":
-  - firstname: ["Zachary", "Z.", "Z. K.", "Zachary Kingston"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Ajith":
+  - firstname: ["Abhiroop", "A.", "A"]
+    url: https://abhiroopajith.github.io/
 
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Chamzas":
+  - firstname: ["Constantinos", "C.", "C"]
+    url: https://cchamzas.com/
 
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Golestaneh":
+  - firstname: ["Ali", "A.", "A", "Seyedali"]
+    url: https://www.linkedin.com/in/aligolestaneh/
 
-"Bach": 
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
-
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Zhong":
+  - firstname: ["Zhuoyun", "Z.", "Z"]
+    url: https://www.linkedin.com/in/zhuoyunzhong/
