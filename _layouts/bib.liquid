@@ -51,31 +51,23 @@
           {% endfor %}
 
           {% if forloop.length == 1 %}
-            {% if author_is_self %}
-              {{author.first | slice:0}}. {{author.last}}
+            {% if coauthor_url %}
+              <a href="{{coauthor_url}}" target="_blank" style="text-decoration: none; border-bottom: none;">{{author.first | slice:0}}. {{author.last}}</a>
             {% else %}
               {{author.first | slice:0}}. {{author.last}}
             {% endif %}
           {% else %}
             {% unless forloop.last %}
-              {% if author_is_self %}
-                {{author.first | slice:0}}. {{author.last}},
+              {% if coauthor_url %}
+                <a href="{{coauthor_url}}" target="_blank" style="text-decoration: none; border-bottom: none;">{{author.first | slice:0}}. {{author.last}}</a>,
               {% else %}
-                {% if coauthor_url %}
-                  <a href="{{coauthor_url}}" target="_blank" style="text-decoration: none; border-bottom: none; ">{{author.first | slice:0}}. {{author.last}}</a>,
-                {% else %}
-                  {{author.first | slice:0}}. {{author.last}},
-                {% endif %}
+                {{author.first | slice:0}}. {{author.last}},
               {% endif %}
             {% else %}
-              {% if author_is_self %}
-                and {{author.first | slice:0}}. {{author.last}}
+              {% if coauthor_url %}
+                and <a href="{{coauthor_url}}" target="_blank" style="text-decoration: none; border-bottom: none;">{{author.first | slice:0}}. {{author.last}}</a>
               {% else %}
-                {% if coauthor_url %}
-                  and <a href="{{coauthor_url}}" target="_blank" style="text-decoration: none; border-bottom: none; ">{{author.first | slice:0}}. {{author.last}}</a>
-                {% else %}
-                  and {{author.first | slice:0}}. {{author.last}}
-                {% endif %}
+                and {{author.first | slice:0}}. {{author.last}}
               {% endif %}
             {% endunless %}
           {% endif %}
