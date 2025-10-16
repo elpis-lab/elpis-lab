@@ -15,10 +15,13 @@ profile:
 carousel:
   show_captions: true  
   images:
+    - src: "/assets/img/team_pictures/rss.jpg"
+      alt: "RSS"
+      caption: "ELPIS Lab @ RSS2025"
+      active: true
     - src: "/assets/img/team_pictures/team_photo_1.jpg"
       alt: "Team Photo 1"
       caption: "ELPIS Lab @ NERC 2024, UMass Amherst"
-      active: true
     - src: "/assets/img/team_pictures/team_photo_4.png"
       alt: "Team Photo 3"
       caption: "Christmas Dinner Celebration 2024"
