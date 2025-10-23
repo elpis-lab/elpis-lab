@@ -34,7 +34,7 @@ profiles:
   - align: left
     name: Ali Golestaneh
     website: "https://www.linkedin.com/in/aligolestaneh/"
-    image: people/Ali.png
+    image: people/Ali.jpg
     type: phd 
     content: about_ali.md
     email: sgolestaneh@wpi.edu
