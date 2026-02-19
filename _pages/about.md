@@ -12,119 +12,110 @@ profile:
     <p>100 Institute Rd</p>
     <p>Worcester, MA 01609</p>
 
-carousel:
-  show_captions: true  
-  images:
-    - src: "/assets/img/team_pictures/rss.jpg"
-      alt: "RSS"
-      caption: "ELPIS Lab @ RSS2025"
+research_focuses:
+  autoplay_ms: 6500
+  items:
+    - title: Planning Efficiency
+      description: We design planning systems that reduce computation time while retaining high-quality trajectories in high-dimensional spaces.
+      link: /projects/efficiency
+      link_text: Explore Efficiency Research
+      video: /assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4
+      poster: /assets/img/research/efficient_planning.jpg
       active: true
-    - src: "/assets/img/team_pictures/team_photo_1.jpg"
-      alt: "Team Photo 1"
-      caption: "ELPIS Lab @ NERC 2024, UMass Amherst"
-    - src: "/assets/img/team_pictures/team_photo_4.jpg"
-      alt: "Team Photo 3"
-      caption: "Christmas Dinner Celebration 2024"
-    - src: "/assets/img/team_pictures/team_photo_2.jpg"
-      alt: "Team Photo 2"
-      caption: ""
-    - src: "/assets/img/team_pictures/Team_Dinner_5.jpg"
-      alt: "Team Dinner 5"
-      caption: ""
-    - src: "/assets/img/team_pictures/AbhiroopHSCC.jpg"
-      alt: "Abhiroop at HSCC"
-      caption: "Abhiroop Presenting at HSCC 2025"
-    - src: "/assets/img/team_pictures/zhoyun_iros.jpg"
-      alt: "Zhuoyun at IROS"
-      caption: "Zhuoyun Presenting at IROS 2024"
+    - title: Planning Robustness
+      description: We build robust planners that reason under uncertainty and partial observability to improve safety and reliability.
+      link: /projects/uncertainty
+      link_text: Explore Robustness Research
+      video: /assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4
+      poster: /assets/img/research/planning_under_uncertainty.jpg
+    - title: Planning from Visual Inputs
+      description: We investigate representations that enable task and motion planning directly from image observations in real-world scenes.
+      link: /projects/visual
+      link_text: Explore Vision Research
+      video: /assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4
+      poster: /assets/img/research/vision_based_planning.jpg
 
 news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Wecome to the webpage of the Efficient Learning and Planning for Intelligent Systems (ELPIS) Lab! 
+Welcome to the webpage of the Efficient Learning and Planning for Intelligent Systems (ELPIS) Lab.
 
-The Lab has a broad interest in autonomous robotic systems capable of reasoning about and interacting with the physical world. The primary goal is to develop agents that are efficient, robust, and capable of learning from real-world interactions. Current research projects focus on the integration of classical planning algorithms and state-of-the-art machine learning techniques, aiming to advance 1) [planning efficiency](/projects/efficiency), 2) [planning robustness](/projects/uncertainty), and 3) [planning from visual inputs](/projects/visual). 
+The Lab has a broad interest in autonomous robotic systems capable of reasoning about and interacting with the physical world. The primary goal is to develop agents that are efficient, robust, and capable of learning from real-world interactions. Current research projects focus on the integration of classical planning algorithms and state-of-the-art machine learning techniques, aiming to advance 1) [planning efficiency](/projects/efficiency), 2) [planning robustness](/projects/uncertainty), and 3) [planning from visual inputs](/projects/visual).
 
-If you are interested in joining the Lab please see this [page](/join). 
+If you are interested in joining the Lab please see this [page](/join).
 
-<!-- ## Lab Team Photos -->
+<section class="landing-focus-section">
+  <div class="landing-focus-header">
+    <h2>Research Focus Areas</h2>
+    <p>Our core work spans three complementary themes that shape the lab's research agenda.</p>
+  </div>
 
-<div class="container mt-5">
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div
+    id="researchFocusCarousel"
+    class="carousel slide carousel-fade elpis-carousel research-focus-carousel"
+    data-ride="carousel"
+    data-interval="{{ page.research_focuses.autoplay_ms | default: 6500 }}"
+    data-pause="hover"
+  >
+    <ol class="carousel-indicators">
+      {% for focus in page.research_focuses.items %}
+        <li
+          data-target="#researchFocusCarousel"
+          data-slide-to="{{ forloop.index0 }}"
+          class="{% if focus.active or forloop.first %}active{% endif %}"
+        ></li>
+      {% endfor %}
+    </ol>
     <div class="carousel-inner">
-      {% for image in page.carousel.images %}
-      <div class="carousel-item {% if image.active %}active{% endif %}">
-        {% if image.active %}
-        {% include figure.liquid loading="eager" path=image.src class="d-block w-100" alt=image.alt cache_bust=true %}
-        {% else %}
-        {% include figure.liquid loading="lazy" path=image.src class="d-block w-100" alt=image.alt cache_bust=true %}
-        {% endif %}
-        {% if page.carousel.show_captions and image.caption and image.caption != "" %}
-        <div class="carousel-caption d-none d-md-block">
-          <h5>{{ image.caption }}</h5>
+      {% for focus in page.research_focuses.items %}
+        <div class="carousel-item {% if focus.active or forloop.first %}active{% endif %}">
+          <div class="research-focus-slide row no-gutters align-items-center">
+            <div class="col-lg-5">
+              <div class="research-focus-copy">
+                <p class="focus-kicker">Research Focus {{ forloop.index }}</p>
+                <h3>{{ focus.title }}</h3>
+                <p>{{ focus.description }}</p>
+                <a class="btn btn-sm btn-outline-primary mt-2" href="{{ focus.link | relative_url }}">
+                  {{ focus.link_text }}
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="research-focus-media">
+                {% if focus.video %}
+                  <video autoplay muted loop playsinline preload="metadata" poster="{{ focus.poster | relative_url }}">
+                    <source src="{{ focus.video | relative_url }}" type="video/mp4">
+                  </video>
+                {% else %}
+                  <img src="{{ focus.poster | relative_url }}" alt="{{ focus.title }}">
+                {% endif %}
+                <span class="research-focus-media-label">{{ focus.title }}</span>
+              </div>
+            </div>
+          </div>
         </div>
-        {% endif %}
-      </div>
       {% endfor %}
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+
+    <a class="carousel-control-prev" href="#researchFocusCarousel" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+
+    <a class="carousel-control-next" href="#researchFocusCarousel" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
   </div>
-</div>
-
-<style>
-.carousel {
-    max-width: 800px;
-    margin: 0 auto;
-}
-.carousel-item img {
-    max-height: 400px;
-    object-fit: cover;
-    filter: contrast(1.02);
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
-    backface-visibility: hidden;
-    transform: translateZ(0);
-    -webkit-font-smoothing: subpixel-antialiased;
-}
-.carousel-caption {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 15px;
-    border-radius: 8px;
-    color: rgba(255, 255, 255, 0.9) !important;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); 
-    bottom: 20px !important;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    max-width: 600px;
-}
-.carousel-caption h5 {
-    color: rgba(255, 255, 255, 0.95) !important;
-    font-weight: 500;
-    font-size: 1.1rem;
-    margin-bottom: 5px;
-    letter-spacing: 0.5px;
-}
-.carousel-caption p {
-    color: rgba(255, 255, 255, 0.85) !important;
-    margin-bottom: 0;
-    font-size: 0.9rem;
-}
-</style>
+</section>
 
 <script>
-$(document).ready(function(){
-    $('.carousel').carousel({
-        interval: 3000
+$(function () {
+    $("#researchFocusCarousel").carousel({
+        interval: {{ page.research_focuses.autoplay_ms | default: 6500 }},
+        pause: "hover"
     });
 });
 </script>

@@ -5,6 +5,32 @@ title: People
 description: Members of the ELPIS lab
 nav: true
 nav_order: 3
+team_carousel:
+  autoplay_ms: 3800
+  show_captions: true
+  images:
+    - src: /assets/img/team_pictures/rss.jpg
+      alt: ELPIS at RSS
+      caption: ELPIS Lab @ RSS 2025
+      active: true
+    - src: /assets/img/team_pictures/team_photo_1.jpg
+      alt: ELPIS team at NERC
+      caption: ELPIS Lab @ NERC 2024 (UMass Amherst)
+    - src: /assets/img/team_pictures/team_photo_4.jpg
+      alt: ELPIS team holiday dinner
+      caption: Christmas Dinner Celebration 2024
+    - src: /assets/img/team_pictures/team_photo_2.jpg
+      alt: ELPIS team photo
+      caption: Team photo
+    - src: /assets/img/team_pictures/Team_Dinner_5.jpg
+      alt: ELPIS team dinner
+      caption: Team dinner
+    - src: /assets/img/team_pictures/AbhiroopHSCC.jpg
+      alt: Abhiroop presenting at HSCC
+      caption: Abhiroop presenting at HSCC 2025
+    - src: /assets/img/team_pictures/zhoyun_iros.jpg
+      alt: Zhuoyun presenting at IROS
+      caption: Zhuoyun presenting at IROS 2024
 
 profiles:
   # if you want to include more than one profile, just replicate the following block

@@ -1,37 +1,308 @@
-// Custom styles for the team carousel
-#teamCarousel {
-    max-width: 800px;  // Adjust this value to your preferred width
-    margin: 0 auto;    // Centers the carousel
-    margin-bottom: 2rem;
-    
-    .carousel-item {
-        img {
-            max-height: 500px;  // Adjust this value to your preferred height
-            object-fit: cover;
-        }
-    }
+.elpis-carousel {
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--global-divider-color);
+  box-shadow: 0 16px 34px rgba(9, 17, 31, 0.18);
+  background: var(--global-card-bg-color);
 
-    .carousel-caption {
-        background: rgba(0,0,0,0.5);
-        border-radius: 10px;
-        padding: 10px;
-    }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 9%;
+    min-width: 46px;
+  }
 
-    .carousel-control-prev,
-    .carousel-control-next {
-        background-color: rgba(0,0,0,0.3);
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        top: 50%;
-        transform: translateY(-50%);
-    }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    border-radius: 999px;
+    padding: 0.95rem;
+    background-size: 55%;
+    background-color: rgba(16, 24, 40, 0.5);
+  }
 
-    .carousel-indicators {
-        bottom: -40px;
-        
-        button {
-            background-color: #666;
-        }
-    }
+  .carousel-indicators {
+    margin-bottom: 0.65rem;
+  }
+
+  .carousel-indicators li {
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 999px;
+  }
+
+  .carousel-caption {
+    left: 50%;
+    bottom: 1rem;
+    transform: translateX(-50%);
+    width: min(88%, 680px);
+    padding: 0.65rem 0.9rem;
+    border-radius: 0.7rem;
+    background: rgba(12, 18, 30, 0.62);
+  }
+
+  .carousel-caption h5 {
+    margin-bottom: 0;
+    font-size: 0.97rem;
+    font-weight: 500;
+    color: #f8fafc;
+  }
+}
+
+html[data-theme="dark"] .elpis-carousel {
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.45);
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.landing-focus-section {
+  clear: both;
+  margin: 2.35rem 0 1.5rem;
+  border-radius: 1.05rem;
+  border: 1px solid var(--global-divider-color);
+  background: linear-gradient(140deg, rgba(10, 86, 140, 0.12), rgba(148, 206, 255, 0.06));
+  padding: 1.2rem;
+}
+
+html[data-theme="dark"] .landing-focus-section {
+  background: linear-gradient(140deg, rgba(2, 132, 199, 0.2), rgba(15, 23, 42, 0.45));
+}
+
+.landing-focus-header {
+  margin: 0.2rem 0 1rem;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 0.45rem;
+  }
+
+  p {
+    margin-bottom: 0;
+    color: var(--global-text-color-light);
+  }
+}
+
+.research-focus-carousel .carousel-inner {
+  border-radius: 0.85rem;
+}
+
+.research-focus-slide {
+  min-height: 350px;
+}
+
+.research-focus-copy {
+  padding: 1.7rem 1.75rem 1.7rem 2rem;
+}
+
+.focus-kicker {
+  margin-bottom: 0.45rem;
+  color: var(--global-theme-color);
+  font-size: 0.82rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.research-focus-copy h3 {
+  margin-bottom: 0.6rem;
+}
+
+.research-focus-copy p {
+  margin-bottom: 0.35rem;
+}
+
+.research-focus-media {
+  position: relative;
+  min-height: 350px;
+  height: 100%;
+  background: #020617;
+}
+
+.research-focus-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(2, 6, 23, 0.14), rgba(2, 6, 23, 0.68));
+  pointer-events: none;
+}
+
+.research-focus-media video,
+.research-focus-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.research-focus-media-label {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 1;
+  border-radius: 999px;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  color: #eff6ff;
+  background: rgba(2, 6, 23, 0.7);
+}
+
+.team-carousel-section {
+  margin: 1.75rem 0 2.2rem;
+}
+
+.team-carousel .carousel-item img {
+  width: 100%;
+  height: clamp(260px, 46vw, 500px);
+  object-fit: cover;
+}
+
+.people-section-title {
+  text-align: left;
+}
+
+.people-profile-full {
+  width: 100%;
+}
+
+.people-alumni-title {
+  margin-top: 2.2rem;
+}
+
+.people-alumni-list {
+  margin-bottom: 1.5rem;
+}
+
+.people-alumni-row {
+  padding: 0.48rem 0;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.people-alumni-name {
+  font-weight: 500;
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+.people-alumni-role {
+  margin-left: 0.45rem;
+  color: var(--global-text-color-light);
+  font-style: italic;
+}
+
+@media (max-width: 991.98px) {
+  .research-focus-copy {
+    padding: 1.3rem;
+  }
+
+  .research-focus-slide,
+  .research-focus-media {
+    min-height: 290px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .landing-focus-section {
+    padding: 0.75rem;
+  }
+
+  .research-focus-media-label {
+    font-size: 0.72rem;
+  }
+
+  .team-carousel .carousel-item img {
+    height: 230px;
+  }
+}
+
+.publications ol.bibliography li .pub-entry-card {
+  display: flex;
+  gap: 0.95rem;
+  align-items: flex-start;
+}
+
+.publications ol.bibliography li .pub-entry-media {
+  position: relative;
+  flex: 0 0 190px;
+  width: 190px;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  border: 1px solid var(--global-divider-color);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.14);
+  background: linear-gradient(140deg, rgba(15, 23, 42, 0.65), rgba(30, 64, 175, 0.35));
+}
+
+.publications ol.bibliography li .pub-entry-media-link {
+  display: block;
+  text-decoration: none;
+}
+
+.publications ol.bibliography li .pub-entry-badge {
+  position: absolute;
+  top: 0.55rem;
+  left: 0.55rem;
+  z-index: 2;
+  border-radius: 999px;
+  padding: 0.12rem 0.52rem;
+  font-size: 0.67rem;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  color: #f8fafc;
+  background: rgba(2, 6, 23, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(1px);
+}
+
+.publications ol.bibliography li .pub-entry-badge a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.publications ol.bibliography li .pub-entry-badge a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.publications ol.bibliography li .pub-entry-media.pub-entry-has-video::after {
+  content: "";
+  position: absolute;
+  right: 0.7rem;
+  bottom: 0.7rem;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 13px solid rgba(255, 255, 255, 0.96);
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.35));
+  pointer-events: none;
+}
+
+.publications ol.bibliography li .pub-entry-media img,
+.publications ol.bibliography li .pub-entry-media video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.publications ol.bibliography li .pub-entry-main {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+html[data-theme="dark"] .publications ol.bibliography li .pub-entry-media {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 767.98px) {
+  .publications ol.bibliography li .pub-entry-card {
+    flex-direction: column;
+  }
+
+  .publications ol.bibliography li .pub-entry-media {
+    width: 100%;
+    max-width: 300px;
+    flex: 0 0 auto;
+  }
 }

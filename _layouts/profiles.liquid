@@ -7,70 +7,144 @@ layout: default
     <p class="post-description">{{ page.description }}</p>
   </header>
 
-<div class="post">
+  <div class="profiles-page">
     {% if page.profiles %}
-      <div style="text-align: left;">
-      <h3><span style="color: var(--global-text-color-light)"> Principal Investigator </span></h3>
+      <div class="people-section-title">
+        <h3><span style="color: var(--global-text-color-light)"> Principal Investigator </span></h3>
       </div>
       <hr>
       {% for profile in page.profiles %}
-      {% if profile.type == 'pi' %}
-      <div class="profile" style="width: 100%;"> {% include profile.liquid %} </div>
-      {% endif %}
+        {% if profile.type == 'pi' %}
+          <div class="profile people-profile-full">{% include profile.liquid %}</div>
+        {% endif %}
       {% endfor %}
-      <div style="text-align: left;">
-      <h3><span style="color: var(--global-text-color-light)"> Ph.D. Students </span></h3>
+
+      <div class="people-section-title">
+        <h3><span style="color: var(--global-text-color-light)"> Ph.D. Students </span></h3>
       </div>
       <hr>
       {% for profile in page.profiles %}
-      {% if profile.type == 'phd' %}
-      <div class="profile" style="width: 100%;"> {% include profile.liquid %} </div>
-      {% endif %}
+        {% if profile.type == 'phd' %}
+          <div class="profile people-profile-full">{% include profile.liquid %}</div>
+        {% endif %}
       {% endfor %}
-      <div style="text-align: left;">
-      <h3><span style="color: var(--global-text-color-light)"> MS Students </span></h3>
+
+      <div class="people-section-title">
+        <h3><span style="color: var(--global-text-color-light)"> MS Students </span></h3>
       </div>
       <hr>
     {% endif %}
+
     {% for profile in page.profiles %}
       {% if profile.type == 'ms' %}
-      <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if profile.image %}
-        {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-        {% if profile.image_circular %}
-          {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-        {% else %}
-          {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-        {% endif %}
-        {% capture sizes %}(max-width: {{site.max_width | times: 0.1}}) {{ site.max_width | minus: 30 | times: 0.1}}px, (min-width: 20px) 30vw, 95vw"{% endcapture %}
-        {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
-        <h4><a href={{profile.website}}>{{ profile.name }}</a></h4>
-        <div class="contact-icons">{% include social_profiles.liquid  %}</div> 
-        {% endif %}
-        </div> 
-      {% endif %}
-      {% endfor %}
-      <div class="clearfix"/>
-      
-      <!-- Alumni Section -->
-      <div style="text-align: left; margin-top: 40px;">
-      <h3><span style="color: var(--global-text-color-light)"> Alumni </span></h3>
-      </div>
-      <hr>
-      <div class="alumni-list" style="margin-bottom: 30px;">
-        {% for profile in page.profiles %}
-          {% if profile.type == 'alumni' %}
-          <div style="padding: 8px 0; border-bottom: 1px solid #eee;">
-            {% if profile.website %}
-            <a href="{{ profile.website }}" style="text-decoration: none; color: var(--global-text-color); font-weight: 500;">{{ profile.name }}</a>
+        <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
+          {% if profile.image %}
+            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+            {% if profile.image_circular %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
             {% else %}
-            <span style="color: var(--global-text-color); font-weight: 500;">{{ profile.name }}</span>
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+            {% endif %}
+            {% capture sizes %}(max-width: {{site.max_width | times: 0.1}}) {{ site.max_width | minus: 30 | times: 0.1}}px, (min-width: 20px) 30vw, 95vw"{% endcapture %}
+            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image cache_bust=true %}
+            {% if profile.website and profile.website != '' %}
+              <h4><a href="{{ profile.website }}">{{ profile.name }}</a></h4>
+            {% else %}
+              <h4>{{ profile.name }}</h4>
+            {% endif %}
+            <div class="contact-icons">{% include social_profiles.liquid  %}</div>
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endfor %}
+    <div class="clearfix"></div>
+
+    {% if page.team_carousel and page.team_carousel.images %}
+      {% assign team_carousel_id = "teamMomentsCarousel" %}
+      <section class="team-carousel-section">
+        <div
+          id="{{ team_carousel_id }}"
+          class="carousel slide elpis-carousel team-carousel"
+          data-ride="carousel"
+          data-interval="{{ page.team_carousel.autoplay_ms | default: 3800 }}"
+          data-pause="hover"
+        >
+          {% if page.team_carousel.images.size > 1 %}
+            <ol class="carousel-indicators">
+              {% for image in page.team_carousel.images %}
+                <li
+                  data-target="#{{ team_carousel_id }}"
+                  data-slide-to="{{ forloop.index0 }}"
+                  class="{% if image.active or forloop.first %}active{% endif %}"
+                ></li>
+              {% endfor %}
+            </ol>
+          {% endif %}
+
+          <div class="carousel-inner">
+            {% for image in page.team_carousel.images %}
+              {% if forloop.first %}
+                {% assign team_image_loading = "eager" %}
+              {% else %}
+                {% assign team_image_loading = "lazy" %}
+              {% endif %}
+
+              <div class="carousel-item {% if image.active or forloop.first %}active{% endif %}">
+                {% include figure.liquid loading=team_image_loading path=image.src class="d-block w-100" alt=image.alt cache_bust=true %}
+                {% if page.team_carousel.show_captions and image.caption and image.caption != "" %}
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>{{ image.caption }}</h5>
+                  </div>
+                {% endif %}
+              </div>
+            {% endfor %}
+          </div>
+
+          {% if page.team_carousel.images.size > 1 %}
+            <a class="carousel-control-prev" href="#{{ team_carousel_id }}" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#{{ team_carousel_id }}" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          {% endif %}
+        </div>
+      </section>
+    {% endif %}
+      
+    <!-- Alumni Section -->
+    <div class="people-section-title people-alumni-title">
+      <h3><span style="color: var(--global-text-color-light)"> Alumni </span></h3>
+    </div>
+    <hr>
+    <div class="alumni-list people-alumni-list">
+      {% for profile in page.profiles %}
+        {% if profile.type == 'alumni' %}
+          <div class="people-alumni-row">
+            {% if profile.website %}
+              <a href="{{ profile.website }}" class="people-alumni-name">{{ profile.name }}</a>
+            {% else %}
+              <span class="people-alumni-name">{{ profile.name }}</span>
             {% endif %}
             {% if profile.current_position and profile.current_position != '' %}
-            <span style="color: var(--global-text-color-light); font-style: italic; margin-left: 8px;">({{ profile.current_position }})</span>
+              <span class="people-alumni-role">({{ profile.current_position }})</span>
             {% endif %}
           </div>
-          {% endif %}
-        {% endfor %}
-      </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
 </div>
+
+{% if page.team_carousel and page.team_carousel.images %}
+<script>
+$(function () {
+  $("#teamMomentsCarousel").carousel({
+    interval: {{ page.team_carousel.autoplay_ms | default: 3800 }},
+    pause: "hover"
+  });
+});
+</script>
+{% endif %}
