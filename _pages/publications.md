@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: Publications
 description: "* denotes equal contribution." 
-years: [2025, 2024, 2023, 2022, 2021, 2020, 2019]
+years: [2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019]
 nav: true
 nav_order: 3 
 ---
@@ -13,6 +13,12 @@ nav_order: 3
   text-align: left !important;
 }
 </style>
+
+<div class="publications">
+<h1><span style="color: var(--global-theme-color)"> 2026 </span></h1>
+{% bibliography -f papers -q @*[year=2026] %}
+</div>
+
 
 <div class="publications">
 <h1><span style="color: var(--global-theme-color)"> 2025 </span></h1>
