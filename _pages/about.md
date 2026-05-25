@@ -15,25 +15,21 @@ profile:
 research_focuses:
   autoplay_ms: 6500
   items:
-    - title: Planning Efficiency
-      description: We design planning systems that reduce computation time while retaining high-quality trajectories in high-dimensional spaces.
-      link: /projects/efficiency
-      link_text: Explore Efficiency Research
-      video: /assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4
-      poster: /assets/img/research/efficient_planning.jpg
-      active: true
     - title: Planning Robustness
       description: We build robust planners that reason under uncertainty and partial observability to improve safety and reliability.
       link: /projects/uncertainty
       link_text: Explore Robustness Research
-      video: /assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4
-      poster: /assets/img/research/planning_under_uncertainty.jpg
+      video: /assets/video/planning_robust.mp4
+    - title: Planning Efficiency
+      description: We design planning systems that reduce computation time while retaining high-quality trajectories in high-dimensional spaces.
+      link: /projects/efficiency
+      link_text: Explore Efficiency Research
+      video: /assets/video/planning_fast.mp4
     - title: Planning from Visual Inputs
       description: We investigate representations that enable task and motion planning directly from image observations in real-world scenes.
       link: /projects/visual
       link_text: Explore Vision Research
-      video: /assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4
-      poster: /assets/img/research/vision_based_planning.jpg
+      video: /assets/video/visual_planning.mp4
 
 news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
