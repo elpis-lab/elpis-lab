@@ -10,6 +10,117 @@
 @String { arev  = {Annual Review of Control, Robotics, and Autonomous Systems}}
 @String { hscc  = {ACM Hybrid Systems: Computation and Control}}
 @String { arxiv  = {arXiv Preprint}}
+@String { corl  = {Conference on Robot Learning}}
+
+@article{golestaneh2026aura,
+      title={AURA: Asymptotically Optimal Uncertainty-Robust Replanning Algorithm for Kinodynamic Systems},
+      author={Seyedali Golestaneh and Zhuoyun Zhong and Donghyung Lee and Constantinos Chamzas},
+      journal = iral,
+      year={2026},
+      eprint={2605.27699},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2605.27699},
+      abstract={Sampling-based motion planners offer a practical and scalable approach to kinodynamic motion planning, notably for high-dimensional, underactuated, or non-holonomic systems. However, these planners are typically used offline, requiring execution to begin only after the trajectory has been computed. In addition, the planned trajectory may not be accurately tracked in the presence of motion uncertainty, leading to deviations from the nominal solution. In this work, these limitations were addressed within a unified framework, AURA, an asymptotically-optimal meta-planner framework that improves both path quality and tracking performance during execution. In addition to the main execution thread, this framework comprises a replanning method that continuously explores the state space and refines the trajectory during execution, and an optimization process that refines future control inputs to reduce tracking error. Together, these components enable AURA to leverage asymptotically optimal planning online while improving execution accuracy under motion uncertainty. The proposed approach is evaluated in both simulation and real-world environments across multiple systems, demonstrating consistent improvements in trajectory quality, tracking accuracy, and overall performance compared with baselines.},
+      abbr={RAL},
+      pdf={golestaneh2026aura.pdf},
+      preview={publication_preview/golestaneh2026aura.jpg},
+      video={https://www.youtube.com/watch?v=bhrmnuMtRw0&t=7s},
+      code={https://github.com/elpis-lab/AURA},
+      bibtex_show={true},
+      keyword1 = {uncertainty},
+}
+
+
+@inproceedings{ajith2026stripswm,
+      title={STRIPS-WM: Learning Grounded Propositional STRIPS-style World Models from Images},
+      author={Abhiroop Ajith and Constantinos Chamzas},
+      booktitle = corl,
+      year={2026},
+      eprint={2606.06832},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2606.06832},
+      abstract={Robots performing long-horizon visual manipulation observe high-dimensional images, but successful plans depend on action-relevant facts: what can be done now and what changes afterward. Classical task planners exploit this structure through symbolic operators with preconditions and effects, but obtaining such representations from raw visual experience remains challenging. We study a visual task-planning setting in which a robot receives only action-image transitions: the current image, executed high-level action, and resulting image. At test time, given start and goal images, the robot must produce a sequence of high-level actions that reaches the goal. We introduce STRIPS-WM, a framework for learning image-grounded STRIPS-style world models directly from visual transitions. STRIPS-WM first induces a finite abstract transition graph from images, then learns binary predicates and propositional operators that explain this graph. The learned predicates are grounded back into perception through a visual classifier, enabling classical planning directly from novel start and goal images. Experiments on visual rearrangement tasks show that STRIPS-WM improves image-to-plan success over the tested visual rollout, latent graph-search, and latent-symbolic baselines.},
+      abbr={CoRL},
+      pdf={ajith2026stripswm.pdf},
+      preview={publication_preview/ajith2026stripswm.jpg},
+      bibtex_show={true},
+      keyword1 = {visual},
+}
+
+
+@misc{ajith2026robomonitor,
+      title={RoboMonitor: Label-Efficient Runtime Monitoring of Robot Task Execution via Predictive Representation Learning},
+      author={Abhiroop Ajith and Gokul Narayanan and Kyle Coelho and Tingji Zhao and Yash Shahapurkar and Brian Zhu and Melih Erdogan and Ted Krubasik and Constantinos Chamzas and Eugen Solowjow},
+      year={2026},
+      eprint={2609.30715},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2609.30715},
+      abstract={Learned robot policies produce actions, but their outputs alone do not establish whether execution is progressing as intended. Robot execution monitoring requires identifying the current execution phase, detecting failures, and recognizing task completion from observations available during execution. Training such monitors requires annotations that are scarce in datasets collected for robot-policy learning. We present RoboMonitor, a label-efficient vision-language execution monitor that learns from these datasets before introducing monitoring supervision. We pre-train on 25 hours of multi-camera trajectories spanning 12 manipulation tasks and two robot embodiments, using action-conditioned future-feature prediction, inverse dynamics, and masked-present prediction. We then transfer the learned visual and context encoders to a causal monitor and apply temporal supervised fine-tuning (Temporal SFT), which combines supervision throughout each observation window with consistency objectives within and across overlapping windows. At deployment, RoboMonitor requires only the task instruction and camera observations. On a four-task monitoring benchmark, RoboMonitor trained with 52 labeled episodes achieves 93.1\% mean phase accuracy and 85.9\% macro recall over two fine-tuning seeds, exceeding Qwen3-VL and Robometer trained with the same monitoring supervision. Its phase accuracy also exceeds that of both Qwen3-VL and Robometer trained with 100 episodes. A Qwen3-VL ablation shows that Temporal SFT reduces mean spurious phase switching from 15.23\% to 4.95\%. In closed-loop deployment, the integrated system completes 39 of 40 simulated Toolbox Sorting trials and 35 of 40 real-world Reel Packing trials, with no false recovery triggers observed.},
+      abbr={arxiv},
+      pdf={ajith2026robomonitor.pdf},
+      preview={publication_preview/ajith2026robomonitor.jpg},
+      bibtex_show={true},
+      keyword1 = {visual},
+}
+
+
+@misc{golestaneh2026metapusher,
+      title={MetaPusher: Meta Learning and Planning for Nonprehensile Manipulation of Unseen Objects with Rapid Online Adaption},
+      author={Lee*, Donghyung and Golestaneh*, Seyedali and Singh, Jaskrit and Zhong, Zhuoyun and Kapoutsis, Athanasios and Chamzas, Constantinos},
+      year={2026},
+      eprint={2609.21122},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2609.21122},
+      abstract={Manipulating previously unseen objects remains challenging, as their dynamics depend on latent physical properties, such as friction and mass distribution, that cannot be inferred from perception alone. Prior experience across objects can provide an initial estimate of unseen object dynamics, but this estimate remains uncertain and can degrade further during sim-to-real transfer. Adapting the dynamics through interaction can progressively refine the estimation, however, updating the model may invalidate the planned trajectory. Successful and efficient manipulation therefore requires both rapid dynamics adaptation and a planning strategy that can incorporate this evolution. In this work, we introduce MetaPusher, a meta-learning and adaptive planning framework for nonprehensile manipulation of unseen objects without prior object-specific interactions. A meta-learned dynamics model rapidly adapts from interactions during task execution, while an adaptive kinodynamic planner updates long-horizon plans by reusing and refining its existing search tree. This coupling enables manipulation and adaptation without a separate data collection phase. We evaluate MetaPusher on unseen objects in simulation and in sim-to-real scenarios, comparing against fine-tuning and active learning methods, MPPI-based control, and a reinforcement learning policy. It achieves lower prediction error and improves task success rate by up to 20\%.},
+      abbr={arxiv},
+      pdf={golestaneh2026metapusher.pdf},
+      preview={publication_preview/golestaneh2026metapusher.jpg},
+      bibtex_show={true},
+      keyword1 = {uncertainty},
+}
+
+
+@misc{zhong2026kite,
+      title={Terminal Matters: Kinodynamic Planning with a Terminal Cost and Learned Uncertainty in Belief State-Cost Space},
+      author={Zhuoyun Zhong and Seyedali Golestaneh and Constantinos Chamzas},
+      year={2026},
+      eprint={2605.09046},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2605.09046},
+      abstract={In many real-world robotic tasks, robots must generate dynamically feasible motions that reliably reach desired goals even under uncertainty. Yet existing sampling-based kinodynamic planners typically optimize running costs accumulated along trajectories and treat goal reaching as a feasibility check, rather than explicitly optimizing terminal-state quality, such as goal preference or goal-reaching reliability. In this work, we introduce Kinodynamic planning with a Terminal cost, termed KiTe. It augments AO-RRT with a terminal-cost objective to optimize terminal-state quality alongside trajectory running cost. We provide a rigorous proof that this augmented AO-RRT formulation preserves asymptotic optimality. Furthermore, we extend the formulation to belief space and prove that minimizing the Wasserstein distance between the terminal belief and the goal improves a lower bound on the probability of reaching the goal region. To support systems without analytical uncertainty models, we learn dynamics and process uncertainty directly from data and integrate the learned belief dynamics into planning. We validate the proposed formulation with experiments on Flappy Bird, Car Parking, and Planar Pushing with learned belief dynamics in both simulation and the real world. Compared with baselines without terminal costs, KiTe better satisfies goal preferences and consistently achieves higher goal-reaching success under uncertainty.},
+      abbr={arxiv},
+      pdf={zhong2026kite.pdf},
+      preview={publication_preview/zhong2026kite.jpg},
+      video={https://www.youtube.com/watch?v=XgUaRy2WUow},
+      code={https://github.com/elpis-lab/KiTe},
+      bibtex_show={true},
+      keyword1 = {uncertainty},
+}
+
+
+@misc{zhong2026coad,
+      title={CoAd: Constant-Time Planning for Continuous Goal Manipulation with Compressed Library and Online Adaptation},
+      author={Shiyas*, Adil and Zhong*, Zhuoyun and Chamzas, Constantinos},
+      year={2026},
+      eprint={2603.12488},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2603.12488},
+      abstract={In many robotic manipulation tasks, the robot repeatedly solves motion-planning problems that differ mainly in the location of the goal object and its associated obstacle, while the surrounding workspace remains fixed. Prior works have shown that leveraging experience and offline computation can accelerate repeated planning queries, but they lack guarantees of covering the continuous task space and require storing large libraries of solutions. In this work, we present CoAd, a framework that provides constant-time planning over a continuous goal-parameterized task space. CoAd discretizes the continuous task space into finitely many Task Coverage Regions. Instead of planning and storing solutions for every region offline, it constructs a compressed library by only solving representative root problems. Other problems are handled through fast adaptation from these root solutions. At query time, the system retrieves a root motion in constant time and adapts it to the desired goal using lightweight adaptation modules such as linear interpolation, Dynamic Movement Primitives, or simple trajectory optimization. We evaluate the framework on various manipulators and environments in simulation and the real world, showing that CoAd achieves substantial compression of the motion library while maintaining high success rates and sub-millisecond-level queries, outperforming baseline methods in both efficiency and path quality.},
+      abbr={arxiv},
+      pdf={zhong2026coad.pdf},
+      preview={publication_preview/zhong2026coad.jpg},
+      video={https://www.youtube.com/watch?v=7beBnjVmmgk},
+      code={https://github.com/elpis-lab/CoAd},
+      bibtex_show={true},
+      keyword1 = {efficiency},
+}
+
 
 @misc{ilampooranan2025covercoverageverifiedroadmapsfixedtimemotion,
       title={COVER: COverage-VErified Roadmaps for Fixed-time Motion Planning
@@ -42,7 +153,7 @@ in Continuous Semi-Static Environments},
       bibtex_show={true},
       video= {https://www.youtube.com/watch?v=lxvyy61g0CY},
       keyword1 = {uncertainty}, 
-      note = {(Top-3 finalist for best paper in Planning and Control)},
+      note = {(Top-3 finalist for best paper in Planning and Control)<br>Best Student Paper Award},
 }
 
 

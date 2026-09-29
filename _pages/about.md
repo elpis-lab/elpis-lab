@@ -51,9 +51,7 @@ If you are interested in joining the Lab please see this [page](/join).
   <div
     id="researchFocusCarousel"
     class="carousel slide carousel-fade elpis-carousel research-focus-carousel"
-    data-ride="carousel"
-    data-interval="{{ page.research_focuses.autoplay_ms | default: 6500 }}"
-    data-pause="hover"
+    data-interval="false"
   >
     <ol class="carousel-indicators">
       {% for focus in page.research_focuses.items %}
@@ -81,7 +79,7 @@ If you are interested in joining the Lab please see this [page](/join).
             <div class="col-lg-7">
               <div class="research-focus-media">
                 {% if focus.video %}
-                  <video autoplay muted loop playsinline preload="metadata" poster="{{ focus.poster | relative_url }}">
+                  <video muted playsinline preload="{% if forloop.first %}auto{% else %}metadata{% endif %}" poster="{{ focus.poster | relative_url }}">
                     <source src="{{ focus.video | relative_url }}" type="video/mp4">
                   </video>
                 {% else %}
@@ -108,10 +106,52 @@ If you are interested in joining the Lab please see this [page](/join).
 </section>
 
 <script>
-$(function () {
-    $("#researchFocusCarousel").carousel({
-        interval: {{ page.research_focuses.autoplay_ms | default: 6500 }},
-        pause: "hover"
+// Advance when the active video ends, so videos always play fully (the old fixed
+// timer cut them off on mobile, where there is no hover to pause the carousel).
+// Runs on DOMContentLoaded because jQuery/Bootstrap load at the end of the page.
+document.addEventListener("DOMContentLoaded", function () {
+    var $carousel = $("#researchFocusCarousel");
+    var fallbackMs = {{ page.research_focuses.autoplay_ms | default: 6500 }};
+    var canHover = window.matchMedia("(hover: hover)").matches;
+    var timer = null;
+
+    function next() {
+        $carousel.carousel("next");
+    }
+
+    function playActive() {
+        clearTimeout(timer);
+        $carousel.find("video").each(function () {
+            this.pause();
+        });
+        var video = $carousel.find(".carousel-item.active video").get(0);
+        if (!video) {
+            timer = setTimeout(next, fallbackMs);
+            return;
+        }
+        video.currentTime = 0;
+        var played = video.play();
+        if (played && played.catch) {
+            played.catch(function (err) {
+                // Autoplay blocked (e.g. iOS Low Power Mode): fall back to the timer.
+                if (err && err.name === "NotAllowedError") {
+                    timer = setTimeout(next, fallbackMs);
+                }
+            });
+        }
+    }
+
+    $carousel.carousel({ interval: false, pause: false });
+    $carousel.find("video").on("ended", function () {
+        if (!$(this).closest(".carousel-item").hasClass("active")) return;
+        if (canHover && $carousel.is(":hover")) {
+            this.currentTime = 0;
+            this.play();
+        } else {
+            next();
+        }
     });
+    $carousel.on("slid.bs.carousel", playActive);
+    playActive();
 });
 </script>
