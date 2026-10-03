@@ -310,6 +310,7 @@ scholar:
       - talk
       - code
       - website
+      - project
       - abbr
       - note
       - video 
@@ -352,6 +353,7 @@ filtered_bibtex_keywords:
     supp,
     video,
     website,
+    project,
   ]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)

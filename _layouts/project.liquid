@@ -1,0 +1,79 @@
+---
+layout: default
+---
+
+<article class="project-page">
+  <header class="project-hero">
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}
+      <p class="project-subtitle">{{ page.subtitle }}</p>
+    {% endif %}
+
+    {% if page.authors %}
+      <div class="project-authors" aria-label="Authors">
+        {% for author in page.authors %}
+          {% if author.url %}<a href="{{ author.url }}" target="_blank" rel="noopener noreferrer">{% endif %}
+          {{- author.name -}}
+          {% if author.url %}</a>{% endif %}
+          {%- unless forloop.last -%}<span aria-hidden="true">,</span>{%- endunless -%}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if page.affiliation %}
+      <p class="project-affiliation">{{ page.affiliation }}</p>
+    {% endif %}
+
+    {% if page.venue %}
+      <p class="project-venue">{{ page.venue }}</p>
+    {% endif %}
+
+    {% if page.awards %}
+      <div class="project-awards" aria-label="Awards">
+        {% for award in page.awards %}
+          <span><i class="fa-solid fa-trophy" aria-hidden="true"></i>{{ award }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if page.links %}
+      <nav class="project-links" aria-label="Project resources">
+        {% for link in page.links %}
+          <a href="{{ link.url | relative_url }}" class="project-link"{% if link.external %} target="_blank" rel="noopener noreferrer"{% endif %}>
+            {% if link.icon %}<i class="{{ link.icon }}" aria-hidden="true"></i>{% endif %}
+            {{ link.label }}
+          </a>
+        {% endfor %}
+      </nav>
+    {% endif %}
+  </header>
+
+  {% if page.featured_videos %}
+    <section class="project-featured-videos" aria-label="{{ page.title }} highlights">
+      <div class="project-video-grid">
+        {% for video in page.featured_videos %}
+          <div class="project-video-card project-featured-video-card">
+            <video controls muted loop playsinline preload="metadata"{% if video.poster %} poster="{{ video.poster | relative_url }}"{% endif %} aria-label="{{ video.title }}">
+              <source src="{{ video.src | relative_url }}" type="video/mp4">
+            </video>
+            <div class="project-video-copy">
+              <h2>{{ video.title }}</h2>
+              {% if video.caption %}<p>{{ video.caption }}</p>{% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
+  {% if page.teaser %}
+    <figure class="project-teaser">
+      <img src="{{ page.teaser | relative_url }}" alt="{{ page.teaser_alt | default: page.title }}" fetchpriority="high">
+      {% if page.teaser_caption %}<figcaption>{{ page.teaser_caption }}</figcaption>{% endif %}
+    </figure>
+  {% endif %}
+
+  <div class="project-content">
+    {{ content }}
+  </div>
+</article>
