@@ -49,7 +49,7 @@ profiles:
   - align: left
     image: people/zhong_square.jpg
     name: Zhuoyun Zhong
-    website: "https://www.linkedin.com/in/zhuoyunzhong/"
+    website: "https://zhuoyunzhong.github.io/"
     type: phd 
     content: about_zzhong.md
     email: zzhong3@wpi.edu

@@ -6,7 +6,7 @@ description: A data-efficient framework that learns pushing dynamics from inform
 permalink: /projects/activepusher/
 authors:
   - name: Zhuoyun Zhong
-    url: https://www.linkedin.com/in/zhuoyunzhong/
+    url: https://zhuoyunzhong.github.io/
   - name: Seyedali Golestaneh
     url: https://www.linkedin.com/in/aligolestaneh/
   - name: Constantinos Chamzas

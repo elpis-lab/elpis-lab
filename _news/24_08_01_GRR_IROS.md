@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 The first paper of the ELPIS Lab titled ["Expansion-GRR: Efficient Generation of Smooth Global Redundancy Resolution Roadmaps"](https://arxiv.org/abs/2405.13770) has been accepted to **IROS2024**!
-Congrats [Zhuoyun Zhong](https://www.linkedin.com/in/zhuoyunzhong/)!
+Congrats [Zhuoyun Zhong](https://zhuoyunzhong.github.io/)!
