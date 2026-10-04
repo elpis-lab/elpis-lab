@@ -56,6 +56,35 @@ html[data-theme="dark"] .elpis-carousel {
   }
 }
 
+// Keep the homepage identity block subordinate to the introductory copy.
+.homepage-profile {
+  width: 220px;
+  max-width: 27%;
+  margin-bottom: 0.9rem;
+  text-align: center;
+
+  figure {
+    margin: 0 auto 0.65rem;
+  }
+}
+
+.homepage-address {
+  clear: both;
+  margin: 1.1rem 0 0;
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+  font-style: normal;
+  line-height: 1.55;
+}
+
+.homepage-profile.float-right {
+  margin-left: 1.75rem;
+}
+
+.homepage-profile.float-left {
+  margin-right: 1.75rem;
+}
+
 .landing-focus-section {
   clear: both;
   margin: 2.35rem 0 1.5rem;
@@ -201,7 +230,31 @@ html[data-theme="dark"] .landing-focus-section {
   }
 }
 
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .homepage-profile {
+    width: 165px;
+    max-width: 30%;
+  }
+
+  .homepage-profile.float-right {
+    margin-left: 1.25rem;
+  }
+
+  .homepage-profile.float-left {
+    margin-right: 1.25rem;
+  }
+}
+
 @media (max-width: 575.98px) {
+  .homepage-profile,
+  .homepage-profile.float-left,
+  .homepage-profile.float-right {
+    float: none !important;
+    width: 160px;
+    max-width: none;
+    margin: 0 auto 1.25rem;
+  }
+
   .landing-focus-section {
     padding: 0.75rem;
   }

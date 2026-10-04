@@ -5,12 +5,8 @@ permalink: /
 
 profile:
   align: right 
-  image: logo1.jpg
+  image: logo1.webp
   image_circular: true # crops the image to make it circular
-  more_info: >
-    <p>UH200B, Unity Hall</p>
-    <p>100 Institute Rd</p>
-    <p>Worcester, MA 01609</p>
 
 research_focuses:
   autoplay_ms: 6500
@@ -41,6 +37,12 @@ Welcome to the webpage of the Efficient Learning and Planning for Intelligent Sy
 The Lab has a broad interest in autonomous robotic systems capable of reasoning about and interacting with the physical world. The primary goal is to develop agents that are efficient, robust, and capable of learning from real-world interactions. Current research projects focus on the integration of classical planning algorithms and state-of-the-art machine learning techniques, aiming to advance 1) [planning efficiency](/projects/efficiency), 2) [planning robustness](/projects/uncertainty), and 3) [planning from visual inputs](/projects/visual).
 
 If you are interested in joining the Lab please see this [page](/join).
+
+<!-- <address class="homepage-address">
+  <strong>ELPIS Lab</strong><br>
+  UH200B, Unity Hall · 100 Institute Rd<br>
+  Worcester, MA 01609
+</address> -->
 
 <section class="landing-focus-section">
   <div class="landing-focus-header">
