@@ -1,1 +1,3 @@
-Zhuoyun (Joey) Zhong has a profound interest in empowering robots to solve long-horizon real-life problems. Currently, he works on enhancing task and motion planning algorithms with learning capability. Before joining WPI, he completed his undergraduate degree in Automotive Engineering at Jilin University. His research interest lie in Task and Motion planning and Robot Learning.
+Zhuoyun (Joey) Zhong has a profound interest in empowering robots to solve long-horizon real-life problems.
+His research interest lies in Motion Planning and Robot Learning for Robot Manipulators and Humanoid Robots.
+Currently, he works on enhancing sampling-based motion planning algorithms with learning capability to solve complex real-world manipulation problems. Before joining WPI, he completed his undergraduate degree in Automotive Engineering at Jilin University.
