@@ -18,20 +18,24 @@ awards:
   - ICRA 2026 Best Paper in Planning and Control Finalist
   - HRF 2026 Best Student Paper Award
 links:
+  - label: URL
+    url: https://arxiv.org/abs/2506.04646
+    icon: fa-solid fa-link
+    external: true
   - label: arXiv
     url: https://arxiv.org/abs/2506.04646
     icon: ai ai-arxiv
     external: true
-  - label: Paper
+  - label: PDF
     url: /assets/pdf/zhong2026activepusheractivelearningplanning.pdf
     icon: fa-regular fa-file-pdf
-  - label: Code
-    url: https://github.com/elpis-lab/ActivePusher
-    icon: fa-brands fa-github
-    external: true
   - label: Video
     url: https://www.youtube.com/watch?v=lxvyy61g0CY
     icon: fa-brands fa-youtube
+    external: true
+  - label: Code
+    url: https://github.com/elpis-lab/ActivePusher
+    icon: fa-brands fa-github
     external: true
 featured_videos:
   - title: Active learning

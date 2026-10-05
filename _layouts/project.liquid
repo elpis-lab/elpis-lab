@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="project-page{% if page.video_aspect == 'square' %} project-page--square-video{% endif %}">
+<article class="project-page{% if page.video_aspect == 'square' %} project-page--square-video{% endif %}{% if page.video_fit == 'contain' %} project-page--contain-video{% endif %}">
   <header class="project-hero">
     <h1>{{ page.title }}</h1>
     {% if page.subtitle %}

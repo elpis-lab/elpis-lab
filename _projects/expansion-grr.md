@@ -16,20 +16,24 @@ authors:
 affiliation: Worcester Polytechnic Institute · ELPIS Lab
 venue: Accepted to IROS 2024
 links:
+  - label: URL
+    url: https://ieeexplore.ieee.org/document/10801917
+    icon: fa-solid fa-link
+    external: true
   - label: arXiv
     url: https://arxiv.org/abs/2405.13770
     icon: ai ai-arxiv
     external: true
-  - label: Paper
+  - label: PDF
     url: /assets/pdf/zhong2024-expansion-grr.pdf
     icon: fa-regular fa-file-pdf
-  - label: Code
-    url: https://github.com/elpis-lab/Expansion-GRR
-    icon: fa-brands fa-github
-    external: true
   - label: Video
     url: https://www.youtube.com/watch?v=YnLAqy3MtfQ
     icon: fa-brands fa-youtube
+    external: true
+  - label: Code
+    url: https://github.com/elpis-lab/Expansion-GRR
+    icon: fa-brands fa-github
     external: true
 featured_videos:
   - title: Global consistency

@@ -303,6 +303,10 @@
   object-fit: contain;
 }
 
+.project-page--contain-video .project-video-card video {
+  object-fit: contain;
+}
+
 .project-video-card p {
   margin: 0;
   padding: 0.7rem 0.9rem;
