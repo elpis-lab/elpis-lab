@@ -14,7 +14,6 @@ authors:
   - name: Constantinos Chamzas
     url: https://cchamzas.com/
 affiliation: Worcester Polytechnic Institute · ELPIS Lab
-venue: Under review at IEEE Transactions on Robotics (T-RO)
 # After acceptance, replace the venue line above with:
 # venue: Accepted by IEEE Transactions on Robotics (T-RO), 2026
 links:

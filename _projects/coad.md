@@ -14,7 +14,6 @@ authors:
   - name: Constantinos Chamzas
     url: https://cchamzas.com/
 affiliation: Worcester Polytechnic Institute · ELPIS Lab
-venue: Under review at ICRA 2027
 # After acceptance, replace the venue line above with:
 # venue: Accepted to ICRA 2027
 links:
