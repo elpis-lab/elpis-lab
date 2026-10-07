@@ -59,13 +59,13 @@ profiles:
     image_circular: false # crops the image to make it circular
   - align: left
     name: Ali Golestaneh
-    website: "https://www.linkedin.com/in/aligolestaneh/"
+    website: "https://aligolestaneh.github.io/"
     image: people/Ali.jpg
     type: phd 
     content: about_ali.md
     email: sgolestaneh@wpi.edu
     github_username: AliGolestaneh # your GitHub user name
-    linkedin_username: www.linkedin.com/in/aligolestaneh # your LinkedIn user name
+    linkedin_username: aligolestaneh # your LinkedIn user name
     scholar_userid: OVpKMqwAAAAJ # your Google Scholar ID
     image_circular: false # crops the image to make it circular
   - align: left

@@ -8,7 +8,7 @@ og_image: /assets/projects/aura/intro.webp
 color_theme: aura
 authors:
   - name: Seyedali Golestaneh
-    url: https://www.linkedin.com/in/aligolestaneh/
+    url: https://aligolestaneh.github.io/
   - name: Zhuoyun Zhong
     url: https://zhuoyunzhong.github.io/
   - name: Donghyung Lee

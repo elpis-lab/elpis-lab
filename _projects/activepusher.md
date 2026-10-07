@@ -8,7 +8,7 @@ authors:
   - name: Zhuoyun Zhong
     url: https://zhuoyunzhong.github.io/
   - name: Seyedali Golestaneh
-    url: https://www.linkedin.com/in/aligolestaneh/
+    url: https://aligolestaneh.github.io/
   - name: Constantinos Chamzas
     url: https://cchamzas.com/
 venue: Accepted to ICRA 2026
