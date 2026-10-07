@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="project-page{% if page.video_aspect == 'square' %} project-page--square-video{% endif %}{% if page.video_fit == 'contain' %} project-page--contain-video{% endif %}">
+<article class="project-page{% if page.video_aspect == 'square' %} project-page--square-video{% endif %}{% if page.video_fit == 'contain' %} project-page--contain-video{% endif %}{% if page.color_theme %} project-page--{{ page.color_theme }}{% endif %}">
   <header class="project-hero">
     <h1>{{ page.title }}</h1>
     {% if page.subtitle %}
@@ -52,8 +52,8 @@ layout: default
     <section class="project-featured-videos" aria-label="{{ page.title }} highlights">
       <div class="project-video-grid">
         {% for video in page.featured_videos %}
-          <div class="project-video-card project-featured-video-card">
-            <video controls muted loop playsinline preload="metadata"{% if video.poster %} poster="{{ video.poster | relative_url }}"{% endif %} aria-label="{{ video.title }}">
+          <div class="project-video-card project-featured-video-card{% if video.highlight %} project-video-card--primary{% endif %}">
+            <video controls muted loop playsinline{% if video.autoplay %} autoplay{% endif %} preload="metadata"{% if video.poster %} poster="{{ video.poster | relative_url }}"{% endif %} aria-label="{{ video.title }}">
               <source src="{{ video.src | relative_url }}" type="video/mp4">
             </video>
             <div class="project-video-copy">
