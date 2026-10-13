@@ -10,6 +10,7 @@ authors:
   - name: Constantinos Chamzas
     url: https://cchamzas.com/
 affiliation: Worcester Polytechnic Institute · ELPIS Lab
+venue: Accepted to CoRL 2026
 ---
 
 <section aria-labelledby="coming-soon-heading">
