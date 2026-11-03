@@ -75,7 +75,7 @@
     {% endif %}
 
     <div class="pub-entry-card">
-      <div class="pub-entry-media {% if primary_link_is_video or media_is_video %}pub-entry-has-video{% endif %}">
+      <div class="pub-entry-media {% if primary_link_is_video or media_is_video %}pub-entry-has-video{% endif %} {% if entry.preview_fit == 'contain' %}pub-entry-media-contain{% endif %}">
         {% if entry.abbr %}
           <span class="pub-entry-badge">
             {% if site.data.venues[entry.abbr] %}

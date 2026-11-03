@@ -108,6 +108,37 @@
       keyword1 = {uncertainty},
 }
 
+@misc{noori2026asymmetric,
+      title={Asymmetric Scout-Worker Reconnaissance for Route Validation in Unknown Environments},
+      author={Kashif Khurshid Noori and Jaskrit Singh and Athanasios Ch. Kapoutsis and Jing Xiao and Constantinos Chamzas},
+      year={2026},
+      eprint={2609.36537},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2609.36537},
+      pdf={https://arxiv.org/pdf/2609.36537},
+      abstract={This paper studies asymmetric scout-worker reconnaissance in unknown environments, where a small, agile autonomous scout explores routes for a larger worker robot that must visit an ordered sequence of goal locations. Because the scout has a smaller footprint and greater mobility, a scout-traversable route may be infeasible for the worker; worker feasibility must therefore be inferred from scout observations. This setting is not explicitly addressed by existing exploration and replanning methods, which typically assume a single traversability model and seek optimal paths for the same robot performing the exploration. We introduce a symbiotic scout-based framework that exploits the scout's superior mobility to explore only the portions of the unknown environment needed to identify worker-feasible path segments connecting the ordered goals. Evaluations in simulated and real-world settings demonstrate that the proposed approach validates feasible routes, repairs blocked segments with validated worker-feasible detours, and substantially reduces scout travel compared to baseline exploration and planning methods. A real-world indoor deployment further demonstrates the scout navigating narrow corridors to identify a worker-feasible route.},
+      abbr={arxiv},
+      bibtex_show={true},
+      preview={publication_preview/noori2026asymmetric.png},
+      preview_fit={contain}
+}
+
+@misc{singh2026dgtmap,
+      title={DGT-Map: Directional Global Traversability Mapping Utilizing Multi-Task Learning for Heterogeneous Vehicles},
+      author={Jaskrit Singh and Kashif K. Noori and Jing Xiao and Constantinos Chamzas},
+      year={2026},
+      eprint={2609.30461},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2609.30461},
+      pdf={https://arxiv.org/pdf/2609.30461},
+      abstract={Off-road traversability is direction-dependent and vehicle specific, yet most global maps assign a single isotropic cost to each location. Existing learned estimators are also commonly trained independently for each vehicle; this preserves vehicle-specific behavior but prevents vehicles from sharing common terrain representations. DGT-MAP addresses both limitations through a self-supervised framework that learns global, directional, and vehicle-conditioned traversability costmaps from RGB-D observations and locomotion signals. A shared multi-task backbone learns common terrain features across training vehicles while vehicle-specific prediction heads preserve platform-dependent responses. At inference, DGT-MAP produces a heading-indexed costmap that can be used by a direction-aware planner. We evaluate DGT-MAP in simulation by integrating it into a Hybrid A* navigation stack and measuring downstream task success on challenging terrains, including slopes that are traversable downhill but not uphill and a ridge obstacle that is traversable by some vehicles, but not by others. Across evaluated tasks, DGT-MAP achieves the highest or tied-highest navigation success rate when compared against geometric, binary, and learned direction-agnostic baselines.},
+      abbr={arxiv},
+      bibtex_show={true},
+      preview={publication_preview/singh2026dgtmap.png},
+      preview_fit={contain}
+}
 
 @misc{zhong2026coad,
       title={CoAd: Constant-Time Planning for Continuous Goal Manipulation with Compressed Library and Online Adaptation},

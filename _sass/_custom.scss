@@ -339,6 +339,11 @@ html[data-theme="dark"] .landing-focus-section {
   display: block;
 }
 
+.publications ol.bibliography li .pub-entry-media-contain img {
+  object-fit: contain;
+  background: #fff;
+}
+
 .publications ol.bibliography li .pub-entry-main {
   min-width: 0;
   flex: 1 1 auto;

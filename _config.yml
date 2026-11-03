@@ -317,6 +317,7 @@ scholar:
       - keyword1
       - keyword2
       - keyword3
+      - preview_fit
   replace_strings: true
   join_strings: true
 
@@ -348,6 +349,7 @@ filtered_bibtex_keywords:
     pdf,
     poster,
     preview,
+    preview_fit,
     selected,
     slides,
     supp,
