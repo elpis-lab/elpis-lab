@@ -1,0 +1,77 @@
+---
+layout: default
+---
+
+<article class="mqp-page">
+  <header class="mqp-hero">
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}
+      <p class="mqp-hero-subtitle">{{ page.subtitle }}</p>
+    {% endif %}
+    <div class="mqp-hero-tags">
+      <span class="mqp-tag">Major Qualifying Project</span>
+      {% if page.completed %}<span class="mqp-tag">{{ page.completed }}</span>{% endif %}
+      {% if page.sponsor %}
+        {% if page.sponsor_url %}
+          <a class="mqp-tag" href="{{ page.sponsor_url }}" target="_blank" rel="noopener noreferrer">Sponsor: {{ page.sponsor }} <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        {% else %}
+          <span class="mqp-tag">Sponsor: {{ page.sponsor }}</span>
+        {% endif %}
+      {% endif %}
+    </div>
+  </header>
+
+  {% if page.teaser %}
+    <figure class="mqp-hero-image">
+      <img src="{{ page.teaser | relative_url }}" alt="{{ page.teaser_alt | default: page.title }}" fetchpriority="high">
+      {% if page.teaser_caption %}<figcaption>{{ page.teaser_caption }}</figcaption>{% endif %}
+    </figure>
+  {% endif %}
+
+  <section class="mqp-people" aria-label="Project team">
+    {% if page.students %}
+      <div class="mqp-people-card">
+        <h2>Students</h2>
+        <ul>
+          {% for person in page.students %}
+            <li>{% if person.url %}<a href="{{ person.url }}" target="_blank" rel="noopener noreferrer">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+    {% if page.advisors %}
+      <div class="mqp-people-card">
+        <h2>Advisors</h2>
+        <ul>
+          {% for person in page.advisors %}
+            <li>{% if person.url %}<a href="{{ person.url }}" target="_blank" rel="noopener noreferrer">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+    {% if page.sponsor %}
+      <div class="mqp-people-card">
+        <h2>Sponsor</h2>
+        <ul>
+          <li>{% if page.sponsor_url %}<a href="{{ page.sponsor_url }}" target="_blank" rel="noopener noreferrer">{{ page.sponsor }}</a>{% else %}{{ page.sponsor }}{% endif %}</li>
+        </ul>
+      </div>
+    {% endif %}
+  </section>
+
+  {% if page.featured_videos %}
+    {% for video in page.featured_videos %}
+      <section class="mqp-video" aria-label="{{ video.title }}">
+        <h2>{{ video.title }}</h2>
+        <div class="mqp-video-frame">
+          <iframe src="{{ video.src }}" title="{{ video.title }}" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+        </div>
+        {% if video.caption %}<p>{{ video.caption }}</p>{% endif %}
+      </section>
+    {% endfor %}
+  {% endif %}
+
+  <div class="mqp-content">
+    {{ content }}
+  </div>
+</article>

@@ -1,0 +1,272 @@
+// MQP listing page
+.mqp-list {
+  margin-top: 1rem;
+}
+
+.mqp-year-heading {
+  margin: 3rem 0 1.5rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  color: var(--global-theme-color);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.mqp-year-heading:first-child {
+  margin-top: 0;
+}
+
+.mqp-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 2.25rem;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+.mqp-feature:nth-of-type(even) .mqp-feature-media {
+  order: 2;
+}
+
+.mqp-feature-media {
+  display: block;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.2);
+  line-height: 0;
+}
+
+.mqp-feature-media img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.mqp-feature-media:hover img {
+  transform: scale(1.03);
+}
+
+.mqp-feature-body h3 {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.mqp-feature-body h3 a {
+  color: var(--global-text-color);
+}
+
+.mqp-feature-body h3 a:hover {
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+.mqp-feature-subtitle {
+  margin-bottom: 0.9rem;
+  color: var(--global-text-color-light);
+  font-size: 1.05rem;
+}
+
+.mqp-feature-description {
+  margin-bottom: 1.1rem;
+  line-height: 1.6;
+}
+
+.mqp-meta {
+  margin: 0 0 1.25rem;
+  padding: 0;
+  list-style: none;
+  font-size: 0.95rem;
+}
+
+.mqp-meta li {
+  margin-bottom: 0.3rem;
+}
+
+.mqp-meta strong {
+  color: var(--global-text-color);
+}
+
+.mqp-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.mqp-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--global-theme-color);
+  border-radius: 999px;
+  color: var(--global-theme-color);
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.mqp-button:hover {
+  background: var(--global-theme-color);
+  color: var(--global-bg-color);
+  text-decoration: none;
+}
+
+.mqp-button--solid {
+  background: var(--global-theme-color);
+  color: var(--global-bg-color);
+}
+
+.mqp-button--solid:hover {
+  opacity: 0.85;
+}
+
+// MQP detail page
+.mqp-page {
+  padding-bottom: 2rem;
+}
+
+.mqp-hero {
+  max-width: 940px;
+  margin: 1.4rem auto 2rem;
+  text-align: center;
+}
+
+.mqp-hero h1 {
+  margin-bottom: 0.5rem;
+  font-size: clamp(2.2rem, 6vw, 3.8rem);
+  font-weight: 750;
+  letter-spacing: -0.04em;
+  line-height: 1.02;
+}
+
+.mqp-hero-subtitle {
+  margin: 0 auto 0.75rem;
+  color: var(--global-text-color-light);
+  font-size: clamp(1.2rem, 2.8vw, 1.7rem);
+  line-height: 1.3;
+}
+
+.mqp-hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.mqp-tag {
+  padding: 0.25rem 0.85rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+}
+
+a.mqp-tag:hover {
+  border-color: var(--global-theme-color);
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+.mqp-hero-image {
+  margin: 0 auto 2.5rem;
+  max-width: 1080px;
+}
+
+.mqp-hero-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1.15rem;
+  box-shadow: 0 22px 55px rgba(15, 23, 42, 0.2);
+}
+
+.mqp-hero-image figcaption {
+  margin-top: 0.65rem;
+  color: var(--global-text-color-light);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.mqp-people {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin: 0 auto 2.5rem;
+}
+
+.mqp-people-card {
+  padding: 1.1rem 1.3rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.9rem;
+  background: var(--global-card-bg-color);
+}
+
+.mqp-people-card h2 {
+  margin: 0 0 0.6rem;
+  color: var(--global-theme-color);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.mqp-people-card ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mqp-people-card li {
+  margin-bottom: 0.25rem;
+}
+
+.mqp-video {
+  margin: 0 auto 2.5rem;
+}
+
+.mqp-video-frame {
+  overflow: hidden;
+  border-radius: 1rem;
+  background: #000;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.2);
+  aspect-ratio: 16 / 9;
+}
+
+.mqp-video-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.mqp-video h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.4rem;
+}
+
+.mqp-video p {
+  margin-top: 0.6rem;
+  color: var(--global-text-color-light);
+  text-align: center;
+}
+
+.mqp-content {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .mqp-feature {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+  }
+
+  .mqp-feature:nth-of-type(even) .mqp-feature-media {
+    order: 0;
+  }
+}

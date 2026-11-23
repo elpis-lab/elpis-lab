@@ -172,6 +172,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  mqps:
+    output: true
+    permalink: /mqps/:path/
 
 announcements:
   enabled: true
