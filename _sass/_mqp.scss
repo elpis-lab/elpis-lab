@@ -150,26 +150,8 @@
   line-height: 1.3;
 }
 
-.mqp-hero-tags {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-top: 1rem;
-}
-
-.mqp-tag {
-  padding: 0.25rem 0.85rem;
-  border: 1px solid var(--global-divider-color);
-  border-radius: 999px;
-  color: var(--global-text-color-light);
-  font-size: 0.9rem;
-}
-
-a.mqp-tag:hover {
-  border-color: var(--global-theme-color);
-  color: var(--global-theme-color);
-  text-decoration: none;
+.mqp-hero-actions {
+  margin: 1.25rem 0 0;
 }
 
 .mqp-hero-image {

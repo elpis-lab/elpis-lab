@@ -1,66 +1,49 @@
 ---
 layout: mqp
 title: Toward Automated Parachute Packing
-subtitle: Pack to The Future - Multi-Arm Robotic Vision-Guided Line Stowing
-description: A robotic system for automating parachute line stowing through teleoperation and autonomous control
+subtitle: Robotic Line Stowing
+description: A multi-arm robotic system that stows parachute suspension lines into elastic loops with vision-guided control.
 year: 2025
+completed: April 2026
 permalink: /mqps/pack-to-the-future/
 teaser: /assets/img/mqps/pack-to-the-future.jpg
 teaser_caption: The robotic arm stowing parachute suspension lines
-authors:
-  - name: MQP Team
-affiliation: Worcester Polytechnic Institute · ELPIS Lab
-sponsor: U.S. Army Natick Soldier Systems Center (NSSC)
+students:
+  - name: Chenhan Guan
+    url: https://www.linkedin.com/in/chenhan-david-guan-aab83a2bb/
+  - name: Zheren Li
+  - name: Fiona Prendergast
+    url: https://www.linkedin.com/in/fiona-prendergast/
+  - name: Gunnar Rorapaugh
+    url: https://www.linkedin.com/in/gunnar-rorapaugh-b4646824a/
+  - name: Oliver Van Campen
+    url: https://www.linkedin.com/in/oliver-van-campen-901066274/
+advisors:
+  - name: Prof. Constantinos Chamzas
+    url: https://cchamzas.com/
+  - name: Prof. Connor McCann
+    url: https://www.wpi.edu/people/faculty/cmccann1
+  - name: Prof. Mohammad Mahdi Agheli Hajiabadi
+    url: https://www.wpi.edu/people/faculty/mmaghelih
+  - name: Prof. Jing Xiao
+    url: https://www.wpi.edu/people/faculty/jxiao2
+sponsor: U.S. Army Natick Soldier Systems Center
+sponsor_url: https://www.army.mil/natick
+report_url: https://digital.wpi.edu/concern/student_works/w6634825j?locale=en
 featured_videos:
-  - title: Best Stow Demonstration
-    caption: Vision-guided robotic line stowing in action
+  - title: Project video
+    caption: Toward Automated Parachute Packing, a multi-arm robotic approach to vision-guided line stowing.
     src: https://www.youtube.com/embed/iWUgX9Byj0E
-    external: true
 ---
 
-## Project Overview
+## Overview
 
-The U.S. Army is facing a future shortfall of Military Occupational Specialty (MOS) 92R parachute riggers, which impacts the ability to maintain readiness and sustain logistics operations. Personnel parachute inspection and packing is a methodical, life-saving process with multiple pre-defined checkpoints for quality assurance.
+Parachute packing is largely manual because the canopy and suspension lines are flexible and deformable. Stowing the suspension lines into loops on the back of the parachute bag requires consistent, controlled tension, which makes it hard to automate with a traditional robotic manipulator. The result is a process that is time-consuming, labor-intensive, and operator dependent.
 
-This MQP focused on automating a critical step in parachute packing: **line stowing**—organizing, folding, and securing suspension lines to prevent tangling and ensure smooth deployment.
+The team developed a robotic system that manipulates flexible lines and guides them through two arrays of constrained elastic loops. A state machine coordinates a primary manipulator and two secondary tensioning arms to position, tension, and insert the lines.
 
-## Project Scope
+In testing, the system completed the stowing process and demonstrated repeatable line insertion without manual effort. The results suggest that robotic handling of long, flexible lines can be performed reliably, which contributes to automating industries that deal with variability and compliance in textiles.
 
-Rather than attempting full automation (which is impractical in the short term), the team designed a system where a robotic manipulator **threads parachute lines through a set of hoops** in a structured manner, guided by computer vision.
+## About the sponsor
 
-### Project Phases
-
-**Phase 1: Teleoperation System Development**
-- Developed a teleoperated robotic system using a 6-DOF ViperX 300 robot arm
-- Implemented intuitive teleoperation control for parachute line handling
-- Designed specialized fixtures to assist in the line stowing process
-- Evaluated system feasibility and refined mechanical/robotic components
-
-**Phase 2: Autonomous Line Stowing**
-- Enabled the robot to autonomously stow one or more lines using the designed fixtures
-- Developed state estimation capabilities to track:
-  - Progress (number of hoops threaded)
-  - Failures (missed stows or misalignment)
-  - Completion detection (task success criteria)
-- Integrated RGB-D and force sensors to assist in automation
-- Implemented vision-guided control for robust autonomous operation
-
-## Sponsoring Organization
-
-This project was generously sponsored by the [U.S. Army Natick Soldier Systems Center (NSSC)](https://www.army.mil/natick#org-about). The NSSC works to develop and test soldier equipment, ensuring readiness and sustainability of military operations.
-
-## Key Achievements
-
-- Successfully developed teleoperated parachute line handling system
-- Implemented vision-guided autonomous line stowing
-- Created specialized fixtures for robust manipulation
-- Demonstrated feasibility of robotic assistance in critical military logistics
-- Provided insights for human-robot collaboration in precision tasks
-
----
-
-**Team Members:** A 3-5 person team of Robotics and Mechanical Engineering students from Worcester Polytechnic Institute
-
-**Academic Year:** 2025-2026
-
-**Hardware:** ViperX 300 6-DOF collaborative robot arm
+This project was sponsored by the [U.S. Army Natick Soldier Systems Center](https://www.army.mil/natick), motivated by a projected shortfall of parachute riggers (MOS 92R) and the need to keep the packing process safe and trusted.

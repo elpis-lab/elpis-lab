@@ -10,7 +10,7 @@ nav_order: 6.5
 <div class="mqp-list">
   {% assign mqp_years = site.mqps | group_by: "year" | sort: "name" | reverse %}
   {% for group in mqp_years %}
-    <h2 class="mqp-year-heading">{{ group.name }}</h2>
+    <h2 class="mqp-year-heading">{{ group.name }}&ndash;{{ group.name | plus: 1 }}</h2>
     {% for mqp in group.items %}
       <article class="mqp-feature">
         {% if mqp.teaser %}
@@ -25,12 +25,12 @@ nav_order: 6.5
           <ul class="mqp-meta">
             {% if mqp.students %}
               <li><strong>Students:</strong>
-                {% for person in mqp.students %}{{ person.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+                {% for person in mqp.students %}{% if person.url %}<a href="{{ person.url }}" target="_blank" rel="noopener noreferrer">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
               </li>
             {% endif %}
             {% if mqp.advisors %}
               <li><strong>Advisors:</strong>
-                {% for person in mqp.advisors %}{{ person.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+                {% for person in mqp.advisors %}{% if person.url %}<a href="{{ person.url }}" target="_blank" rel="noopener noreferrer">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
               </li>
             {% endif %}
             {% if mqp.sponsor %}
@@ -43,6 +43,9 @@ nav_order: 6.5
             <a class="mqp-button mqp-button--solid" href="{{ mqp.url | relative_url }}"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Project page</a>
             {% if mqp.featured_videos %}
               <a class="mqp-button" href="{{ mqp.featured_videos[0].src | replace: 'youtube.com/embed/', 'youtube.com/watch?v=' }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" aria-hidden="true"></i> Video</a>
+            {% endif %}
+            {% if mqp.report_url %}
+              <a class="mqp-button" href="{{ mqp.report_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i> Report</a>
             {% endif %}
           </div>
         </div>

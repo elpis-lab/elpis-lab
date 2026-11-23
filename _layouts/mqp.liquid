@@ -8,17 +8,11 @@ layout: default
     {% if page.subtitle %}
       <p class="mqp-hero-subtitle">{{ page.subtitle }}</p>
     {% endif %}
-    <div class="mqp-hero-tags">
-      <span class="mqp-tag">Major Qualifying Project</span>
-      {% if page.completed %}<span class="mqp-tag">{{ page.completed }}</span>{% endif %}
-      {% if page.sponsor %}
-        {% if page.sponsor_url %}
-          <a class="mqp-tag" href="{{ page.sponsor_url }}" target="_blank" rel="noopener noreferrer">Sponsor: {{ page.sponsor }} <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
-        {% else %}
-          <span class="mqp-tag">Sponsor: {{ page.sponsor }}</span>
-        {% endif %}
-      {% endif %}
-    </div>
+    {% if page.report_url %}
+      <p class="mqp-hero-actions">
+        <a class="mqp-button mqp-button--solid" href="{{ page.report_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i> Read the final report</a>
+      </p>
+    {% endif %}
   </header>
 
   {% if page.teaser %}
