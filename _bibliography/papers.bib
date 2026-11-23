@@ -11,6 +11,7 @@
 @String { hscc  = {ACM Hybrid Systems: Computation and Control}}
 @String { arxiv  = {arXiv Preprint}}
 @String { corl  = {Conference on Robot Learning}}
+@String { isrr  = {International Symposium on Robotics Research}}
 
 @article{golestaneh2026aura,
       title={AURA: Asymptotically Optimal Uncertainty-Robust Replanning Algorithm for Kinodynamic Systems},
@@ -108,9 +109,10 @@
       keyword1 = {uncertainty},
 }
 
-@misc{noori2026asymmetric,
+@inproceedings{noori2026asymmetric,
       title={Asymmetric Scout-Worker Reconnaissance for Route Validation in Unknown Environments},
       author={Kashif Khurshid Noori and Jaskrit Singh and Athanasios Ch. Kapoutsis and Jing Xiao and Constantinos Chamzas},
+      booktitle = isrr,
       year={2026},
       eprint={2609.36537},
       archivePrefix={arXiv},
@@ -118,7 +120,7 @@
       url={https://arxiv.org/abs/2609.36537},
       pdf={https://arxiv.org/pdf/2609.36537},
       abstract={This paper studies asymmetric scout-worker reconnaissance in unknown environments, where a small, agile autonomous scout explores routes for a larger worker robot that must visit an ordered sequence of goal locations. Because the scout has a smaller footprint and greater mobility, a scout-traversable route may be infeasible for the worker; worker feasibility must therefore be inferred from scout observations. This setting is not explicitly addressed by existing exploration and replanning methods, which typically assume a single traversability model and seek optimal paths for the same robot performing the exploration. We introduce a symbiotic scout-based framework that exploits the scout's superior mobility to explore only the portions of the unknown environment needed to identify worker-feasible path segments connecting the ordered goals. Evaluations in simulated and real-world settings demonstrate that the proposed approach validates feasible routes, repairs blocked segments with validated worker-feasible detours, and substantially reduces scout travel compared to baseline exploration and planning methods. A real-world indoor deployment further demonstrates the scout navigating narrow corridors to identify a worker-feasible route.},
-      abbr={arxiv},
+      abbr={ISRR},
       bibtex_show={true},
       preview={publication_preview/noori2026asymmetric.png},
       preview_fit={contain}
@@ -237,7 +239,7 @@ in Continuous Semi-Static Environments},
     series = {HSCC '25},
     selected = {false},
     abbr = {HSCC},
-    bibtex_show = {false},
+    bibtex_show = {true},
     pdf={ajith2025multilayerplanning.pdf},
     preview={publication_preview/ajith2025multilayerplanning.png},
     code = {https://github.com/elpis-lab/LG-SST-STL},
@@ -461,6 +463,7 @@ url = {https://doi.org/10.31478/202203b},
   title = {Using Experience to Improve Constrained Planning on Foliations for Multi-Modal Problems},
   year = {2021},
   pdf = {kingston2021experience-foliations.pdf}, 
+  preview = {publication_preview/kingston2021foliations.jpg},
   pages = {6922-6927},
   doi = {10.1109/IROS51168.2021.9636236},
   url = {https://doi.org/10.1109/IROS51168.2021.9636236},
@@ -487,6 +490,7 @@ url = {https://doi.org/10.31478/202203b},
   title = {HyperPlan: A Framework for Motion Planning Algorithm Selection and Parameter Optimization},
   year = {2021},
   pdf = {moll2021hyperplan.pdf}, 
+  preview = {publication_preview/moll2021hyperplan.jpg},
   pages = {2511-2518},
   doi = {10.1109/IROS51168.2021.9636651},
   url = {https://doi.org/10.1109/IROS51168.2021.9636651},
@@ -506,6 +510,7 @@ url = {https://doi.org/10.31478/202203b},
   website= {https://zt-yang.github.io/rss23-l4tamp-workshop/},
   url={https://openreview.net/forum?id=68N8Dj6KVv},
   pdf={chamzas2023-metapolicy.pdf}, 
+  preview={publication_preview/chamzas2023metapolicy.jpg},
   bibtex_show={true},
   abbr={RSS},
   keyword2 = {uncertainty}, 
@@ -646,7 +651,7 @@ During the last years, the emerging field of Augmented Virtual Reality (AR-VR) h
       supervision such as Siamese networks with a simple contrastive loss produce more useful
       representations than traditionally used autoencoders for the final downstream manipulation
       task.},
-  author = {Chamzas*, Constantinos and Lippi*, Martina and C. Welle*, Michael and Varava, Anastasiia and Alessandro, Marino and E. Kavraki, Lydia and Kragic, Danica},
+  author = {Chamzas*, Constantinos and Lippi*, Martina and C. Welle*, Michael and Varava, Anastasiia and Marino, Alessandro and E. Kavraki, Lydia and Kragic, Danica},
   booktitle = {NeurIPS, 3rd Robot Learning Workshop: Grounding Machine Learning Development in the
       Real World},
   title = {State Representations in Robotics: Identifying Relevant Factors of Variation using Weak
